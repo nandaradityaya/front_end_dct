@@ -1,0 +1,3165 @@
+<!doctype html>
+<html lang="en" class="color-sidebar sidebarcolor3">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--favicon-->
+	<link rel="icon" href="assets/images/index.ico" type="image/png" />
+	<!--plugins-->
+	<link href="assets/plugins/simplebar/css/simplebar.css" rel="stylesheet" />
+	<link href="assets/plugins/fullcalendar/css/main.min.css" rel="stylesheet" />
+	<link href="assets/plugins/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet" />
+	<link href="assets/plugins/metismenu/css/metisMenu.min.css" rel="stylesheet" />
+	<link href="assets/plugins/highcharts/css/highcharts.css" rel="stylesheet" />
+	<link href="assets/plugins/datatable/css/dataTables.bootstrap5.min.css" rel="stylesheet" />
+	<link href="assets/plugins/select2/css/select2.min.css" rel="stylesheet" />
+	<link href="assets/plugins/select2/css/select2-bootstrap4.css" rel="stylesheet" />
+	<link rel="stylesheet" href="assets/libraries/gijgo/css/gijgo.min.css">
+	<!-- loader-->
+	<link href="assets/css/pace.min.css" rel="stylesheet" />
+	<script src="assets/js/pace.min.js"></script>
+	<!-- Bootstrap CSS -->
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+	<link href="assets/css/bootstrap-extended.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+	<link href="assets/css/app.css" rel="stylesheet">
+	<link href="assets/css/icons.css" rel="stylesheet">
+	<!-- Theme Style CSS -->
+	<link rel="stylesheet" href="assets/css/dark-theme.css" />
+	<link rel="stylesheet" href="assets/css/semi-dark.css" />
+	<link rel="stylesheet" href="assets/css/header-colors.css" />
+	<style>
+		.detail-cpc svg:hover {
+			color: #ffffff;
+		}
+	</style>
+	<title>DCT WEB</title>
+</head>
+
+<body>
+	<!--wrapper-->
+	<div class="wrapper">
+		<!--sidebar wrapper -->
+		<div class="sidebar-wrapper" data-simplebar="true">
+			<div class="sidebar-header">
+				<!-- <div>
+					<img src="assets/images/logo-icon.png" class="logo-icon" alt="logo icon">
+				</div> -->
+				<div style="margin-left: 40px;">
+					<a href="dashboard.html" class="logo-text" style="font-family: 'Segoe UI Black';">
+						<span style="font-size: larger; font-style: italic">DCT</span>
+						<span style="font-size: 15px; text-decoration:overline ">WEB</span>
+					</a>
+				</div>
+				<div class="toggle-icon ms-auto"><i class='bx bx-first-page'></i>
+				</div>
+			</div>
+			<!--navigation-->
+			<ul class="metismenu" id="menu">
+				<li class="menu-label">Menu</li>
+				<li>
+					<a href="dashboard.html">
+						<div class="parent-icon"><i class='bx bx-home'></i>
+						</div>
+						<div class="menu-title">Dashboard</div>
+					</a>
+				</li>
+				<!-- <li>
+					<a href="javascript:;" class="has-arrow">
+						<div class="parent-icon"><i class='bx bx-spa' ></i>
+						</div>
+						<div class="menu-title">Application</div>
+					</a>
+					<ul>
+						<li> <a href="app-emailbox.html"><i class="bx bx-right-arrow-alt"></i>Email</a>
+						</li>
+						<li> <a href="app-chat-box.html"><i class="bx bx-right-arrow-alt"></i>Chat Box</a>
+						</li>
+						<li> <a href="app-file-manager.html"><i class="bx bx-right-arrow-alt"></i>File Manager</a>
+						</li>
+						<li> <a href="app-contact-list.html"><i class="bx bx-right-arrow-alt"></i>Contatcs</a>
+						</li>
+						<li> <a href="app-to-do.html"><i class="bx bx-right-arrow-alt"></i>Todo List</a>
+						</li>
+						<li> <a href="app-invoice.html"><i class="bx bx-right-arrow-alt"></i>Invoice</a>
+						</li>
+						<li> <a href="app-fullcalender.html"><i class="bx bx-right-arrow-alt"></i>Calendar</a>
+						</li>
+					</ul>
+				</li> -->
+				
+				
+			</ul>
+			<!--end navigation-->
+		</div>
+		<!--end sidebar wrapper -->
+		<!--start header -->
+		<header>
+			<div class="topbar d-flex align-items-center">
+				<nav class="navbar navbar-expand">
+					<div class="mobile-toggle-menu"><i class='bx bx-menu'></i>
+					</div>
+					<!-- <div class="top-menu-left d-none d-lg-block">
+						<ul class="nav">
+						  <li class="nav-item">
+							<a class="nav-link" href="app-emailbox.html"><i class='bx bx-envelope'></i></a>
+						  </li>
+						  <li class="nav-item">
+							<a class="nav-link" href="app-chat-box.html"><i class='bx bx-message'></i></a>
+						  </li>
+						  <li class="nav-item">
+							<a class="nav-link" href="app-fullcalender.html"><i class='bx bx-calendar'></i></a>
+						  </li>
+						  <li class="nav-item">
+							  <a class="nav-link" href="app-to-do.html"><i class='bx bx-check-square'></i></a>
+						  </li>
+					  </ul>
+					 </div>
+					<div class="search-bar flex-grow-1">
+						<div class="position-relative search-bar-box">
+							<input type="text" class="form-control search-control" placeholder="Type to search..."> <span class="position-absolute top-50 search-show translate-middle-y"><i class='bx bx-search'></i></span>
+							<span class="position-absolute top-50 search-close translate-middle-y"><i class='bx bx-x'></i></span>
+						</div>
+					</div> -->
+					<div class="top-menu ms-auto">
+						<ul class="navbar-nav align-items-center">
+							<!-- <li class="nav-item mobile-search-icon">
+								<a class="nav-link" href="#">	<i class='bx bx-search'></i>
+								</a>
+							</li> -->
+							<!-- <li class="nav-item dropdown dropdown-large">
+								<a class="nav-link dropdown-toggle dropdown-toggle-nocaret" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">	<i class='bx bx-category'></i>
+								</a>
+								<div class="dropdown-menu dropdown-menu-end">
+									<div class="row row-cols-3 g-3 p-3">
+										<div class="col text-center">
+											<div class="app-box mx-auto bg-gradient-cosmic text-white"><i class='bx bx-group'></i>
+											</div>
+											<div class="app-title">Teams</div>
+										</div>
+										<div class="col text-center">
+											<div class="app-box mx-auto bg-gradient-burning text-white"><i class='bx bx-atom'></i>
+											</div>
+											<div class="app-title">Projects</div>
+										</div>
+										<div class="col text-center">
+											<div class="app-box mx-auto bg-gradient-lush text-white"><i class='bx bx-shield'></i>
+											</div>
+											<div class="app-title">Tasks</div>
+										</div>
+										<div class="col text-center">
+											<div class="app-box mx-auto bg-gradient-kyoto text-dark"><i class='bx bx-notification'></i>
+											</div>
+											<div class="app-title">Feeds</div>
+										</div>
+										<div class="col text-center">
+											<div class="app-box mx-auto bg-gradient-blues text-dark"><i class='bx bx-file'></i>
+											</div>
+											<div class="app-title">Files</div>
+										</div>
+										<div class="col text-center">
+											<div class="app-box mx-auto bg-gradient-moonlit text-white"><i class='bx bx-filter-alt'></i>
+											</div>
+											<div class="app-title">Alerts</div>
+										</div>
+									</div>
+								</div>
+							</li> -->
+							<li class="nav-item dropdown dropdown-large">
+								<a class="nav-link dropdown-toggle dropdown-toggle-nocaret position-relative" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> <span class="alert-count">8</span>
+									<i class='lni lni-headphone'></i>
+								</a>
+								<div class="dropdown-menu dropdown-menu-end">
+									<a href="javascript:;">
+										<div class="msg-header">
+											<p class="msg-header-title">Messages</p>
+											<p class="msg-header-clear ms-auto">Marks all as read</p>
+										</div>
+									</a>
+									<div class="header-message-list">
+										<a class="dropdown-item" href="javascript:;">
+											<div class="d-flex align-items-center">
+												<div class="user-online">
+													<img src="assets/images/avatars/avatar-1.png" class="msg-avatar" alt="user avatar">
+												</div>
+												<div class="flex-grow-1">
+													<h6 class="msg-name">Daisy Anderson <span class="msg-time float-end">5 sec
+												ago</span></h6>
+													<p class="msg-info">The standard chunk of lorem</p>
+												</div>
+											</div>
+										</a>
+										<a class="dropdown-item" href="javascript:;">
+											<div class="d-flex align-items-center">
+												<div class="user-online">
+													<img src="assets/images/avatars/avatar-2.png" class="msg-avatar" alt="user avatar">
+												</div>
+												<div class="flex-grow-1">
+													<h6 class="msg-name">Althea Cabardo <span class="msg-time float-end">14
+												sec ago</span></h6>
+													<p class="msg-info">Many desktop publishing packages</p>
+												</div>
+											</div>
+										</a>
+										<a class="dropdown-item" href="javascript:;">
+											<div class="d-flex align-items-center">
+												<div class="user-online">
+													<img src="assets/images/avatars/avatar-3.png" class="msg-avatar" alt="user avatar">
+												</div>
+												<div class="flex-grow-1">
+													<h6 class="msg-name">Oscar Garner <span class="msg-time float-end">8 min
+												ago</span></h6>
+													<p class="msg-info">Various versions have evolved over</p>
+												</div>
+											</div>
+										</a>
+										<a class="dropdown-item" href="javascript:;">
+											<div class="d-flex align-items-center">
+												<div class="user-online">
+													<img src="assets/images/avatars/avatar-4.png" class="msg-avatar" alt="user avatar">
+												</div>
+												<div class="flex-grow-1">
+													<h6 class="msg-name">Katherine Pechon <span class="msg-time float-end">15
+												min ago</span></h6>
+													<p class="msg-info">Making this the first true generator</p>
+												</div>
+											</div>
+										</a>
+										<a class="dropdown-item" href="javascript:;">
+											<div class="d-flex align-items-center">
+												<div class="user-online">
+													<img src="assets/images/avatars/avatar-5.png" class="msg-avatar" alt="user avatar">
+												</div>
+												<div class="flex-grow-1">
+													<h6 class="msg-name">Amelia Doe <span class="msg-time float-end">22 min
+												ago</span></h6>
+													<p class="msg-info">Duis aute irure dolor in reprehenderit</p>
+												</div>
+											</div>
+										</a>
+										<a class="dropdown-item" href="javascript:;">
+											<div class="d-flex align-items-center">
+												<div class="user-online">
+													<img src="assets/images/avatars/avatar-6.png" class="msg-avatar" alt="user avatar">
+												</div>
+												<div class="flex-grow-1">
+													<h6 class="msg-name">Cristina Jhons <span class="msg-time float-end">2 hrs
+												ago</span></h6>
+													<p class="msg-info">The passage is attributed to an unknown</p>
+												</div>
+											</div>
+										</a>
+										<a class="dropdown-item" href="javascript:;">
+											<div class="d-flex align-items-center">
+												<div class="user-online">
+													<img src="assets/images/avatars/avatar-7.png" class="msg-avatar" alt="user avatar">
+												</div>
+												<div class="flex-grow-1">
+													<h6 class="msg-name">James Caviness <span class="msg-time float-end">4 hrs
+												ago</span></h6>
+													<p class="msg-info">The point of using Lorem</p>
+												</div>
+											</div>
+										</a>
+										<a class="dropdown-item" href="javascript:;">
+											<div class="d-flex align-items-center">
+												<div class="user-online">
+													<img src="assets/images/avatars/avatar-8.png" class="msg-avatar" alt="user avatar">
+												</div>
+												<div class="flex-grow-1">
+													<h6 class="msg-name">Peter Costanzo <span class="msg-time float-end">6 hrs
+												ago</span></h6>
+													<p class="msg-info">It was popularised in the 1960s</p>
+												</div>
+											</div>
+										</a>
+										<a class="dropdown-item" href="javascript:;">
+											<div class="d-flex align-items-center">
+												<div class="user-online">
+													<img src="assets/images/avatars/avatar-9.png" class="msg-avatar" alt="user avatar">
+												</div>
+												<div class="flex-grow-1">
+													<h6 class="msg-name">David Buckley <span class="msg-time float-end">2 hrs
+												ago</span></h6>
+													<p class="msg-info">Various versions have evolved over</p>
+												</div>
+											</div>
+										</a>
+										<a class="dropdown-item" href="javascript:;">
+											<div class="d-flex align-items-center">
+												<div class="user-online">
+													<img src="assets/images/avatars/avatar-10.png" class="msg-avatar" alt="user avatar">
+												</div>
+												<div class="flex-grow-1">
+													<h6 class="msg-name">Thomas Wheeler <span class="msg-time float-end">2 days
+												ago</span></h6>
+													<p class="msg-info">If you are going to use a passage</p>
+												</div>
+											</div>
+										</a>
+										<a class="dropdown-item" href="javascript:;">
+											<div class="d-flex align-items-center">
+												<div class="user-online">
+													<img src="assets/images/avatars/avatar-11.png" class="msg-avatar" alt="user avatar">
+												</div>
+												<div class="flex-grow-1">
+													<h6 class="msg-name">Johnny Seitz <span class="msg-time float-end">5 days
+												ago</span></h6>
+													<p class="msg-info">All the Lorem Ipsum generators</p>
+												</div>
+											</div>
+										</a>
+									</div>
+									<a href="javascript:;">
+										<div class="text-center msg-footer">View All Messages</div>
+									</a>
+								</div>
+							</li>
+							<li class="nav-item dropdown dropdown-large">
+								<a class="nav-link dropdown-toggle dropdown-toggle-nocaret position-relative" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> <span class="alert-count">7</span>
+									<i class='bx bx-bell'></i>
+								</a>
+								<div class="dropdown-menu dropdown-menu-end">
+									<a href="javascript:;">
+										<div class="msg-header">
+											<p class="msg-header-title">Notifications</p>
+											<p class="msg-header-clear ms-auto">Marks all as read</p>
+										</div>
+									</a>
+									<div class="header-notifications-list">
+										<a class="dropdown-item" href="javascript:;">
+											<div class="d-flex align-items-center">
+												<div class="notify bg-light-primary text-primary"><i class="bx bx-group"></i>
+												</div>
+												<div class="flex-grow-1">
+													<h6 class="msg-name">New Customers<span class="msg-time float-end">14 Sec
+												ago</span></h6>
+													<p class="msg-info">5 new user registered</p>
+												</div>
+											</div>
+										</a>
+										<a class="dropdown-item" href="javascript:;">
+											<div class="d-flex align-items-center">
+												<div class="notify bg-light-danger text-danger"><i class="bx bx-cart-alt"></i>
+												</div>
+												<div class="flex-grow-1">
+													<h6 class="msg-name">New Orders <span class="msg-time float-end">2 min
+												ago</span></h6>
+													<p class="msg-info">You have recived new orders</p>
+												</div>
+											</div>
+										</a>
+										<a class="dropdown-item" href="javascript:;">
+											<div class="d-flex align-items-center">
+												<div class="notify bg-light-success text-success"><i class="bx bx-file"></i>
+												</div>
+												<div class="flex-grow-1">
+													<h6 class="msg-name">24 PDF File<span class="msg-time float-end">19 min
+												ago</span></h6>
+													<p class="msg-info">The pdf files generated</p>
+												</div>
+											</div>
+										</a>
+										<a class="dropdown-item" href="javascript:;">
+											<div class="d-flex align-items-center">
+												<div class="notify bg-light-warning text-warning"><i class="bx bx-send"></i>
+												</div>
+												<div class="flex-grow-1">
+													<h6 class="msg-name">Time Response <span class="msg-time float-end">28 min
+												ago</span></h6>
+													<p class="msg-info">5.1 min avarage time response</p>
+												</div>
+											</div>
+										</a>
+										<a class="dropdown-item" href="javascript:;">
+											<div class="d-flex align-items-center">
+												<div class="notify bg-light-info text-info"><i class="bx bx-home-circle"></i>
+												</div>
+												<div class="flex-grow-1">
+													<h6 class="msg-name">New Product Approved <span
+												class="msg-time float-end">2 hrs ago</span></h6>
+													<p class="msg-info">Your new product has approved</p>
+												</div>
+											</div>
+										</a>
+										<a class="dropdown-item" href="javascript:;">
+											<div class="d-flex align-items-center">
+												<div class="notify bg-light-danger text-danger"><i class="bx bx-message-detail"></i>
+												</div>
+												<div class="flex-grow-1">
+													<h6 class="msg-name">New Comments <span class="msg-time float-end">4 hrs
+												ago</span></h6>
+													<p class="msg-info">New customer comments recived</p>
+												</div>
+											</div>
+										</a>
+										<a class="dropdown-item" href="javascript:;">
+											<div class="d-flex align-items-center">
+												<div class="notify bg-light-success text-success"><i class='bx bx-check-square'></i>
+												</div>
+												<div class="flex-grow-1">
+													<h6 class="msg-name">Your item is shipped <span class="msg-time float-end">5 hrs
+												ago</span></h6>
+													<p class="msg-info">Successfully shipped your item</p>
+												</div>
+											</div>
+										</a>
+										<a class="dropdown-item" href="javascript:;">
+											<div class="d-flex align-items-center">
+												<div class="notify bg-light-primary text-primary"><i class='bx bx-user-pin'></i>
+												</div>
+												<div class="flex-grow-1">
+													<h6 class="msg-name">New 24 authors<span class="msg-time float-end">1 day
+												ago</span></h6>
+													<p class="msg-info">24 new authors joined last week</p>
+												</div>
+											</div>
+										</a>
+										<a class="dropdown-item" href="javascript:;">
+											<div class="d-flex align-items-center">
+												<div class="notify bg-light-warning text-warning"><i class='bx bx-door-open'></i>
+												</div>
+												<div class="flex-grow-1">
+													<h6 class="msg-name">Defense Alerts <span class="msg-time float-end">2 weeks
+												ago</span></h6>
+													<p class="msg-info">45% less alerts last 4 weeks</p>
+												</div>
+											</div>
+										</a>
+									</div>
+									<a href="javascript:;">
+										<div class="text-center msg-footer">View All Notifications</div>
+									</a>
+								</div>
+							</li>
+							
+						</ul>
+					</div>
+					<div class="user-box dropdown">
+						<a class="d-flex align-items-center nav-link dropdown-toggle dropdown-toggle-nocaret" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							<img src="assets/images/avatars/nanda.jpg" class="user-img" alt="user avatar">
+							<div class="user-info ps-3">
+								<p class="user-name mb-0">Nanda Raditya</p>
+								<p class="designattion mb-0">UI/UX Designer</p>
+							</div>
+						</a>
+						<ul class="dropdown-menu dropdown-menu-end">
+							<li><a class="dropdown-item" href="javascript:;"><i class="bx bx-user"></i><span>Profile</span></a>
+							</li>
+							<li><a class="dropdown-item" href="javascript:;"><i class='bx bx-help-circle'></i><span>Help Desk</span></a>
+								<li>
+							<li><a class="dropdown-item" href="javascript:;"><i class="bx bx-lock"></i><span>Change Password</span></a>
+							</li>
+							
+								<div class="dropdown-divider mb-0"></div>
+							</li>
+							<li><a class="dropdown-item" href="javascript:;"><i class='bx bx-log-out-circle'></i><span>Logout</span></a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</header>
+		<!--end header -->
+		<!--start page wrapper -->
+		<div class="page-wrapper">
+			<div class="page-content">
+				<!--breadcrumb-->
+				<div class="page-breadcrumb d-none d-sm-flex align-items-center mb-4">
+					<div class="breadcrumb-title pe-3">Dashboard</div>
+					<div class="ps-3">
+						<nav aria-label="breadcrumb">
+							<ol class="breadcrumb mb-0 p-0">
+								<li class="breadcrumb-item"><a href="javascript:;"><i class="bx bx-home-alt"></i></a>
+								</li>
+								<li class="breadcrumb-item active" aria-current="page">National Summary</li>
+							</ol>
+						</nav>
+					</div>
+				</div>
+				<!--end breadcrumb-->
+
+				<div class="d-flex mb-4">
+					<button type="button" class="btn btn-white radius-4 me-3 tablinks selected" onclick="toggleBtn(event, 'sigma')">Sigma</button>
+					<button type="button" class="btn btn-white radius-4 me-3 tablinks" onclick="toggleBtn(event, 'cpc')">CPC</button>
+					<button type="button" class="btn btn-white radius-4 me-3 tablinks" onclick="toggleBtn(event, 'cdc')">CDC</button>
+					<button type="button" class="btn btn-white radius-4 me-3 tablinks" onclick="toggleBtn(event, 'flm')">FLM</button>
+					<button type="button" class="btn btn-white radius-4 me-3 tablinks" onclick="toggleBtn(event, 'overtime')">Overtime</button>
+					<button type="button" class="btn btn-white radius-4 me-3 tablinks" onclick="toggleBtn(event, 'ejPending')">EJ Pending</button>
+				</div>
+
+				<div class="national-summary" id="sigma">
+					<div class="card">
+						<div class="card-body">
+							<div class="row mb-2">
+								<div class="col-12 col-lg-3 filter-awal"><label for="filerDateAwal" class="form-label">Start Date
+										Filter</label>
+									<div class="input-group mb-2">
+										<input type="text" class="form-control datepickerawal" id="filterDateAwal"
+											placeholder="dd/mm/yyyy">
+									</div>
+								</div>
+								<div class="col-12 col-lg-3 filter-akhir"><label for="filerDateAkhir" class="form-label">End Date
+										Filters</label>
+									<div class="input-group mb-2">
+										<input type="text" class="form-control datepickerakhir" id="filterDateAkhir"
+											placeholder="dd/mm/yyyy">
+									</div>
+								</div>
+								<div class="col-12 col-lg-3">
+									<label class="form-label">Uptime</label>
+									<select class="single-select form-select">
+										<option value="dct">DCT</option>
+										<option value="final">Final</option>
+									</select>
+								</div>
+								<div class="col-12 col-lg-3">
+									<label class="form-label">Target SLA</label>
+									<select class="single-select form-select">
+										<option value="client">Client</option>
+										<option value="internal">Internal</option>
+									</select>
+								</div>
+								<!-- <div class="col-12 col-lg-1 button-filter">
+									<label for="" class="form-label">Action</label> <br>
+									<button type="button" class="btn btn-primary radius-4">Apply</button>
+								</div> -->
+							</div>
+		
+							<div class="d-flex justify-content-end mb-4">
+								<button type="button" class="btn btn-primary radius-4 me-3">Apply</button>
+								<div class="btn-group">
+									<button type="button" class="btn btn-outline-primary">Report</button>
+									<button type="button" class="btn btn-outline-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">	<span class="visually-hidden">Toggle Dropdown</span>
+									</button>
+									<ul class="dropdown-menu" >
+										<li><a class="dropdown-item" href="#">3 Month Analysis Report</a>
+										</li>
+										<li><a class="dropdown-item" href="#">SLA & FLM Report</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+	
+					<div class="card">
+						<div class="card-body">
+							<h5 class="text-black mb-4">Top 8 Bank</h5>
+							<div class="row">
+								<div class="col-12 col-lg-3">
+									<div class="card radius-10">
+										<div class="card-body">
+											<div class="d-flex align-items-center">
+												<div class="flex-grow-1">
+													<p class="mb-0">ADV</p>
+													<h4 class="font-weight-bold">278 <small class="text-success font-13">(+40)</small></h4>
+													<p class="text-success mb-0 font-13">Analytics for last week</p>
+												</div>
+												<div class="widgets-icons bg-gradient-cosmic text-white"><i class="bx bx-money"></i>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-12 col-lg-3">
+									<div class="card radius-10">
+										<div class="card-body">
+											<div class="d-flex align-items-center">
+												<div class="flex-grow-1">
+													<p class="mb-0">ATMI</p>
+													<h4 class="font-weight-bold">278</h4>
+													<p class="mb-0 font-13">Analytics for last week</p>
+												</div>
+												<div class="widgets-icons bg-gradient-burning text-white"><i class="bx bx-money"></i>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-12 col-lg-3">
+									<div class="card radius-10">
+										<div class="card-body">
+											<div class="d-flex align-items-center">
+												<div class="flex-grow-1">
+													<p class="mb-0">BCA</p>
+													<h4 class="font-weight-bold">227</h4>
+													<p class="mb-0 font-13">Analytics for last week</p>
+												</div>
+												<div class="widgets-icons bg-gradient-lush text-white"><i class="bx bx-money"></i>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-12 col-lg-3">
+									<div class="card radius-10">
+										<div class="card-body">
+											<div class="d-flex align-items-center">
+												<div class="flex-grow-1">
+													<p class="mb-0">BNI</p>
+													<h4 class="font-weight-bold">198</h4>
+													<p class="mb-0 font-13">Analytics for last week</p>
+												</div>
+												<div class="widgets-icons bg-gradient-kyoto text-white"><i class="bx bx-money"></i>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-12 col-lg-3">
+									<div class="card radius-10">
+										<div class="card-body">
+											<div class="d-flex align-items-center">
+												<div class="flex-grow-1">
+													<p class="mb-0">BRI</p>
+													<h4 class="font-weight-bold">187</h4>
+													<p class="mb-0 font-13">Analytics for last week</p>
+												</div>
+												<div class="widgets-icons bg-gradient-blues text-white"><i class="bx bx-money"></i>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-12 col-lg-3">
+									<div class="card radius-10">
+										<div class="card-body">
+											<div class="d-flex align-items-center">
+												<div class="flex-grow-1">
+													<p class="mb-0">BII</p>
+													<h4 class="font-weight-bold">176</h4>
+													<p class="mb-0 font-13">Analytics for last week</p>
+												</div>
+												<div class="widgets-icons bg-gradient-moonlit text-white"><i class="bx bx-money"></i>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-12 col-lg-3">
+									<div class="card radius-10">
+										<div class="card-body">
+											<div class="d-flex align-items-center">
+												<div class="flex-grow-1">
+													<p class="mb-0">PMT</p>
+													<h4 class="font-weight-bold">143 <small class="text-success font-13">(+40)</small></h4>
+													<p class="text-success mb-0 font-13">Analytics for last week</p>
+												</div>
+												<div class="widgets-icons bg-gradient-custom-1 text-white"><i class="bx bx-money"></i>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-12 col-lg-3">
+									<div class="card radius-10">
+										<div class="card-body">
+											<div class="d-flex align-items-center">
+												<div class="flex-grow-1">
+													<p class="mb-0">CIMB</p>
+													<h4 class="font-weight-bold">127</h4>
+													<p class="mb-0 font-13">Analytics for last week</p>
+												</div>
+												<div class="widgets-icons bg-gradient-custom-2 text-white"><i class="bx bx-money"></i>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+	
+					<div class="row">
+						<div class="col-12 col-lg-5 d-flex">
+							<div class="card w-100">
+								<div class="card-body">
+									<h5 class="text-black text-center mb-4">Pencapaian SLA</h5>
+									<div id="pencapaianSLA"></div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-lg-7 d-flex">
+							<div class="card w-100">
+								<div class="card-body">
+									<h5 class="text-black text-center mb-4">Sigma</h5>
+									<table class="table table-borderless mb-0">
+										<thead>
+											<tr>
+												<th scope="col">Rate Sigma</th>
+												<th scope="col">Last</th>
+												<th scope="col">Handle</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>6 (99,9997 - 100)</td>
+												<td class="d-flex align-items-center">
+													2 (74,84%)
+													<div class="progress ms-1" style="width: 16px; height: 8px;">
+														<div class="progress-bar bg-warning" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+													</div>
+													<div class="progress ms-1" style="width: 16px; height: 8px;">
+														<div class="progress-bar bg-warning" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+													</div>
+													<div class="progress ms-1" style="width: 16px; height: 8px;">
+														<div class="progress-bar bg-warning" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+													</div>
+												</td>
+												<td>3,5 (>= 95,00%)</td>
+											</tr>
+											<tr>
+												<td>5 (99,977 - 99,9996)</td>
+											</tr>
+											<tr>
+												<td>4 (99,40 - 99,976)</td>
+											</tr>
+											<tr>
+												<td>3 (93 - 99,39)</td>
+											</tr>
+											<tr>
+												<td>2 (69 - 92,99)</td>
+											</tr>
+											<tr>
+												<td>1 (31 - 68,99)</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-body">
+							<div class="mb-3">
+								<label class="form-label">Select Bank (Max 7)</label>
+								<select class="multiple-select" data-placeholder="Choose anything" multiple="multiple">
+									<option value="atmi" selected>ATMI</option>
+									<option value="bca" selected>BCA</option>
+									<option value="bni" selected>BNI</option>
+									<option value="bri" selected>BRI</option>
+									<option value="bii" selected>BII</option>
+									<option value="pmt" selected>PMT</option>
+									<option value="cimb" selected>CIMB</option>
+									<option value="mandiri">Mandiri</option>
+									<option value="permata">Permata</option>
+								</select>
+							</div>
+							<h5 class="text-black text-center mb-2">Achievement of SLA (Bank)</h5>
+							<div id="chartPencapaian"></div>
+						</div>
+					</div>
+					
+					<div class="card">
+						<div class="card-body">
+							<h5 class="text-black text-center mb-2">Bottom 5 Branch Rankings</h5>
+							<div id="chartBottomFive"></div>
+						</div>
+					</div>
+
+					<div class="card">
+						<div class="card-body">
+							<h5 class="text-black text-center mb-2">Annual Sigma Recap</h5>
+							<div id="#">chart ?</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="national-summary" id="cpc" style="display: none;">
+					<div class="card">
+						<div class="card-body">
+							<div class="row mb-3">
+								<div class="col-12 col-lg-2 filter-awal"><label for="filerDateAwal" class="form-label">Start Date
+										Filter</label>
+									<div class="input-group mb-2">
+										<input type="text" class="form-control" id="filterDateStartCpc"
+											placeholder="dd/mm/yyyy">
+									</div>
+								</div>
+								<div class="col-12 col-lg-2 filter-akhir"><label for="filerDateAkhir" class="form-label">End Date
+										Filters</label>
+									<div class="input-group mb-2">
+										<input type="text" class="form-control" id="filterDateEndCpc"
+											placeholder="dd/mm/yyyy">
+									</div>
+								</div>
+								<div class="col-12 col-lg-2">
+									<label class="form-label">Period</label>
+									<select class="single-select form-select">
+										<option value="harian">Harian</option>
+										<option value="bulanan">Bulanan</option>
+									</select>
+								</div>
+								<div class="col-12 col-lg-2">
+									<label class="form-label">Filter</label>
+									<select class="single-select form-select">
+										<option value="all">All</option>
+										<option value="region">Region</option>
+										<option value="kelas">Kelas</option>
+										<option value="branch">Branch</option>
+									</select>
+								</div>
+								<div class="col-12 col-lg-3">
+									<label class="form-label">Bank</label>
+									<select class="single-select form-select">
+										<option value="lorem">Lorem</option>
+										<option value="lorem">Lorem</option>
+										<option value="lorem">Lorem</option>
+										<option value="lorem">Lorem</option>
+									</select>
+								</div>
+								<div class="col-12 col-lg-1 button-filter">
+									<label for="" class="form-label">Action</label> <br>
+									<button type="button" class="btn btn-primary radius-4">Apply</button>
+								</div>
+							</div>
+							<div class="d-flex justify-content-end">
+								<button class="btn btn-outline-primary detail-cpc me-3">
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye text-primary me-1"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+									Detail CPC
+								</button>
+								<button class="btn btn-outline-warning detail-cpc">
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-alert-circle text-warning me-1"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+									Guideline
+								</button>
+							</div>
+						</div>
+					</div>
+					
+					<div class="card">
+						<div class="card-body">
+							<div class="row">
+								<div class="col-12 col-lg-3">
+									<div class="card radius-10 overflow-hidden bg-gradient-cosmic">
+										<div class="card-body">
+											<div class="d-flex align-items-center">
+												<div>
+													<p class="mb-0 text-white">Big Deposit</p>
+													
+												</div>
+												<div class="ms-auto text-white"><h5 class="mb-0 text-white">0</h5>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-12 col-lg-3">
+									<div class="card radius-10 overflow-hidden bg-gradient-burning">
+										<div class="card-body">
+											<div class="d-flex align-items-center">
+												<div>
+													<p class="mb-0 text-white">Small Deposit</p>
+													
+												</div>
+												<div class="ms-auto text-white"><h5 class="mb-0 text-white">0</h5>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-12 col-lg-3">
+									<div class="card radius-10 overflow-hidden bg-gradient-lush">
+										<div class="card-body">
+											<div class="d-flex align-items-center">
+												<div>
+													<p class="mb-0 text-white">Brick Prepare</p>
+													
+												</div>
+												<div class="ms-auto text-white"><h5 class="mb-0 text-white">0</h5>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-12 col-lg-3">
+									<div class="card radius-10 overflow-hidden bg-gradient-kyoto">
+										<div class="card-body">
+											<div class="d-flex align-items-center">
+												<div>
+													<p class="mb-0 text-white">Brick Return</p>
+													
+												</div>
+												<div class="ms-auto text-white"><h5 class="mb-0 text-white">0</h5>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-12 col-lg-3">
+									<div class="card radius-10 overflow-hidden bg-gradient-blues">
+										<div class="card-body">
+											<div class="d-flex align-items-center">
+												<div>
+													<p class="mb-0 text-white">Brick CDR</p>
+													
+												</div>
+												<div class="ms-auto text-white"><h5 class="mb-0 text-white">0</h5>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-12 col-lg-3">
+									<div class="card radius-10 overflow-hidden bg-gradient-moonlit">
+										<div class="card-body">
+											<div class="d-flex align-items-center">
+												<div>
+													<p class="mb-0 text-white">Total Cashier</p>
+													
+												</div>
+												<div class="ms-auto text-white"><h5 class="mb-0 text-white">0</h5>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-12 col-lg-3">
+									<div class="card radius-10 overflow-hidden bg-gradient-custom-1">
+										<div class="card-body">
+											<div class="d-flex align-items-center">
+												<div>
+													<p class="mb-0 text-white">Total CPC Employee</p>
+													
+												</div>
+												<div class="ms-auto text-white"><h5 class="mb-0 text-white">16,000</h5>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-12 col-lg-3">
+									<div class="card radius-10 overflow-hidden bg-gradient-custom-2">
+										<div class="card-body">
+											<div class="d-flex align-items-center">
+												<div>
+													<p class="mb-0 text-white">Pending Sortir</p>
+													
+												</div>
+												<div class="ms-auto text-white"><h5 class="mb-0 text-white">0</h5>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-12 col-lg-3">
+									<div class="card radius-10 overflow-hidden bg-gradient-custom-3">
+										<div class="card-body">
+											<div class="d-flex align-items-center">
+												<div>
+													<p class="mb-0 text-white">Less Difference</p>
+													
+												</div>
+												<div class="ms-auto text-white"><h5 class="mb-0 text-white">0</h5>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-12 col-lg-3">
+									<div class="card radius-10 overflow-hidden bg-gradient-custom-4">
+										<div class="card-body">
+											<div class="d-flex align-items-center">
+												<div>
+													<p class="mb-0 text-white">More Difference</p>
+													
+												</div>
+												<div class="ms-auto text-white"><h5 class="mb-0 text-white">0</h5>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="card">
+						<div class="card-body">
+							<h5 class="text-center text-black">CPC and cashier efficiency ratio</h5>
+							<div id="rasioEfesiensiCPC"></div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-body">
+							<h5 class="text-center text-black">Less regional difference</h5>
+							<div id="chartLessDifference"></div>
+						</div>
+					</div>
+
+					<div class="card">
+						<div class="card-body">
+							<h5 class="text-center text-black">The Difference is more regional</h5>
+							<div id="differenceMoreRegional"></div>
+						</div>
+					</div>
+					
+				</div>
+
+				<div class="national-summary" id="cdc" style="display: none;">
+					<div class="card">
+						<div class="card-body">
+							<div class="row mb-3">
+								<div class="col-12 col-lg-3 filter-awal"><label for="filerDateAwal" class="form-label">Start Date
+										Filter</label>
+									<div class="input-group mb-2">
+										<input type="text" class="form-control" id="filterDateStartCdc"
+											placeholder="dd/mm/yyyy">
+									</div>
+								</div>
+								<div class="col-12 col-lg-3 filter-akhir"><label for="filerDateAkhir" class="form-label">End Date
+										Filters</label>
+									<div class="input-group mb-2">
+										<input type="text" class="form-control" id="filterDateEndCdc"
+											placeholder="dd/mm/yyyy">
+									</div>
+								</div>
+								<div class="col-12 col-lg-2">
+									<label class="form-label">Period</label>
+									<select class="single-select form-select">
+										<option value="harian">Harian</option>
+										<option value="bulanan">Bulanan</option>
+									</select>
+								</div>
+								<div class="col-12 col-lg-2">
+									<label class="form-label">Type</label>
+									<select class="single-select form-select">
+										<option value="lorem">Lorem</option>
+										<option value="lorem">Lorem</option>
+										<option value="lorem">Lorem</option>
+										<option value="lorem">Lorem</option>
+									</select>
+								</div>
+								<div class="col-12 col-lg-2">
+									<label class="form-label">Filter</label>
+									<select class="single-select form-select">
+										<option value="all">All</option>
+										<option value="region">Region</option>
+										<option value="kelas">Kelas</option>
+										<option value="branch">Branch</option>
+									</select>
+								</div>
+							</div>
+							<div class="d-flex justify-content-end">
+								<button type="button" class="btn btn-primary radius-4 me-3">Apply</button>
+								<button class="btn btn-outline-warning detail-cpc">
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-alert-circle text-warning me-1"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+									Guideline
+								</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="card">
+						<div class="card-body">
+							<div class="row">
+								<div class="col-12 col-lg-3">
+									<div class="card radius-10 overflow-hidden bg-gradient-cosmic">
+										<div class="card-body">
+											<div class="d-flex align-items-center">
+												<div>
+													<p class="mb-0 text-white">Number of Trips CIT COS</p>
+													
+												</div>
+												<div class="ms-auto text-white"><h5 class="mb-0 text-white">26,733</h5>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-12 col-lg-3">
+									<div class="card radius-10 overflow-hidden bg-gradient-burning">
+										<div class="card-body">
+											<div class="d-flex align-items-center">
+												<div>
+													<p class="mb-0 text-white">Number of Trips CIT BBC</p>
+													
+												</div>
+												<div class="ms-auto text-white"><h5 class="mb-0 text-white">12,785</h5>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-12 col-lg-3">
+									<div class="card radius-10 overflow-hidden bg-gradient-lush">
+										<div class="card-body">
+											<div class="d-flex align-items-center">
+												<div>
+													<p class="mb-0 text-white">Number of Trips CIT STC</p>
+													
+												</div>
+												<div class="ms-auto text-white"><h5 class="mb-0 text-white">171,503</h5>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-12 col-lg-3">
+									<div class="card radius-10 overflow-hidden bg-gradient-kyoto">
+										<div class="card-body">
+											<div class="d-flex align-items-center">
+												<div>
+													<p class="mb-0 text-white">Number of Trips ATM</p>
+													
+												</div>
+												<div class="ms-auto text-white"><h5 class="mb-0 text-white">111,948</h5>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-12 col-lg-3">
+									<div class="card radius-10 overflow-hidden bg-gradient-blues">
+										<div class="card-body">
+											<div class="d-flex align-items-center">
+												<div>
+													<p class="mb-0 text-white">Number of RUN</p>
+													
+												</div>
+												<div class="ms-auto text-white"><h5 class="mb-0 text-white">4,012</h5>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-12 col-lg-3">
+									<div class="card radius-10 overflow-hidden bg-gradient-moonlit">
+										<div class="card-body">
+											<div class="d-flex align-items-center">
+												<div>
+													<p class="mb-0 text-white">Total Custody</p>
+													
+												</div>
+												<div class="ms-auto text-white"><h5 class="mb-0 text-white">1,803</h5>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-12 col-lg-3">
+									<div class="card radius-10 overflow-hidden bg-gradient-custom-1">
+										<div class="card-body">
+											<div class="d-flex align-items-center">
+												<div>
+													<p class="mb-0 text-white">Total CDC Employee</p>
+													
+												</div>
+												<div class="ms-auto text-white"><h5 class="mb-0 text-white">1,850</h5>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-12 col-lg-5 d-flex">
+							<div class="card w-100">
+								<div class="card-body">
+									<h5 class="text-black text-center mb-4">Transaction Summary</h5>
+									<div id="transactionSummary"></div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-lg-7 d-flex">
+							<div class="card w-100">
+								<div class="card-body">
+									<h5 class="text-black text-center">Cancel</h5>
+									<p class="text-center mb-4">Based on Bank / Branch</p>
+									<div id="cancelByBank"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-12 col-lg-6 d-flex">
+							<div class="card w-100">
+								<div class="card-body">
+									<div class="row mb-3">
+										<div class="col-12 col-lg-10">
+											<label class="form-label">Factor</label>
+											<select class="single-select form-select">
+												<option value="all">All</option>
+												<option value="internal">Internal</option>
+												<option value="external">External</option>
+											</select>
+										</div>
+										<div class="col-12 col-lg-2">
+											<label for="" class="form-label">Action</label> <br>
+											<button type="button" class="btn btn-primary radius-4">Apply</button>
+										</div>
+									</div>
+									<h5 class="text-center text-black">Cancel</h5>
+									<p class="text-center mb-4">Based on Cancel Factor</p>
+									<div id="cancelBasedFactor"></div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-lg-6 d-flex">
+							<div class="card w-100">
+								<div class="card-body">
+										<div class="mb-2">
+											<label class="form-label">Factor</label>
+											<select class="single-select form-select">
+												<option value="all">All</option>
+												<option value="internal">Internal</option>
+												<option value="external">External</option>
+											</select>
+										</div>
+										<div class="d-flex justify-content-end mb-3">
+											<button type="button" class="btn btn-primary radius-4 me-3">Apply</button>
+											<button type="button" class="btn btn-outline-primary radius-4">Upload</button>
+										</div>
+									<h5 class="text-center text-black">Cancel</h5>
+									<p class="text-center mb-4">Based on Cancel Factor - Data Real</p>
+									<div id="cancelDataReal"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="national-summary" id="flm" style="display: none;">
+					<div class="card">
+						<div class="card-body">
+							<div class="row mb-4">
+								<div class="col-12 col-lg-4 filter-awal"><label for="filerDateAwal" class="form-label">Start Date
+										Filter</label>
+									<div class="input-group mb-2">
+										<input type="text" class="form-control" id="filterDateStartFlm"
+											placeholder="dd/mm/yyyy">
+									</div>
+								</div>
+								<div class="col-12 col-lg-4 filter-akhir"><label for="filerDateAkhir" class="form-label">End Date
+										Filters</label>
+									<div class="input-group mb-2">
+										<input type="text" class="form-control" id="filterDateEndFlm"
+											placeholder="dd/mm/yyyy">
+									</div>
+								</div>
+								<div class="col-12 col-lg-3">
+									<label class="form-label">Filter</label>
+									<select class="single-select form-select">
+										<option value="dct">All</option>
+										<option value="region">Region</option>
+										<option value="kelas">Kelas</option>
+										<option value="branch">Branch</option>
+									</select>
+								</div>
+								<div class="col-12 col-lg-1 button-filter">
+									<label for="" class="form-label">Action</label> <br>
+									<button type="button" class="btn btn-primary radius-4">Apply</button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="card">
+						<div class="card-body">
+							<div class="row">
+								<div class="col-12 col-lg-3 d-flex">
+									<div class="card w-100 radius-10 overflow-hidden bg-gradient-cosmic">
+										<div class="card-body">
+											<div class="d-flex align-items-center">
+												<div>
+													<p class="mb-0 text-white">Number of Sectors</p>
+													
+												</div>
+												<div class="ms-auto text-white"><h5 class="mb-0 text-white">277</h5>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-12 col-lg-3 d-flex">
+									<div class="card w-100 radius-10 overflow-hidden bg-gradient-burning">
+										<div class="card-body">
+											<div class="d-flex align-items-center">
+												<div>
+													<p class="mb-0 text-white">Employees FLM - Sector</p>
+													
+												</div>
+												<div class="ms-auto text-white"><h5 class="mb-0 text-white">12,785</h5>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-12 col-lg-3 d-flex">
+									<div class="card w-100 radius-10 overflow-hidden bg-gradient-lush">
+										<div class="card-body">
+											<div class="d-flex align-items-center">
+												<div>
+													<p class="mb-0 text-white">Number of ATM</p>
+													
+												</div>
+												<div class="ms-auto text-white"><h5 class="mb-0 text-white">171,503</h5>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-12 col-lg-3 d-flex">
+									<div class="card w-100 radius-10 overflow-hidden bg-gradient-kyoto">
+										<div class="card-body">
+											<div class="d-flex align-items-center">
+												<div>
+													<p class="mb-0 text-white">Number of ATM Employees</p>
+													
+												</div>
+												<div class="ms-auto text-white"><h5 class="mb-0 text-white">111,948</h5>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="card">
+						<div class="card-body">
+							<!-- <h5 class="text-center text-black">FLM Employee Number Ratio - Sector</h5> -->
+							
+							<div id="employeeNumberRatio"></div>
+						</div>
+					</div>
+
+					<div class="card">
+						<div class="card-body">
+							<h5 class="text-black">Ratio Number of FLM Employees - Sector</h5>
+							<div class="table-responsive">
+								<div id="printbar" style="float:right"></div>
+								<br>
+								<table id="tableRatioFlmEmployees" class="table mb-0 align-middle" style="width:100%">
+									<thead class="table-light">
+										<tr>
+											<th>No</th>
+											<th>Branch</th>
+											<th>Ratio</th>
+											<th>Average Ratio</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>1</td>
+											<td>Cideng</td>
+											<td>1.42</td>
+											<td>2.84625</td>
+										</tr>
+										<tr>
+											<td>2</td>
+											<td>Cideng</td>
+											<td>1.42</td>
+											<td>2.84625</td>
+										</tr>
+										<tr>
+											<td>3</td>
+											<td>Cideng</td>
+											<td>1.42</td>
+											<td>2.84625</td>
+										</tr>
+										<tr>
+											<td>4</td>
+											<td>Cideng</td>
+											<td>1.42</td>
+											<td>2.84625</td>
+										</tr>
+										<tr>
+											<td>5</td>
+											<td>Cideng</td>
+											<td>1.42</td>
+											<td>2.84625</td>
+										</tr>
+										<tr>
+											<td>6</td>
+											<td>Cideng</td>
+											<td>1.42</td>
+											<td>2.84625</td>
+										</tr>
+										<tr>
+											<td>7</td>
+											<td>Cideng</td>
+											<td>1.42</td>
+											<td>2.84625</td>
+										</tr>
+										<tr>
+											<td>8</td>
+											<td>Cideng</td>
+											<td>1.42</td>
+											<td>2.84625</td>
+										</tr>
+										<tr>
+											<td>9</td>
+											<td>Cideng</td>
+											<td>1.42</td>
+											<td>2.84625</td>
+										</tr>
+										<tr>
+											<td>10</td>
+											<td>Cideng</td>
+											<td>1.42</td>
+											<td>2.84625</td>
+										</tr>
+									</tbody>
+									<tfoot class="table-light">
+										<tr>
+											<th>Level</th>
+											<th>Name</th>
+											<th>Employee Code</th>
+										</tr>
+									</tfoot>
+								</table>
+							</div>
+						</div>
+					</div>
+
+					<div class="card">
+						<div class="card-body">
+							<div id="ratioAtmEmployees"></div>
+						</div>
+					</div>
+
+					<div class="card">
+						<div class="card-body">
+							<h5 class="text-black">FLM Employee Ratio - Sector / Number of ATM Employees</h5>
+							<div class="table-responsive">
+								<div id="printbar" style="float:right"></div>
+								<br>
+								<table id="tableRatioFlmEmployeesAtm" class="table mb-0 align-middle" style="width:100%">
+									<thead class="table-light">
+										<tr>
+											<th>No</th>
+											<th>Branch</th>
+											<th>Ratio</th>
+											<th>Average Ratio</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>1</td>
+											<td>Cideng</td>
+											<td>1.42</td>
+											<td>2.84625</td>
+										</tr>
+										<tr>
+											<td>2</td>
+											<td>Cideng</td>
+											<td>1.42</td>
+											<td>2.84625</td>
+										</tr>
+										<tr>
+											<td>3</td>
+											<td>Cideng</td>
+											<td>1.42</td>
+											<td>2.84625</td>
+										</tr>
+										<tr>
+											<td>4</td>
+											<td>Cideng</td>
+											<td>1.42</td>
+											<td>2.84625</td>
+										</tr>
+										<tr>
+											<td>5</td>
+											<td>Cideng</td>
+											<td>1.42</td>
+											<td>2.84625</td>
+										</tr>
+										<tr>
+											<td>6</td>
+											<td>Cideng</td>
+											<td>1.42</td>
+											<td>2.84625</td>
+										</tr>
+										<tr>
+											<td>7</td>
+											<td>Cideng</td>
+											<td>1.42</td>
+											<td>2.84625</td>
+										</tr>
+										<tr>
+											<td>8</td>
+											<td>Cideng</td>
+											<td>1.42</td>
+											<td>2.84625</td>
+										</tr>
+										<tr>
+											<td>9</td>
+											<td>Cideng</td>
+											<td>1.42</td>
+											<td>2.84625</td>
+										</tr>
+										<tr>
+											<td>10</td>
+											<td>Cideng</td>
+											<td>1.42</td>
+											<td>2.84625</td>
+										</tr>
+									</tbody>
+									<tfoot class="table-light">
+										<tr>
+											<th>Level</th>
+											<th>Name</th>
+											<th>Employee Code</th>
+										</tr>
+									</tfoot>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="national-summary" id="overtime" style="display: none;">
+					<div class="card">
+						<div class="card-body">
+							<div class="row mb-3">
+								<div class="col-12 col-lg-2 filter-awal"><label for="filerDateAwal" class="form-label">Start Date
+										Filter</label>
+									<div class="input-group mb-2">
+										<input type="text" class="form-control datepickerawal" id="filterDateAwal"
+											placeholder="dd/mm/yyyy">
+									</div>
+								</div>
+								<div class="col-12 col-lg-2 filter-akhir"><label for="filerDateAkhir" class="form-label">End Date
+										Filters</label>
+									<div class="input-group mb-2">
+										<input type="text" class="form-control datepickerakhir" id="filterDateAkhir"
+											placeholder="dd/mm/yyyy">
+									</div>
+								</div>
+								<div class="col-12 col-lg-2">
+									<label class="form-label">Section</label>
+									<select class="single-select form-select">
+										<option value="lorem">Lorem</option>
+										<option value="lorem">Lorem</option>
+										<option value="lorem">Lorem</option>
+									</select>
+								</div>
+								<div class="col-12 col-lg-2">
+									<label class="form-label">Sub Unit</label>
+									<select class="single-select form-select">
+										<option value="lorem">Lorem</option>
+										<option value="lorem">Lorem</option>
+										<option value="lorem">Lorem</option>
+									</select>
+								</div>
+								<div class="col-12 col-lg-2">
+									<label class="form-label">Status</label>
+									<select class="single-select form-select">
+										<option value="all">All</option>
+										<option value="verification">Verification</option>
+										<option value="waiting">Menunggu Approve RH</option>
+										<option value="approve">Approve</option>
+										<option value="closing">Closing</option>
+										<option value="newEntry">New Entry</option>
+										<option value="decline">Decline</option>
+									</select>
+								</div>
+								<div class="col-12 col-lg-2">
+									<label class="form-label">Filter</label>
+									<select class="single-select form-select">
+										<option value="all">All</option>
+										<option value="region">Region</option>
+										<option value="branchbko">Branch BKO</option>
+										<option value="branch">Branch</option>
+									</select>
+								</div>
+							</div>
+							<div class="d-flex justify-content-end">
+								<button class="btn btn-primary me-3">Apply</button>
+								<button class="btn btn-outline-primary me-3">
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye text-primary me-1"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+									Detail SPL</button>
+									<button class="btn btn-outline-primary">
+										<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye text-primary me-1"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+										Detail FO</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="card">
+						<div class="card-body">
+							<h5 class="text-black text-center">Percentage of overtime duration to working hours</h5>
+							<p class="text-center">Duration of Overtime / (Total Hours Worked) x 100%</p>
+							<div id="durasiLemburSPL"></div>
+						</div>
+					</div>
+
+					<div class="card">
+						<div class="card-body">
+							<h5 class="text-black text-center">Percentage of FO frequency to working days</h5>
+							<p class="text-center">FO Frequency / (Total Hours Worked) x 100%</p>
+							<div id="presentasiFrekuensiFO"></div>
+						</div>
+					</div>
+
+					<hr class="mb-4">
+
+					<div class="card">
+						<div class="card-body">
+							<div class="row">
+								<div class="col-12 col-lg-11">
+										<label class="form-label">Type</label>
+										<select class="single-select form-select">
+											<option value="all">All</option>
+											<option value="spl">SPL</option>
+											<option value="fo">FO</option>
+										</select>
+								</div>
+								<div class="col-12 col-lg-1">
+									<label for="" class="form-label">Action</label> <br>
+									<button type="button" class="btn btn-primary radius-4">Apply</button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-12 col-lg-4 d-flex">
+							<div class="card w-100">
+								<div class="card-body">
+									<h5 class="text-center text-black mb-4">Index Overtime</h5>
+									<div id="indexOvertime"></div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-lg-8 d-flex">
+							<div class="card w-100">
+								<div class="card-body">
+									<div class="btn-group-round">
+										<div class="btn-group">
+											<button type="button" class="btn btn-white btn-index-overtime active" onclick="filterBtn(event, 'indexBottom')">Top 10 Index Bottom</button>
+											<button type="button" class="btn btn-white btn-index-overtime" onclick="filterBtn(event, 'indexUp')">Top 10 Index Up</button>
+										</div>
+									</div>
+									<div class="index-overtime" id="indexBottom">
+										<div class="table-responsive">
+											<br>
+											<table id="tableRatioFlmEmployees" class="table mb-0 align-middle" style="width:100%">
+												<thead class="table-light">
+													<tr>
+														<th>No</th>
+														<th>ID Employee</th>
+														<th>Name</th>
+														<th>Branch</th>
+														<th>Freq</th>
+														<th>Duration (Hours)</th>
+														<th>Avg</th>
+														<th>Index</th>
+														<th>Category</th>
+													</tr>
+												</thead>
+												<tbody>
+													<!-- TOP 10 -->
+													<tr>
+														<td>1</td>
+														<td>42342525</td>
+														<td>Johan</td>
+														<td>Kediri</td>
+														<td>1</td>
+														<td>1</td>
+														<td>1.50</td>
+														<td>1.50</td>
+														<td>Index Bottom</td>
+													</tr>
+													<tr>
+														<td>2</td>
+														<td>42342525</td>
+														<td>Johan</td>
+														<td>Kediri</td>
+														<td>1</td>
+														<td>1</td>
+														<td>1.50</td>
+														<td>1.50</td>
+														<td>Index Bottom</td>
+													</tr>
+													<tr>
+														<td>3</td>
+														<td>42342525</td>
+														<td>Johan</td>
+														<td>Kediri</td>
+														<td>1</td>
+														<td>1</td>
+														<td>1.50</td>
+														<td>1.50</td>
+														<td>Index Bottom</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+									<div class="index-overtime" id="indexUp" style="display: none;">
+										<div class="table-responsive">
+											<br>
+											<table id="tableRatioFlmEmployees" class="table mb-0 align-middle" style="width:100%">
+												<thead class="table-light">
+													<tr>
+														<th>No</th>
+														<th>ID Employee</th>
+														<th>Name</th>
+														<th>Branch</th>
+														<th>Freq</th>
+														<th>Duration (Hours)</th>
+														<th>Avg</th>
+														<th>Index</th>
+														<th>Category</th>
+													</tr>
+												</thead>
+												<tbody>
+													<!-- TOP 10 -->
+													<tr>
+														<td>1</td>
+														<td>42342525</td>
+														<td>Johan</td>
+														<td>Kediri</td>
+														<td>1</td>
+														<td>1</td>
+														<td>1.50</td>
+														<td>1.50</td>
+														<td>Index Up</td>
+													</tr>
+													<tr>
+														<td>2</td>
+														<td>42342525</td>
+														<td>Johan</td>
+														<td>Kediri</td>
+														<td>1</td>
+														<td>1</td>
+														<td>1.50</td>
+														<td>1.50</td>
+														<td>Index Up</td>
+													</tr>
+													<tr>
+														<td>3</td>
+														<td>42342525</td>
+														<td>Johan</td>
+														<td>Kediri</td>
+														<td>1</td>
+														<td>1</td>
+														<td>1.50</td>
+														<td>1.50</td>
+														<td>Index Up</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-12 col-lg-4 d-flex">
+							<div class="card w-100">
+								<div class="card-body">
+									<h5 class="text-center text-black">Ratio Overtime</h5>
+									<div id="chartRatioOvertime"></div>
+									<div class="d-flex justify-content-end">
+										<div class="d-flex align-items-center border radius-10 px-2">
+											<i class='bx bxs-checkbox font-22 me-1 text-primary'></i><span>Average Overtime</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-lg-8 d-flex">
+							<div class="card w-100">
+								<div class="card-body">
+									<div class="btn-group-round">
+										<div class="btn-group">
+											<button type="button" class="btn btn-white btn-index-overtime active">Bottom 10 Overtime Averages</button>
+											<button type="button" class="btn btn-white btn-index-overtime">Top 10 Overtime Averages</button>
+										</div>
+									</div>
+									<!-- Table -->
+									<div class="" id="">
+										<div class="table-responsive">
+											<br>
+											<table id="tableRatioFlmEmployees" class="table mb-0 align-middle" style="width:100%">
+												<thead class="table-light">
+													<tr>
+														<th>No</th>
+														<th>ID Employee</th>
+														<th>Name</th>
+														<th>Branch</th>
+														<th>Duration (Hours)</th>
+														<th>Working Hour</th>
+														<th>Average</th>
+													</tr>
+												</thead>
+												<tbody>
+													<!-- TOP 10 -->
+													<tr>
+														<td>1</td>
+														<td>42342525</td>
+														<td>Johan</td>
+														<td>Kediri</td>
+														<td>0</td>
+														<td>19.6</td>
+														<td>0.00%</td>
+													</tr>
+													<tr>
+														<td>2</td>
+														<td>42342525</td>
+														<td>Johan</td>
+														<td>Kediri</td>
+														<td>0</td>
+														<td>19.6</td>
+														<td>0.00%</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="card">
+						<div class="card-body">
+							<h5 class="text-center text-black">Top 10 Employees with the Highest Overtime Hours</h5>
+							<div id="highestOvertimeHours"></div>
+						</div>
+					</div>
+
+					<div class="card">
+						<div class="card-body">
+							<div class="row mb-3">
+								<div class="col-12 col-lg-3 filter-awal"><label for="filerDateAwal" class="form-label">Start Date
+										Filter</label>
+									<div class="input-group mb-2">
+										<input type="text" class="form-control datepickerawal" id="startDateSelisihKebutuhanRun"
+											placeholder="dd/mm/yyyy">
+									</div>
+								</div>
+								<div class="col-12 col-lg-3 filter-akhir"><label for="filerDateAkhir" class="form-label">End Date
+										Filters</label>
+									<div class="input-group mb-2">
+										<input type="text" class="form-control datepickerakhir" id="endDateSelisihKebutuhanRun"
+											placeholder="dd/mm/yyyy">
+									</div>
+								</div>
+								<div class="col-12 col-lg-3">
+									<label class="form-label">Branch</label>
+									<select class="single-select form-select">
+										<option value="bandung">Bandung</option>
+										<option value="jakarta">Jakarta</option>
+										<option value="cideng">Cideng</option>
+									</select>
+								</div>
+								<div class="col-12 col-lg-2">
+									<label class="form-label">Sub Unit</label>
+									<select class="single-select form-select">
+										<option value="lorem">Lorem</option>
+										<option value="lorem">Lorem</option>
+										<option value="lorem">Lorem</option>
+									</select>
+								</div>
+								<div class="col-12 col-lg-1 button-filter">
+									<label for="" class="form-label">Action</label> <br>
+									<button type="button" class="btn btn-primary radius-4">Apply</button>
+								</div>
+							</div>
+							<h5 class="text-center text-black mb-3">Selisih Kebutuhan Run Terhadap Kehadiran Karyawan CDC Perhari</h5>
+							<div id="selisihKebutuhanRun"></div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-body">
+							<div class="row mb-3">
+								<div class="col-12 col-lg-4 filter-awal"><label for="filerDateAwal" class="form-label">Start Date
+										Filter</label>
+									<div class="input-group mb-2">
+										<input type="text" class="form-control datepickerawal" id="startDatePeningkatanDurasiLembur"
+											placeholder="dd/mm/yyyy">
+									</div>
+								</div>
+								<div class="col-12 col-lg-4 filter-akhir"><label for="filerDateAkhir" class="form-label">End Date
+										Filters</label>
+									<div class="input-group mb-2">
+										<input type="text" class="form-control datepickerakhir" id="endDatePeningkatanDurasiLembur"
+											placeholder="dd/mm/yyyy">
+									</div>
+								</div>
+								<div class="col-12 col-lg-3">
+									<label class="form-label">Type</label>
+									<select class="single-select form-select">
+										<option value="all">All</option>
+										<option value="spl">SPL</option>
+										<option value="fo">FO</option>
+									</select>
+								</div>
+								<div class="col-12 col-lg-1 button-filter">
+									<label for="" class="form-label">Action</label> <br>
+									<button type="button" class="btn btn-primary radius-4">Apply</button>
+								</div>
+							</div>
+							<h5 class="text-center text-black mb-3">Top 10 Cabang Dengan Peningkatan Durasi Lembur Selama 3 Bulan</h5>
+							<div id="peningkatanDurasiLemburTigaBulan"></div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-body">
+							
+							<div class="row mb-3">
+								<div class="col-12 col-lg-4 filter-awal"><label for="filerDateAwal" class="form-label">Start Date
+										Filter</label>
+									<div class="input-group mb-2">
+										<input type="text" class="form-control datepickerawal" id="startDateTopLemburKaryawan"
+											placeholder="dd/mm/yyyy">
+									</div>
+								</div>
+								<div class="col-12 col-lg-4 filter-akhir"><label for="filerDateAkhir" class="form-label">End Date
+										Filters</label>
+									<div class="input-group mb-2">
+										<input type="text" class="form-control datepickerakhir" id="endDateTopLemburKaryawan"
+											placeholder="dd/mm/yyyy">
+									</div>
+								</div>
+								<div class="col-12 col-lg-3">
+									<label class="form-label">Type</label>
+									<select class="single-select form-select">
+										<option value="all">All</option>
+										<option value="spl">SPL</option>
+										<option value="fo">FO</option>
+									</select>
+								</div>
+								<div class="col-12 col-lg-1 button-filter">
+									<label for="" class="form-label">Action</label> <br>
+									<button type="button" class="btn btn-primary radius-4">Apply</button>
+								</div>
+							</div>
+							<h5 class="text-center text-black">Top 10 Karyawan Dengan Peningkatan Durasi Lembur Selama 3 Bulan</h5>
+							<div id="topKaryawanLembur"></div>
+						</div>
+					</div>
+
+
+				</div>
+
+				<div class="national-summary" id="ejPending" style="display: none;">
+							<div class="card">
+								<div class="card-body">
+									<div class="row mb-4">
+										<div class="col-12 col-lg-4 filter-awal"><label for="filerDateAwal" class="form-label">Start Date
+												Filter</label>
+											<div class="input-group mb-2">
+												<input type="text" class="form-control" id="startDateEjPending"
+													placeholder="dd/mm/yyyy">
+											</div>
+										</div>
+										<div class="col-12 col-lg-4 filter-akhir"><label for="filerDateAkhir" class="form-label">End Date
+												Filters</label>
+											<div class="input-group mb-2">
+												<input type="text" class="form-control" id="endDateEjPending"
+													placeholder="dd/mm/yyyy">
+											</div>
+										</div>
+										<div class="col-12 col-lg-3">
+											<label class="form-label">Filter</label>
+											<select class="single-select form-select">
+												<option value="dct">All</option>
+												<option value="region">Region</option>
+												<option value="kelas">Kelas</option>
+												<option value="branch">Branch</option>
+											</select>
+										</div>
+										<div class="col-12 col-lg-1 button-filter">
+											<label for="" class="form-label">Action</label> <br>
+											<button type="button" class="btn btn-primary radius-4">Apply</button>
+										</div>
+									</div>
+								</div>
+							</div>
+
+					<div class="card">
+						<div class="card-body">
+							<div id="outstandingEJ"></div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-body">
+							<div class="mb-3">
+								<label class="form-label">Select Bank (Max 7)</label>
+								<select class="multiple-select" data-placeholder="Choose anything" multiple="multiple">
+									<option value="atmi" selected>ATMI</option>
+									<option value="bca" selected>BCA</option>
+									<option value="bni" selected>BNI</option>
+									<option value="bri" selected>BRI</option>
+									<option value="bii" selected>BII</option>
+									<option value="pmt" selected>PMT</option>
+									<option value="cimb" selected>CIMB</option>
+									<option value="mandiri">Mandiri</option>
+									<option value="permata">Permata</option>
+								</select>
+							</div>
+							<h5 class="text-center text-black">Outstanding EJ has no difference</h5>
+							<div id="outstandingEJNoDifference"></div>
+							<hr class="mb-4">
+							<h5 class="text-center text-black">Outstanding Difference</h5>
+							<div id="outstandingDifference"></div>
+						</div>
+					</div>
+
+					<div class="card">
+						<div class="card-body">
+							<div class="mb-3">
+								<label class="form-label">Select Bank (Max 7)</label>
+								<select class="multiple-select" data-placeholder="Choose anything" multiple="multiple">
+									<option value="atmi" selected>ATMI</option>
+									<option value="bca" selected>BCA</option>
+									<option value="bni" selected>BNI</option>
+									<option value="bri" selected>BRI</option>
+									<option value="bii" selected>BII</option>
+									<option value="pmt" selected>PMT</option>
+									<option value="cimb" selected>CIMB</option>
+									<option value="mandiri">Mandiri</option>
+									<option value="permata">Permata</option>
+								</select>
+							</div>
+							<div class="row mb-4">
+								<div class="col-12 col-lg-4 filter-awal"><label for="filerDateAwal" class="form-label">Start Date
+										Filter</label>
+									<div class="input-group mb-2">
+										<input type="text" class="form-control" id="startDateSummaryEjPending"
+											placeholder="dd/mm/yyyy">
+									</div>
+								</div>
+								<div class="col-12 col-lg-4 filter-akhir"><label for="filerDateAkhir" class="form-label">End Date
+										Filters</label>
+									<div class="input-group mb-2">
+										<input type="text" class="form-control" id="endDateSummaryEjPending"
+											placeholder="dd/mm/yyyy">
+									</div>
+								</div>
+								<div class="col-12 col-lg-3">
+									<label class="form-label">Type</label>
+									<select class="single-select form-select">
+										<option value="harian">Harian</option>
+										<option value="bulanan">Bulanan</option>
+									</select>
+								</div>
+								<div class="col-12 col-lg-1 button-filter">
+									<label for="" class="form-label">Action</label> <br>
+									<button type="button" class="btn btn-primary radius-4">Apply</button>
+								</div>
+							</div>
+
+							<h5 class="text-center text-black">Summary of EJ Pending No Difference</h5>
+							<div id="summaryEJPendingNoDifference"></div>
+							<hr>
+							<h5 class="text-center text-black">Summary of EJ Pending Difference</h5>
+							<div id="summaryEJPendingDifference"></div>
+						</div>
+					</div>
+				</div>
+				
+
+
+
+				
+			</div>
+		</div>
+		<!--end page wrapper -->
+		<!--start overlay-->
+		<div class="overlay toggle-icon"></div>
+		<!--end overlay-->
+		<!--Start Back To Top Button--> <a href="javaScript:;" class="back-to-top"><i class='bx bxs-up-arrow-alt'></i></a>
+		<!--End Back To Top Button-->
+		<footer class="page-footer">
+			<p class="mb-0">Copyright © 2023. All right reserved.</p>
+		</footer>
+	</div>
+	<!--end wrapper-->
+	<!-- Bootstrap JS -->
+	<script src="assets/js/bootstrap.bundle.min.js"></script>
+	<!--plugins-->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/plugins/simplebar/js/simplebar.min.js"></script>
+	<script src="assets/plugins/fullcalendar/js/main.min.js"></script>
+	<script src="assets/plugins/metismenu/js/metisMenu.min.js"></script>
+	<script src="assets/plugins/perfect-scrollbar/js/perfect-scrollbar.js"></script>
+	<script src="assets/libraries/gijgo/js/gijgo.min.js"></script>
+	<script src="assets/plugins/select2/js/select2.min.js"></script>
+	<script src="assets/plugins/datatable/js/jquery.dataTables.min.js"></script>
+	<script src="assets/plugins/datatable/js/dataTables.bootstrap5.min.js"></script>
+	<script src="assets/plugins/apexcharts-bundle/js/apexcharts.min.js"></script>
+	<script src="assets/plugins/apexcharts-bundle/js/apex-custom.js"></script>
+
+	<!-- highcharts js -->
+	<script src="assets/plugins/highcharts/js/highcharts.js"></script>
+	<script src="assets/plugins/highcharts/js/highcharts-more.js"></script>
+	<script src="assets/plugins/highcharts/js/variable-pie.js"></script>
+	<script src="assets/plugins/highcharts/js/solid-gauge.js"></script>
+	<script src="assets/plugins/highcharts/js/highcharts-3d.js"></script>
+	<script src="assets/plugins/highcharts/js/cylinder.js"></script>
+	<script src="assets/plugins/highcharts/js/funnel3d.js"></script>
+	<script src="assets/plugins/highcharts/js/exporting.js"></script>
+	<script src="assets/plugins/highcharts/js/export-data.js"></script>
+	<script src="assets/plugins/highcharts/js/accessibility.js"></script>
+	<script src="assets/plugins/highcharts/js/highcharts-custom.script.js"></script>
+
+	<script src="assets/js/index4.js"></script>
+	<script>
+		$(document).ready(function () {
+
+
+			$(".datepickerawal").datepicker({
+				uiLibrary: "bootstrap4",
+				icons: {
+					rightIcon: '<img src="assets/images/icons/calendar-days.svg" />'
+				}
+			})
+
+			$(".datepickerakhir").datepicker({
+				uiLibrary: "bootstrap4",
+				icons: {
+					rightIcon: '<img src="assets/images/icons/calendar-days.svg" />'
+				}
+			})
+
+			$("#filterDateStartCpc").datepicker({
+				uiLibrary: "bootstrap4",
+				icons: {
+					rightIcon: '<img src="assets/images/icons/calendar-days.svg" />'
+				}
+			})
+			$("#filterDateEndCpc").datepicker({
+				uiLibrary: "bootstrap4",
+				icons: {
+					rightIcon: '<img src="assets/images/icons/calendar-days.svg" />'
+				}
+			})
+
+			$("#filterDateStartCdc").datepicker({
+				uiLibrary: "bootstrap4",
+				icons: {
+					rightIcon: '<img src="assets/images/icons/calendar-days.svg" />'
+				}
+			})
+
+			$("#filterDateEndCdc").datepicker({
+				uiLibrary: "bootstrap4",
+				icons: {
+					rightIcon: '<img src="assets/images/icons/calendar-days.svg" />'
+				}
+			})
+
+			$("#filterDateStartFlm").datepicker({
+				uiLibrary: "bootstrap4",
+				icons: {
+					rightIcon: '<img src="assets/images/icons/calendar-days.svg" />'
+				}
+			})
+
+			$("#filterDateEndFlm").datepicker({
+				uiLibrary: "bootstrap4",
+				icons: {
+					rightIcon: '<img src="assets/images/icons/calendar-days.svg" />'
+				}
+			})
+			$("#startDateEjPending").datepicker({
+				uiLibrary: "bootstrap4",
+				icons: {
+					rightIcon: '<img src="assets/images/icons/calendar-days.svg" />'
+				}
+			})
+			$("#endDateEjPending").datepicker({
+				uiLibrary: "bootstrap4",
+				icons: {
+					rightIcon: '<img src="assets/images/icons/calendar-days.svg" />'
+				}
+			})
+
+			$("#startDateSummaryEjPending").datepicker({
+				uiLibrary: "bootstrap4",
+				icons: {
+					rightIcon: '<img src="assets/images/icons/calendar-days.svg" />'
+				}
+			})
+			$("#endDateSummaryEjPending").datepicker({
+				uiLibrary: "bootstrap4",
+				icons: {
+					rightIcon: '<img src="assets/images/icons/calendar-days.svg" />'
+				}
+			})
+
+			$("#startDateSelisihKebutuhanRun").datepicker({
+				uiLibrary: "bootstrap4",
+				icons: {
+					rightIcon: '<img src="assets/images/icons/calendar-days.svg" />'
+				}
+			})
+			$("#endDateSelisihKebutuhanRun").datepicker({
+				uiLibrary: "bootstrap4",
+				icons: {
+					rightIcon: '<img src="assets/images/icons/calendar-days.svg" />'
+				}
+			})
+
+			$("#startDatePeningkatanDurasiLembur").datepicker({
+				uiLibrary: "bootstrap4",
+				icons: {
+					rightIcon: '<img src="assets/images/icons/calendar-days.svg" />'
+				}
+			})
+			$("#endDatePeningkatanDurasiLembur").datepicker({
+				uiLibrary: "bootstrap4",
+				icons: {
+					rightIcon: '<img src="assets/images/icons/calendar-days.svg" />'
+				}
+			})
+
+			$("#startDateTopLemburKaryawan").datepicker({
+				uiLibrary: "bootstrap4",
+				icons: {
+					rightIcon: '<img src="assets/images/icons/calendar-days.svg" />'
+				}
+			})
+			$("#endDateTopLemburKaryawan").datepicker({
+				uiLibrary: "bootstrap4",
+				icons: {
+					rightIcon: '<img src="assets/images/icons/calendar-days.svg" />'
+				}
+			})
+			
+			
+		});
+	</script>
+	<script>
+		$('.single-select').select2({
+			theme: 'bootstrap4',
+			width: $(this).data('width') ? $(this).data('width') : $(this).hasClass('w-100') ? '100%' : 'style',
+			placeholder: $(this).data('placeholder'),
+			allowClear: Boolean($(this).data('allow-clear')),
+		});
+		$('.multiple-select').select2({
+			theme: 'bootstrap4',
+			width: $(this).data('width') ? $(this).data('width') : $(this).hasClass('w-100') ? '100%' : 'style',
+			placeholder: $(this).data('placeholder'),
+			allowClear: Boolean($(this).data('allow-clear')),
+		});
+	</script>
+
+	<!-- HIGHCHART -->
+	<script>
+		$(function () {
+			"use strict";
+			Highcharts.chart("chartPencapaian", {
+				chart: {
+					type: "bar",
+					styledMode: true,
+				},
+				credits: {
+					enabled: false,
+				},
+				title: {
+					text: null,
+				},
+				xAxis: {
+					categories: ["ATMI", "BCA", "BNI", "BRI", "BII", "CIMB"],
+				},
+				yAxis: {
+					min: 0,
+					title: {
+						text: "Target SLA (%)",
+					},
+				},
+				legend: {
+					reversed: false,
+				},
+				plotOptions: {
+					series: {
+						stacking: "normal",
+						dataLabels: {
+							enabled: true,
+							format: '{point.y:.2f}% ({point.total} mesin)', // Menampilkan persentase dan jumlah mesin
+							style: {
+								color: 'white', // Mengatur warna data label menjadi putih
+							},
+						},
+					},
+				},
+				tooltip: {
+					formatter: function () {
+						return '<b>' + this.series.name + '</b><br/>' +
+							this.point.category + ': ' + Highcharts.numberFormat(this.point.y, 2) + '% (' + this.point.total + ' mesin)';
+					},
+				},
+				series: [
+				{
+						name: "Success Achieved",
+						data: [{y: 83, total: 100}, {y: 79, total: 100}, {y: 55, total: 100}, {y: 70, total: 100}, {y: 83, total: 100}, {y: 83, total: 100}],
+				
+					},
+					{
+						name: "No Success Yet",
+						data: [{y: 17, total: 100}, {y: 21, total: 100}, {y: 45, total: 100}, {y: 30, total: 100}, {y: 17, total: 100}, {y: 17, total: 100}],
+					
+					},
+					
+				],
+			});
+
+		
+		
+			  Highcharts.chart("chartBottomFive", {
+				chart: {
+				type: "bar",
+				styledMode: true,
+				},
+				credits: {
+				enabled: false,
+				},
+				title: {
+				text: null,
+				},
+				xAxis: {
+				categories: ["Kudus", "Singkawang", "Bengkulu", "Kediri", "Pontianak"],
+				title: {
+					text: null,
+				},
+				},
+				yAxis: {
+				min: 0,
+				title: {
+					text: "Target SLA",
+					align: "high",
+				},
+				labels: {
+					overflow: "justify",
+				},
+				},
+				tooltip: {
+					formatter: function () {
+						return '<b>' + this.series.name + '</b><br/>' +
+							this.point.category + ': ' + Highcharts.numberFormat(this.point.y, 2) + '% (' + this.point.total + ' mesin)';
+					},
+				},
+				plotOptions: {
+					series: {
+						dataLabels: {
+							enabled: true,
+							format: '{point.y:.2f}% ({point.total} mesin)', // Menampilkan persentase dan jumlah mesin
+							style: {
+								color: 'white', // Mengatur warna data label menjadi putih
+							},
+						},
+					},
+				bar: {
+					dataLabels: {
+					enabled: true,
+					},
+				},
+				},
+				legend: {
+				layout: "vertical",
+				align: "right",
+				verticalAlign: "top",
+				x: -40,
+				y: 80,
+				floating: true,
+				borderWidth: 1,
+				backgroundColor:
+					Highcharts.defaultOptions.legend.backgroundColor || "#FFFFFF",
+				shadow: true,
+				},
+				credits: {
+				enabled: false,
+				},
+				series: [
+				{
+					name: "Success Achieved",
+					data: [{y: 45, total: 100}, {y: 48, total: 100}, {y: 55, total: 100}, {y: 62, total: 100}, {y: 75, total: 100},],
+				},
+				{
+					name: "No Success Yet",
+					data: [{y: 55, total: 100}, {y: 52, total: 100}, {y: 45, total: 100}, {y: 38, total: 100}, {y: 25, total: 100},],
+				},
+				
+				
+				],
+			});
+
+			Highcharts.chart("employeeNumberRatio", {
+				chart: {
+				zoomType: "xy",
+				styledMode: true,
+				},
+				credits: {
+				enabled: false,
+				},
+				title: {
+					text: "FLM Employee Number Ratio - Sector",
+				},
+				xAxis: [
+				{
+					categories: [
+					"Cideng",
+					"Karawang",
+					"Meruya",
+					"Pontianak",
+					"Rawamangun",
+					"Semarang",
+					"Serang",
+					"Tegal",
+					"Bandung",
+					"Banjarmasin",
+					"Jambi",
+					"Purwokerto",
+					],
+					crosshair: true,
+				},
+				],
+				yAxis: [
+				{
+					// Primary yAxis
+					labels: {
+					// format: "{value}°C",
+					style: {
+						color: Highcharts.getOptions().colors[1],
+					},
+					},
+					title: {
+					text: "Ratio Data",
+					style: {
+						color: Highcharts.getOptions().colors[1],
+					},
+					},
+				},
+				{
+					// Secondary yAxis
+					title: {
+					text: "Average",
+					style: {
+						color: Highcharts.getOptions().colors[0],
+					},
+					},
+					labels: {
+					// format: "{value} mm",
+					style: {
+						color: Highcharts.getOptions().colors[0],
+					},
+					},
+					opposite: true,
+				},
+				],
+				tooltip: {
+				shared: true,
+				},
+				legend: {
+				layout: "vertical",
+				align: "left",
+				x: 120,
+				verticalAlign: "top",
+				y: 100,
+				floating: true,
+				backgroundColor:
+					Highcharts.defaultOptions.legend.backgroundColor || // theme
+					"rgba(255,255,255,0.25)",
+				},
+				series: [
+				{
+					name: "Ratio Data",
+					type: "column",
+					yAxis: 1,
+					data: [
+					49.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1,
+					95.6, 54.4,
+					],
+					// tooltip: {
+					// valueSuffix: " mm",
+					// },
+				},
+				{
+					name: "Average",
+					type: "spline",
+					data: [
+					7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6,
+					],
+					// tooltip: {
+					// valueSuffix: "°C",
+					// },
+				},
+				],
+			});
+
+			Highcharts.chart("ratioAtmEmployees", {
+				chart: {
+				zoomType: "xy",
+				styledMode: true,
+				},
+				credits: {
+				enabled: false,
+				},
+				title: {
+					text: "FLM Employee Ratio - Sector / Number of ATM Employees",
+				},
+				xAxis: [
+				{
+					categories: [
+					"Cideng",
+					"Karawang",
+					"Meruya",
+					"Pontianak",
+					"Rawamangun",
+					"Semarang",
+					"Serang",
+					"Tegal",
+					"Bandung",
+					"Banjarmasin",
+					"Jambi",
+					"Purwokerto",
+					],
+					crosshair: true,
+				},
+				],
+				yAxis: [
+				{
+					// Primary yAxis
+					labels: {
+					// format: "{value}°C",
+					style: {
+						color: Highcharts.getOptions().colors[1],
+					},
+					},
+					title: {
+					text: "Ratio Data",
+					style: {
+						color: Highcharts.getOptions().colors[1],
+					},
+					},
+				},
+				{
+					// Secondary yAxis
+					title: {
+					text: "Average",
+					style: {
+						color: Highcharts.getOptions().colors[0],
+					},
+					},
+					labels: {
+					// format: "{value} mm",
+					style: {
+						color: Highcharts.getOptions().colors[0],
+					},
+					},
+					opposite: true,
+				},
+				],
+				tooltip: {
+				shared: true,
+				},
+				legend: {
+				layout: "vertical",
+				align: "left",
+				x: 120,
+				verticalAlign: "top",
+				y: 100,
+				floating: true,
+				backgroundColor:
+					Highcharts.defaultOptions.legend.backgroundColor || // theme
+					"rgba(255,255,255,0.25)",
+				},
+				series: [
+				{
+					name: "Ratio Data",
+					type: "column",
+					yAxis: 1,
+					data: [
+					49.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1,
+					95.6, 54.4,
+					],
+					// tooltip: {
+					// valueSuffix: " mm",
+					// },
+				},
+				{
+					name: "Average",
+					type: "spline",
+					data: [
+					7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6,
+					],
+					// tooltip: {
+					// valueSuffix: "°C",
+					// },
+				},
+				],
+			});
+
+Highcharts.chart("durasiLemburSPL", {
+    chart: {
+      type: "column",
+      styledMode: true,
+    },
+    credits: {
+      enabled: false,
+    },
+    title: {
+      text: null,
+    },
+    subtitle: {
+      text: null,
+    },
+    accessibility: {
+      announceNewData: {
+        enabled: true,
+      },
+    },
+    xAxis: {
+      type: "category",
+    },
+    yAxis: {
+      title: {
+        text: "Total percent",
+      },
+    },
+    legend: {
+      enabled: false,
+    },
+    plotOptions: {
+      series: {
+        borderWidth: 0,
+        dataLabels: {
+          enabled: true,
+          format: "{point.y:.1f}%",
+        },
+      },
+    },
+    tooltip: {
+      headerFormat: '<span style="font-size:11px">{series.name}</span><br>',
+      pointFormat:
+        '<span style="color:{point.color}">{point.name}</span>: <b>{point.y:.2f}%</b> of total<br/>',
+    },
+    series: [
+      {
+        name: "City",
+        colorByPoint: true,
+        data: [
+          {
+            name: "Kararwang",
+            y: 62.74,
+            drilldown: "Kararwang",
+          },
+          {
+            name: "Tegal",
+            y: 7.23,
+            drilldown: "Tegal",
+          },
+          {
+            name: "Solo",
+            y: 5.58,
+            drilldown: "Solo",
+          },
+          {
+            name: "Mataram",
+            y: 4.02,
+            drilldown: "Mataram",
+          },
+          {
+            name: "Kudus",
+            y: 1.92,
+            drilldown: "Kudus",
+          },
+          {
+            name: "Denpasar",
+            y: 7.62,
+            drilldown: "Denpasar",
+          },
+		  {
+            name: "Rawamangun",
+            y: 7.62,
+            drilldown: "Rawamangun",
+          },
+		  {
+            name: "Purwokerto",
+            y: 7.62,
+            drilldown: "Purwokerto",
+          },
+		  {
+            name: "Bandung",
+            y: 7.62,
+            drilldown: "Bandung",
+          },
+		  {
+            name: "Medan",
+            y: 7.62,
+            drilldown: "Medan",
+          },
+        ],
+      },
+    ],
+  });
+		
+  Highcharts.chart("presentasiFrekuensiFO", {
+    chart: {
+      type: "column",
+      styledMode: true,
+    },
+    credits: {
+      enabled: false,
+    },
+    title: {
+      text: null,
+    },
+    subtitle: {
+      text: null,
+    },
+    accessibility: {
+      announceNewData: {
+        enabled: true,
+      },
+    },
+    xAxis: {
+      type: "category",
+    },
+    yAxis: {
+      title: {
+        text: "Total percent",
+      },
+    },
+    legend: {
+      enabled: false,
+    },
+    plotOptions: {
+      series: {
+        borderWidth: 0,
+        dataLabels: {
+          enabled: true,
+          format: "{point.y:.1f}%",
+        },
+      },
+    },
+    tooltip: {
+      headerFormat: '<span style="font-size:11px">{series.name}</span><br>',
+      pointFormat:
+        '<span style="color:{point.color}">{point.name}</span>: <b>{point.y:.2f}%</b> of total<br/>',
+    },
+    series: [
+      {
+        name: "City",
+        colorByPoint: true,
+        data: [
+          {
+            name: "Kararwang",
+            y: 62.74,
+            drilldown: "Kararwang",
+          },
+          {
+            name: "Tegal",
+            y: 7.23,
+            drilldown: "Tegal",
+          },
+          {
+            name: "Solo",
+            y: 5.58,
+            drilldown: "Solo",
+          },
+          {
+            name: "Mataram",
+            y: 4.02,
+            drilldown: "Mataram",
+          },
+          {
+            name: "Kudus",
+            y: 1.92,
+            drilldown: "Kudus",
+          },
+          {
+            name: "Denpasar",
+            y: 7.62,
+            drilldown: "Denpasar",
+          },
+		  {
+            name: "Rawamangun",
+            y: 7.62,
+            drilldown: "Rawamangun",
+          },
+		  {
+            name: "Purwokerto",
+            y: 7.62,
+            drilldown: "Purwokerto",
+          },
+		  {
+            name: "Bandung",
+            y: 7.62,
+            drilldown: "Bandung",
+          },
+		  {
+            name: "Medan",
+            y: 7.62,
+            drilldown: "Medan",
+          },
+        ],
+      },
+    ],
+  });
+
+
+Highcharts.chart("outstandingEJNoDifference", {
+    chart: {
+      type: "bar",
+      styledMode: true,
+    },
+    credits: {
+      enabled: false,
+    },
+    title: {
+      text: null,
+    },
+    subtitle: {
+      text: null,
+    },
+    xAxis: {
+      categories: ["BCA", "CIMB", ],
+      title: {
+        text: null,
+      },
+    },
+    yAxis: {
+      min: 0,
+      title: {
+        text: "EJ Pending",
+        align: "high",
+      },
+      labels: {
+        overflow: "justify",
+      },
+    },
+    tooltip: {
+      valueSuffix: " EJ Pending",
+    },
+    plotOptions: {
+      series: {
+        stacking: "normal",
+        dataLabels: {
+          enabled: true,
+          format: "{point.y:.2f}% ({point.ejpending} EJ Pending)", // Menampilkan persentase dan jumlah mesin
+          style: {
+            color: "white", // Mengatur warna data label menjadi putih
+          },
+        },
+      },
+    },
+    legend: {
+      layout: "vertical",
+      align: "right",
+      verticalAlign: "top",
+      x: -40,
+      y: 80,
+      floating: true,
+      borderWidth: 1,
+      backgroundColor:
+        Highcharts.defaultOptions.legend.backgroundColor || "#FFFFFF",
+      shadow: true,
+    },
+    credits: {
+      enabled: false,
+    },
+    series: [
+      {
+        name: "EJ Pending",
+        data: [
+          { y: 5.57, ejpending: 52 },
+          { y: 4.5, ejpending: 45 },
+        ],
+      },
+    ],
+  });
+
+  Highcharts.chart("outstandingDifference", {
+    chart: {
+      type: "bar",
+      styledMode: true,
+    },
+    credits: {
+      enabled: false,
+    },
+    title: {
+      text: null,
+    },
+    subtitle: {
+      text: null,
+    },
+    xAxis: {
+      categories: ["BCA", "CIMB", "MANDIRI", "BNI", "BRI", "PERMATA"],
+      title: {
+        text: null,
+      },
+    },
+    yAxis: {
+      min: 0,
+      title: {
+        text: "EJ Pending",
+        align: "high",
+      },
+      labels: {
+        overflow: "justify",
+      },
+    },
+    tooltip: {
+      valueSuffix: " EJ Pending",
+    },
+    plotOptions: {
+      series: {
+        stacking: "normal",
+        dataLabels: {
+          enabled: true,
+          format: "{point.y:.2f}% ({point.ejpending} EJ Pending)", // Menampilkan persentase dan jumlah mesin
+          style: {
+            color: "white", // Mengatur warna data label menjadi putih
+          },
+        },
+      },
+    },
+    legend: {
+      layout: "vertical",
+      align: "right",
+      verticalAlign: "top",
+      x: -40,
+      y: 80,
+      floating: true,
+      borderWidth: 1,
+      backgroundColor:
+        Highcharts.defaultOptions.legend.backgroundColor || "#FFFFFF",
+      shadow: true,
+    },
+    credits: {
+      enabled: false,
+    },
+    series: [
+      {
+        name: "EJ Pending",
+        data: [
+          { y: 5.57, ejpending: 52 },
+          { y: 4.5, ejpending: 45 },
+          { y: 55, ejpending: 100 },
+          { y: 70, ejpending: 100 },
+          { y: 83, ejpending: 100 },
+          { y: 83, ejpending: 100 },
+        ],
+      },
+    ],
+  });
+
+  Highcharts.chart("differenceMoreRegional", {
+  chart: {
+    type: "bar",
+    styledMode: true,
+  },
+  credits: {
+    enabled: false,
+  },
+  title: {
+    text: null,
+  },
+  subtitle: {
+    text: null,
+  },
+  xAxis: {
+    categories: ["Medan", "Singkawang", "Bandung"],
+    title: {
+      text: null,
+    },
+  },
+  yAxis: {
+    min: 0,
+    title: {
+      text: "Selisih Lebih",
+      align: "high",
+    },
+    labels: {
+      overflow: "justify",
+      formatter: function () {
+        return new Intl.NumberFormat("id-ID", {
+          style: "currency",
+          currency: "IDR",
+        }).format(this.value);
+      },
+    },
+  },
+  tooltip: {
+    valuePrefix: "Rp ",
+    valueSuffix: " lebih",
+    formatter: function () {
+      return '<span style="color:' + this.series.color + '">\u25CF</span> ' + this.series.name + ': <b>Rp ' + new Intl.NumberFormat("id-ID").format(this.y) + ' lebih</b><br/>';
+    },
+  },
+  plotOptions: {
+    bar: {
+      dataLabels: {
+        enabled: true,
+        formatter: function () {
+          return 'Rp ' + new Intl.NumberFormat("id-ID").format(this.y);
+        }
+      },
+    },
+  },
+  legend: {
+    layout: "vertical",
+    align: "right",
+    verticalAlign: "top",
+    x: -40,
+    y: 80,
+    floating: true,
+    borderWidth: 1,
+    backgroundColor:
+      Highcharts.defaultOptions.legend.backgroundColor || "#FFFFFF",
+    shadow: true,
+  },
+  series: [
+    {
+      name: "PMT",
+      data: [75000, 24000],
+    },
+    {
+      name: "CIMB",
+      data: [100000, 215000, 87000],
+    },
+    {
+      name: "DNM",
+      data: [43000],
+    },
+    {
+      name: "BCA",
+      data: [24000, 10000, 12000],
+    },
+  ],
+});
+
+Highcharts.chart("selisihKebutuhanRun", {
+    chart: {
+      type: "column",
+      styledMode: true,
+    },
+    title: {
+      text: null,
+    },
+	yAxis: {
+		title: {
+			text: "Selisih"
+		}
+	},
+    xAxis: {
+      categories: ["24-01-2024", "25-01-2024", "26-01-2024", "27-01-2024", "28-01-2024"],
+    },
+    credits: {
+      enabled: false,
+    },
+    series: [
+      {
+        name: "Selisih",
+        data: [5, 3, -1, 7, -3],
+      },
+    ],
+  });
+
+});
+
+	</script>
+	<!-- END HIGHCHART -->
+
+
+	<script>
+		function toggleBtn(evt, menuName) {
+		// Declare all variables
+		var i, tabcontent, tablinks;
+
+		// Get all elements with class="tabcontent" and hide them
+		tabcontent = document.getElementsByClassName("national-summary");
+		for (i = 0; i < tabcontent.length; i++) {
+			tabcontent[i].style.transform = "scaleY(0.2)";
+			tabcontent[i].style.display = "none";
+		}
+
+		// Get all elements with class="tablinks" and remove the class "active"
+		tablinks = document.getElementsByClassName("tablinks");
+		for (i = 0; i < tablinks.length; i++) {
+			tablinks[i].className = tablinks[i].className.replace(" selected", "");
+		}
+
+		// Show the current tab, and add an "active" class to the button that opened the tab
+		document.getElementById(menuName).style.display = "block";
+		evt.currentTarget.className += " selected";
+		setTimeout(() => {
+			document.getElementById(menuName).style.transform = "scaleY(1)";
+		}, 50);
+		}
+
+		window.onload = (event) => {
+		document.getElementById("profile").style.display = "block";
+		document.getElementById("profile").style.transform = "scaleY(1)";
+		};
+
+	</script>
+
+	<script>
+		function filterBtn(evt, menuName) {
+		// Declare all variables
+		var i, tabovertime, tabindex;
+
+		// Get all elements with class="tabovertime" and hide them
+		tabovertime = document.getElementsByClassName("index-overtime");
+		for (i = 0; i < tabovertime.length; i++) {
+			tabovertime[i].style.transform = "scaleY(0.2)";
+			tabovertime[i].style.display = "none";
+		}
+
+		// Get all elements with class="tabindex" and remove the class "active"
+		tabindex = document.getElementsByClassName("btn-index-overtime");
+		for (i = 0; i < tabindex.length; i++) {
+			tabindex[i].className = tabindex[i].className.replace(" active", "");
+		}
+
+		// Show the current tab, and add an "active" class to the button that opened the tab
+		document.getElementById(menuName).style.display = "block";
+		evt.currentTarget.className += " active";
+		setTimeout(() => {
+			document.getElementById(menuName).style.transform = "scaleY(1)";
+		}, 50);
+		}
+
+		window.onload = (event) => {
+		document.getElementById("indexBottom").style.display = "block";
+		document.getElementById("indexBottom").style.transform = "scaleY(1)";
+		};
+	</script>
+
+	<script>
+
+		$(document).ready(function () {
+			var table = $('#tableRatioFlmEmployees').DataTable({
+				dom: '<"row top"<"col-lg-4 col-md-4 col-sm-12 mb-2"B><"col-lg-4 col-md-4 col-sm-12 mb-2"l><"col-lg-4 col-md-4 col-sm-12 mb-2"f>>rtip',
+				buttons: ['csv', 'excel', 'pdf', 'print']
+			});
+
+			table.buttons().container()
+				.appendTo('#tableUser_wrapper .col-md-6:eq(0)');
+		});
+
+		$(document).ready(function () {
+			var table = $('#tableRatioFlmEmployeesAtm').DataTable({
+				dom: '<"row top"<"col-lg-4 col-md-4 col-sm-12 mb-2"B><"col-lg-4 col-md-4 col-sm-12 mb-2"l><"col-lg-4 col-md-4 col-sm-12 mb-2"f>>rtip',
+				buttons: ['csv', 'excel', 'pdf', 'print']
+			});
+
+			table.buttons().container()
+				.appendTo('#tableUser_wrapper .col-md-6:eq(0)');
+		});
+		
+	</script>
+
+	<!--app JS-->
+	<script src="assets/js/app.js"></script>
+</body>
+
+</html>
