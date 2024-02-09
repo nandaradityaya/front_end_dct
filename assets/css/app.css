@@ -3325,3 +3325,8 @@ input::placeholder {
 .bg-purple {
   background-color: #884dff;
 }
+
+.btn-ratio-cpc.selected {
+  background-color: #0095ff;
+  color: #ffffff;
+}

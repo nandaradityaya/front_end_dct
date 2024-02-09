@@ -1115,4 +1115,91 @@ $(function () {
     options
   );
   chart.render();
+
+  var options = {
+    series: [
+      {
+        name: "Visitor",
+        // data: [4, 3, 10, 9, 29, 19, 22, 9, 12, 7, 19, 5],
+        data: [890, 689, 931, 821, 771, 901, 762, 816, 972, 879, 1021, 981],
+      },
+    ],
+    chart: {
+      foreColor: "#9a9797",
+      type: "area",
+      height: 380,
+      zoom: {
+        enabled: false,
+      },
+      toolbar: {
+        show: false,
+      },
+      dropShadow: {
+        enabled: false,
+        top: 3,
+        left: 14,
+        blur: 4,
+        opacity: 0.1,
+      },
+    },
+    stroke: {
+      width: 4,
+      curve: "smooth",
+    },
+    xaxis: {
+      categories: [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec",
+      ],
+    },
+    dataLabels: {
+      enabled: false,
+    },
+    fill: {
+      type: "gradient",
+      gradient: {
+        shade: "light",
+        gradientToColors: ["#0095ff"],
+        shadeIntensity: 1,
+        type: "vertical",
+        opacityFrom: 0.8,
+        opacityTo: 0.3,
+        //stops: [0, 100, 100, 100]
+      },
+    },
+    colors: ["#0095ff"],
+    yaxis: {
+      labels: {
+        formatter: function (value) {
+          return value;
+        },
+      },
+    },
+    markers: {
+      size: 4,
+      colors: ["#0095ff"],
+      strokeColors: "#fff",
+      strokeWidth: 2,
+      hover: {
+        size: 7,
+      },
+    },
+    grid: {
+      show: true,
+      borderColor: "#ededed",
+      strokeDashArray: 4,
+    },
+  };
+  var chart = new ApexCharts(document.querySelector("#chartMonth"), options);
+  chart.render();
 });
