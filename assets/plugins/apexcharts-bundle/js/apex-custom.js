@@ -964,4 +964,155 @@ $(function () {
     options
   );
   chart.render();
+
+  // NEW
+
+  var options = {
+    chart: {
+      height: 300,
+      type: "radialBar",
+      toolbar: {
+        show: false,
+      },
+    },
+    plotOptions: {
+      radialBar: {
+        //startAngle: -135,
+        //endAngle: 225,
+        hollow: {
+          margin: 0,
+          size: "78%",
+          //background: '#fff',
+          image: undefined,
+          imageOffsetX: 0,
+          imageOffsetY: 0,
+          position: "front",
+          dropShadow: {
+            enabled: false,
+            top: 3,
+            left: 0,
+            blur: 4,
+            color: "rgba(7, 39, 215, 0.25)",
+            opacity: 0.65,
+          },
+        },
+        track: {
+          background: "#f0e6ff",
+          //strokeWidth: '67%',
+          margin: 0, // margin is in pixels
+          dropShadow: {
+            enabled: false,
+            top: -3,
+            left: 0,
+            blur: 4,
+            color: "rgba(7, 39, 215, 0.85)",
+            opacity: 0.65,
+          },
+        },
+        dataLabels: {
+          showOn: "always",
+          name: {
+            offsetY: -25,
+            show: true,
+            color: "#6c757d",
+            fontSize: "16px",
+          },
+          value: {
+            formatter: function (val) {
+              return val + "%";
+            },
+            color: "#000",
+            fontSize: "32px",
+            show: true,
+            offsetY: 10,
+          },
+        },
+      },
+    },
+    fill: {
+      type: "gradient",
+      gradient: {
+        shade: "light",
+        type: "horizontal",
+        shadeIntensity: 0.5,
+        gradientToColors: ["#0095FF"],
+        inverseColors: false,
+        opacityFrom: 1,
+        opacityTo: 1,
+        stops: [0, 100],
+      },
+    },
+    colors: ["#0095FF"],
+    series: [66.34],
+    stroke: {
+      lineCap: "round",
+      //dashArray: 4
+    },
+    labels: ["Reached"],
+  };
+  var chart = new ApexCharts(
+    document.querySelector("#SLAAchievement"),
+    options
+  );
+  chart.render();
+
+  var options = {
+    series: [
+      {
+        name: "Reached",
+        data: [2052, 1788, 214, 310, 387, 322, 322],
+      },
+      {
+        name: "Not Reached",
+        data: [462, 958, 1047, 614, 212, 189, 237],
+      },
+    ],
+    chart: {
+      foreColor: "#9ba7b2",
+      type: "bar",
+      height: 360,
+    },
+    plotOptions: {
+      bar: {
+        horizontal: false,
+        columnWidth: "55%",
+        endingShape: "rounded",
+      },
+    },
+    dataLabels: {
+      enabled: false,
+    },
+    stroke: {
+      show: true,
+      width: 2,
+      colors: ["transparent"],
+    },
+    // title: {
+    //   text: "C",
+    //   align: "left",
+    //   style: {
+    //     fontSize: "14px",
+    //   },
+    // },
+    colors: ["#00E096", "#FFCF00"],
+    xaxis: {
+      categories: ["ATMI", "BCA", "BNI", "BRI", "Maybank", "CIMB", "PMT"],
+    },
+
+    fill: {
+      opacity: 1,
+    },
+    tooltip: {
+      // y: {
+      //   formatter: function (val) {
+      //     return "$ " + val + " thousands";
+      //   },
+      // },
+    },
+  };
+  var chart = new ApexCharts(
+    document.querySelector("#acvhievmentOfSLABank"),
+    options
+  );
+  chart.render();
 });

@@ -482,16 +482,16 @@
 				<!--end breadcrumb-->
 
 				<div class="d-flex mb-4">
-					<button type="button" class="btn btn-white radius-4 me-3 tablinks selected" onclick="toggleBtn(event, 'sigma')">Sigma</button>
-					<button type="button" class="btn btn-white radius-4 me-3 tablinks" onclick="toggleBtn(event, 'cpc')">CPC</button>
-					<button type="button" class="btn btn-white radius-4 me-3 tablinks" onclick="toggleBtn(event, 'cdc')">CDC</button>
-					<button type="button" class="btn btn-white radius-4 me-3 tablinks" onclick="toggleBtn(event, 'flm')">FLM</button>
-					<button type="button" class="btn btn-white radius-4 me-3 tablinks" onclick="toggleBtn(event, 'overtime')">Overtime</button>
-					<button type="button" class="btn btn-white radius-4 me-3 tablinks" onclick="toggleBtn(event, 'ejPending')">EJ Pending</button>
+					<button type="button" class="btn btn-white radius-8 me-3 tablinks selected" onclick="toggleBtn(event, 'sigma')">Sigma</button>
+					<button type="button" class="btn btn-white radius-8 me-3 tablinks" onclick="toggleBtn(event, 'cpc')">CPC</button>
+					<button type="button" class="btn btn-white radius-8 me-3 tablinks" onclick="toggleBtn(event, 'cdc')">CDC</button>
+					<button type="button" class="btn btn-white radius-8 me-3 tablinks" onclick="toggleBtn(event, 'flm')">FLM</button>
+					<button type="button" class="btn btn-white radius-8 me-3 tablinks" onclick="toggleBtn(event, 'overtime')">Overtime</button>
+					<button type="button" class="btn btn-white radius-8 me-3 tablinks" onclick="toggleBtn(event, 'ejPending')">EJ Pending</button>
 				</div>
 
 				<div class="national-summary" id="sigma">
-					<div class="card">
+					<div class="card radius-15">
 						<div class="card-body">
 							<div class="row mb-2">
 								<div class="col-12 col-lg-3 filter-awal"><label for="filerDateAwal" class="form-label">Start Date
@@ -529,10 +529,10 @@
 							</div>
 		
 							<div class="d-flex justify-content-end mb-4">
-								<button type="button" class="btn btn-primary radius-4 me-3">Apply</button>
+								<button type="button" class="btn btn-primary radius-8 me-2">Apply</button>
 								<div class="btn-group">
-									<button type="button" class="btn btn-outline-primary">Report</button>
-									<button type="button" class="btn btn-outline-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">	<span class="visually-hidden">Toggle Dropdown</span>
+									<button type="button" class="btn btn-outline-primary radius-8">Report</button>
+									<button type="button" class="btn btn-outline-primary radius-8 dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">	<span class="visually-hidden">Toggle Dropdown</span>
 									</button>
 									<ul class="dropdown-menu" >
 										<li><a class="dropdown-item" href="#">3 Month Analysis Report</a>
@@ -544,226 +544,259 @@
 							</div>
 						</div>
 					</div>
-	
-					<div class="card">
-						<div class="card-body">
-							<h5 class="text-black mb-4">Top 8 Bank</h5>
-							<div class="row">
-								<div class="col-12 col-lg-3">
-									<div class="card radius-10">
-										<div class="card-body">
-											<div class="d-flex align-items-center">
-												<div class="flex-grow-1">
-													<p class="mb-0">ADV</p>
-													<h4 class="font-weight-bold">278 <small class="text-success font-13">(+40)</small></h4>
-													<p class="text-success mb-0 font-13">Analytics for last week</p>
-												</div>
-												<div class="widgets-icons bg-gradient-cosmic text-white"><i class="bx bx-money"></i>
+
+					<div class="row">
+						<div class="col-12 col-lg-7">
+							<div class="card radius-15">
+								<div class="card-body">
+									<h5 class="text-black">Top Bank</h5>
+									<p class="mb-5">Bank Machine Ranking Summary</p>
+									<div class="row mb-3">
+										<div class="col-12 col-lg-3">
+											<div class="card radius-15">
+												<div class="card-body">
+													<div class="widgets-icons text-white mb-3"><img src="assets/images/gallery/adv-logo.png" alt="adv-logo" width="28"></div>
+													<p class="mb-2">ADV</p>
+													<h4 class="font-weight-bold mb-2">10.529</h4>
+													<p class="text-success mb-0 font-12">+40 from last week</p>
 												</div>
 											</div>
 										</div>
+										<div class="col-12 col-lg-3">
+											<div class="card radius-15">
+												<div class="card-body">
+													<div class="widgets-icons text-white mb-3"><img src="assets/images/gallery/bca-logo.png" alt="bca-logo" width="28"></div>
+													<p class="mb-2">BCA</p>
+													<h4 class="font-weight-bold mb-2">2.746</h4>
+													<p class="text-secondary mb-0 font-12">0 from last week</p>
+												</div>
+											</div>
+										</div>
+										<div class="col-12 col-lg-3">
+											<div class="card radius-15">
+												<div class="card-body">
+													<div class="widgets-icons text-white mb-3"><img src="assets/images/gallery/bni-logo.png" alt="bni-logo" width="28"></div>
+													<p class="mb-2">BNI</p>
+													<h4 class="font-weight-bold mb-2">1.130</h4>
+													<p class="text-secondary mb-0 font-12">0 from last week</p>
+												</div>
+											</div>
+										</div>
+										<div class="col-12 col-lg-3">
+											<div class="card radius-15">
+												<div class="card-body">
+													<div class="widgets-icons text-white mb-3"><img src="assets/images/gallery/bri-logo.png" alt="bri-logo" width="28"></div>
+													<p class="mb-2">BRI</p>
+													<h4 class="font-weight-bold mb-2">924</h4>
+													<p class="text-secondary mb-0 font-12">0 from last week</p>
+												</div>
+											</div>
+										</div>
+										<!-- <div class="col-12 col-lg-6">
+											<div class="card radius-15">
+												<div class="card-body">
+													<div class="d-flex align-items-center">
+														<div class="flex-grow-1">
+															<p class="mb-0">ADV</p>
+															<h4 class="font-weight-bold">10.529 <small class="text-success font-13">(+40)</small></h4>
+															<p class="text-success mb-0 font-13">Analytics for last week</p>
+														</div>
+														<div class="widgets-icons text-white"><img src="assets/images/gallery/adv-logo.png" alt="adv-logo" width="28">
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-12 col-lg-6">
+											<div class="card radius-15">
+												<div class="card-body">
+													<div class="d-flex align-items-center">
+														<div class="flex-grow-1">
+															<p class="mb-0">BCA</p>
+															<h4 class="font-weight-bold">2.746</h4>
+															<p class="text-secondary mb-0 font-13">Analytics for last week</p>
+														</div>
+														<div class="widgets-icons text-white"><img src="assets/images/gallery/bca-logo.png" alt="bca-logo" width="28">
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-12 col-lg-6">
+											<div class="card radius-15">
+												<div class="card-body">
+													<div class="d-flex align-items-center">
+														<div class="flex-grow-1">
+															<p class="mb-0">BNI</p>
+															<h4 class="font-weight-bold">1.130</h4>
+															<p class="text-secondary mb-0 font-13">Analytics for last week</p>
+														</div>
+														<div class="widgets-icons text-white"><img src="assets/images/gallery/bni-logo.png" alt="bni-logo" width="28">
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-12 col-lg-6">
+											<div class="card radius-15">
+												<div class="card-body">
+													<div class="d-flex align-items-center">
+														<div class="flex-grow-1">
+															<p class="mb-0">BRI</p>
+															<h4 class="font-weight-bold">924</h4>
+															<p class="text-secondary mb-0 font-13">Analytics for last week</p>
+														</div>
+														<div class="widgets-icons text-white"><img src="assets/images/gallery/bri-logo.png" alt="bri-logo" width="28">
+														</div>
+													</div>
+												</div>
+											</div>
+										</div> -->
 									</div>
 								</div>
-								<div class="col-12 col-lg-3">
-									<div class="card radius-10">
-										<div class="card-body">
-											<div class="d-flex align-items-center">
-												<div class="flex-grow-1">
-													<p class="mb-0">ATMI</p>
-													<h4 class="font-weight-bold">278</h4>
-													<p class="mb-0 font-13">Analytics for last week</p>
-												</div>
-												<div class="widgets-icons bg-gradient-burning text-white"><i class="bx bx-money"></i>
-												</div>
-											</div>
+							</div>
+						</div>
+						<div class="col-12 col-lg-5">
+							<div class="card radius-15" style="height: 348px">
+								<div class="card-body">
+									<div class="d-flex align-items-center">
+										<h5 class="mb-0 text-black">SLA Achievement</h5>
+										<div class="ms-auto">
+											<h6 class="mb-0">6.985</h6>
+											<p class="mb-0">/10.529 target</p>
 										</div>
 									</div>
-								</div>
-								<div class="col-12 col-lg-3">
-									<div class="card radius-10">
-										<div class="card-body">
-											<div class="d-flex align-items-center">
-												<div class="flex-grow-1">
-													<p class="mb-0">BCA</p>
-													<h4 class="font-weight-bold">227</h4>
-													<p class="mb-0 font-13">Analytics for last week</p>
-												</div>
-												<div class="widgets-icons bg-gradient-lush text-white"><i class="bx bx-money"></i>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="col-12 col-lg-3">
-									<div class="card radius-10">
-										<div class="card-body">
-											<div class="d-flex align-items-center">
-												<div class="flex-grow-1">
-													<p class="mb-0">BNI</p>
-													<h4 class="font-weight-bold">198</h4>
-													<p class="mb-0 font-13">Analytics for last week</p>
-												</div>
-												<div class="widgets-icons bg-gradient-kyoto text-white"><i class="bx bx-money"></i>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="col-12 col-lg-3">
-									<div class="card radius-10">
-										<div class="card-body">
-											<div class="d-flex align-items-center">
-												<div class="flex-grow-1">
-													<p class="mb-0">BRI</p>
-													<h4 class="font-weight-bold">187</h4>
-													<p class="mb-0 font-13">Analytics for last week</p>
-												</div>
-												<div class="widgets-icons bg-gradient-blues text-white"><i class="bx bx-money"></i>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="col-12 col-lg-3">
-									<div class="card radius-10">
-										<div class="card-body">
-											<div class="d-flex align-items-center">
-												<div class="flex-grow-1">
-													<p class="mb-0">BII</p>
-													<h4 class="font-weight-bold">176</h4>
-													<p class="mb-0 font-13">Analytics for last week</p>
-												</div>
-												<div class="widgets-icons bg-gradient-moonlit text-white"><i class="bx bx-money"></i>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="col-12 col-lg-3">
-									<div class="card radius-10">
-										<div class="card-body">
-											<div class="d-flex align-items-center">
-												<div class="flex-grow-1">
-													<p class="mb-0">PMT</p>
-													<h4 class="font-weight-bold">143 <small class="text-success font-13">(+40)</small></h4>
-													<p class="text-success mb-0 font-13">Analytics for last week</p>
-												</div>
-												<div class="widgets-icons bg-gradient-custom-1 text-white"><i class="bx bx-money"></i>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="col-12 col-lg-3">
-									<div class="card radius-10">
-										<div class="card-body">
-											<div class="d-flex align-items-center">
-												<div class="flex-grow-1">
-													<p class="mb-0">CIMB</p>
-													<h4 class="font-weight-bold">127</h4>
-													<p class="mb-0 font-13">Analytics for last week</p>
-												</div>
-												<div class="widgets-icons bg-gradient-custom-2 text-white"><i class="bx bx-money"></i>
-												</div>
-											</div>
-										</div>
-									</div>
+									<div id="SLAAchievement"></div>
 								</div>
 							</div>
 						</div>
 					</div>
-	
+
 					<div class="row">
-						<div class="col-12 col-lg-5 d-flex">
-							<div class="card w-100">
+						<div class="col-12 col-lg-6 d-flex">
+							<div class="card radius-15 w-100">
 								<div class="card-body">
-									<h5 class="text-black text-center mb-4">Pencapaian SLA</h5>
-									<div id="pencapaianSLA"></div>
+									<h5 class="text-black">Achievment SLA Bank</h5>
+									<div class="mb-1">
+										<select class="multiple-select" data-placeholder="Choose anything" multiple="multiple">
+											<option value="atmi" selected>ATMI</option>
+											<option value="bca" selected>BCA</option>
+											<option value="bni" selected>BNI</option>
+											<option value="bri" selected>BRI</option>
+											<option value="maybang" selected>Maybank</option>
+											<option value="pmt" selected>PMT</option>
+											<option value="cimb" selected>CIMB</option>
+											<option value="mandiri">Mandiri</option>
+											<option value="permata">Permata</option>
+										</select>
+									</div>
+									<div id="acvhievmentOfSLABank"></div>
 								</div>
 							</div>
 						</div>
-						<div class="col-12 col-lg-7 d-flex">
-							<div class="card w-100">
+						<div class="col-12 col-lg-6 d-flex">
+							<div class="card radius-15 w-100">
 								<div class="card-body">
-									<h5 class="text-black text-center mb-4">Sigma</h5>
+									<h5 class="text-black">Weakest Branches</h5>
+									<p class="mb-3">SLA Not Achieved</p>
+										<!-- <div class="row align-items-center">
+											<div class="col-1">
+												<h5 class="mb-0">1</h5>
+											</div>
+											<div class="col-9">
+												<h6 class="mb-2">Kediri</h6>
+												<div class="progress" style="height:7px;">
+													<div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+												</div>
+											</div>
+											<div class="col-2">
+												<h6 class="mb-0">35.97%</h6>
+											</div>
+										</div> -->
 									<table class="table table-borderless mb-0">
 										<thead>
 											<tr>
-												<th scope="col">Rate Sigma</th>
-												<th scope="col">Last</th>
-												<th scope="col">Handle</th>
+												<td class="text-secondary" scope="col">#</td>
+												<td class="text-secondary" scope="col">Branch</td>
+												<td class="text-secondary" scope="col" style="width:60%">Not Reached</td>
+												<td class="text-secondary" scope="col"></td>
 											</tr>
 										</thead>
 										<tbody>
-											<tr>
-												<td>6 (99,9997 - 100)</td>
-												<td class="d-flex align-items-center">
-													2 (74,84%)
-													<div class="progress ms-1" style="width: 16px; height: 8px;">
-														<div class="progress-bar bg-warning" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-													</div>
-													<div class="progress ms-1" style="width: 16px; height: 8px;">
-														<div class="progress-bar bg-warning" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-													</div>
-													<div class="progress ms-1" style="width: 16px; height: 8px;">
-														<div class="progress-bar bg-warning" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+											<tr style="height: 70px;">
+												<td>01</td>
+												<td>Kediri</td>
+												<td>
+													<div class="progress" style="height:8px; margin-top: 5px;">
+														<div class="progress-bar bg-red" role="progressbar" style="width: 64%" aria-valuenow="64" aria-valuemin="0" aria-valuemax="100"></div>
 													</div>
 												</td>
-												<td>3,5 (>= 95,00%)</td>
+												<td>
+													<span class="badge-progress-red">
+														64%
+													</span>
+												</td>
 											</tr>
-											<tr>
-												<td>5 (99,977 - 99,9996)</td>
+											<tr style="height: 70px;">
+												<td>02</td>
+												<td>Bengkulu</td>
+												<td>
+													<div class="progress" style="height:8px; margin-top: 5px;">
+														<div class="progress-bar bg-orange" role="progressbar" style="width: 57%" aria-valuenow="57" aria-valuemin="0" aria-valuemax="100"></div>
+													</div>
+												</td>
+												<td>
+													<span class="badge-progress-orange">
+														57%
+													</span>
+												</td>
 											</tr>
-											<tr>
-												<td>4 (99,40 - 99,976)</td>
+											<tr style="height: 70px;">
+												<td>03</td>
+												<td>Jambi</td>
+												<td>
+													<div class="progress" style="height:8px; margin-top: 5px;">
+														<div class="progress-bar bg-purple" role="progressbar" style="width: 54%" aria-valuenow="54" aria-valuemin="0" aria-valuemax="100"></div>
+													</div>
+												</td>
+												<td>
+													<span class="badge-progress-purple">
+														54%
+													</span>
+												</td>
 											</tr>
-											<tr>
-												<td>3 (93 - 99,39)</td>
+											<tr style="height: 70px;">
+												<td>04</td>
+												<td>Pontianak</td>
+												<td>
+													<div class="progress" style="height:8px; margin-top: 5px;">
+														<div class="progress-bar bg-blue" role="progressbar" style="width: 49%" aria-valuenow="49" aria-valuemin="0" aria-valuemax="100"></div>
+													</div>
+												</td>
+												<td>
+													<span class="badge-progress-blue">
+														49%
+													</span>
+												</td>
 											</tr>
-											<tr>
-												<td>2 (69 - 92,99)</td>
-											</tr>
-											<tr>
-												<td>1 (31 - 68,99)</td>
+											<tr style="height: 70px;">
+												<td>05</td>
+												<td>Singkawang</td>
+												<td>
+													<div class="progress" style="height:8px; margin-top: 5px;">
+														<div class="progress-bar bg-green" role="progressbar" style="width: 45%" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
+													</div>
+												</td>
+												<td>
+													<span class="badge-progress-green">
+														45%
+													</span>
+												</td>
 											</tr>
 										</tbody>
 									</table>
 								</div>
 							</div>
-						</div>
-					</div>
-					<div class="card">
-						<div class="card-body">
-							<div class="mb-3">
-								<label class="form-label">Select Bank (Max 7)</label>
-								<select class="multiple-select" data-placeholder="Choose anything" multiple="multiple">
-									<option value="atmi" selected>ATMI</option>
-									<option value="bca" selected>BCA</option>
-									<option value="bni" selected>BNI</option>
-									<option value="bri" selected>BRI</option>
-									<option value="bii" selected>BII</option>
-									<option value="pmt" selected>PMT</option>
-									<option value="cimb" selected>CIMB</option>
-									<option value="mandiri">Mandiri</option>
-									<option value="permata">Permata</option>
-								</select>
-							</div>
-							<h5 class="text-black text-center mb-2">Achievement of SLA (Bank)</h5>
-							<div id="chartPencapaian"></div>
-						</div>
-					</div>
-					
-					<div class="card">
-						<div class="card-body">
-							<h5 class="text-black text-center mb-2">Bottom 5 Branch Rankings</h5>
-							<div id="chartBottomFive"></div>
-						</div>
-					</div>
-
-					<div class="card">
-						<div class="card-body">
-							<h5 class="text-black text-center mb-2">Annual Sigma Recap</h5>
-							<div id="#">chart ?</div>
 						</div>
 					</div>
 				</div>
@@ -813,15 +846,15 @@
 								</div>
 								<div class="col-12 col-lg-1 button-filter">
 									<label for="" class="form-label">Action</label> <br>
-									<button type="button" class="btn btn-primary radius-4">Apply</button>
+									<button type="button" class="btn btn-primary radius-8">Apply</button>
 								</div>
 							</div>
 							<div class="d-flex justify-content-end">
-								<button class="btn btn-outline-primary detail-cpc me-3">
+								<button class="btn btn-outline-primary detail-cpc radius-8 me-2">
 									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye text-primary me-1"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
 									Detail CPC
 								</button>
-								<button class="btn btn-outline-warning detail-cpc">
+								<button class="btn btn-outline-warning detail-cpc radius-8">
 									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-alert-circle text-warning me-1"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
 									Guideline
 								</button>
@@ -833,7 +866,7 @@
 						<div class="card-body">
 							<div class="row">
 								<div class="col-12 col-lg-3">
-									<div class="card radius-10 overflow-hidden bg-gradient-cosmic">
+									<div class="card radius-15 overflow-hidden bg-gradient-cosmic">
 										<div class="card-body">
 											<div class="d-flex align-items-center">
 												<div>
@@ -847,7 +880,7 @@
 									</div>
 								</div>
 								<div class="col-12 col-lg-3">
-									<div class="card radius-10 overflow-hidden bg-gradient-burning">
+									<div class="card radius-15 overflow-hidden bg-gradient-burning">
 										<div class="card-body">
 											<div class="d-flex align-items-center">
 												<div>
@@ -861,7 +894,7 @@
 									</div>
 								</div>
 								<div class="col-12 col-lg-3">
-									<div class="card radius-10 overflow-hidden bg-gradient-lush">
+									<div class="card radius-15 overflow-hidden bg-gradient-lush">
 										<div class="card-body">
 											<div class="d-flex align-items-center">
 												<div>
@@ -875,7 +908,7 @@
 									</div>
 								</div>
 								<div class="col-12 col-lg-3">
-									<div class="card radius-10 overflow-hidden bg-gradient-kyoto">
+									<div class="card radius-15 overflow-hidden bg-gradient-kyoto">
 										<div class="card-body">
 											<div class="d-flex align-items-center">
 												<div>
@@ -889,7 +922,7 @@
 									</div>
 								</div>
 								<div class="col-12 col-lg-3">
-									<div class="card radius-10 overflow-hidden bg-gradient-blues">
+									<div class="card radius-15 overflow-hidden bg-gradient-blues">
 										<div class="card-body">
 											<div class="d-flex align-items-center">
 												<div>
@@ -903,7 +936,7 @@
 									</div>
 								</div>
 								<div class="col-12 col-lg-3">
-									<div class="card radius-10 overflow-hidden bg-gradient-moonlit">
+									<div class="card radius-15 overflow-hidden bg-gradient-moonlit">
 										<div class="card-body">
 											<div class="d-flex align-items-center">
 												<div>
@@ -917,7 +950,7 @@
 									</div>
 								</div>
 								<div class="col-12 col-lg-3">
-									<div class="card radius-10 overflow-hidden bg-gradient-custom-1">
+									<div class="card radius-15 overflow-hidden bg-gradient-custom-1">
 										<div class="card-body">
 											<div class="d-flex align-items-center">
 												<div>
@@ -931,7 +964,7 @@
 									</div>
 								</div>
 								<div class="col-12 col-lg-3">
-									<div class="card radius-10 overflow-hidden bg-gradient-custom-2">
+									<div class="card radius-15 overflow-hidden bg-gradient-custom-2">
 										<div class="card-body">
 											<div class="d-flex align-items-center">
 												<div>
@@ -945,7 +978,7 @@
 									</div>
 								</div>
 								<div class="col-12 col-lg-3">
-									<div class="card radius-10 overflow-hidden bg-gradient-custom-3">
+									<div class="card radius-15 overflow-hidden bg-gradient-custom-3">
 										<div class="card-body">
 											<div class="d-flex align-items-center">
 												<div>
@@ -959,7 +992,7 @@
 									</div>
 								</div>
 								<div class="col-12 col-lg-3">
-									<div class="card radius-10 overflow-hidden bg-gradient-custom-4">
+									<div class="card radius-15 overflow-hidden bg-gradient-custom-4">
 										<div class="card-body">
 											<div class="d-flex align-items-center">
 												<div>
@@ -1056,7 +1089,7 @@
 						<div class="card-body">
 							<div class="row">
 								<div class="col-12 col-lg-3">
-									<div class="card radius-10 overflow-hidden bg-gradient-cosmic">
+									<div class="card radius-15 overflow-hidden bg-gradient-cosmic">
 										<div class="card-body">
 											<div class="d-flex align-items-center">
 												<div>
@@ -1070,7 +1103,7 @@
 									</div>
 								</div>
 								<div class="col-12 col-lg-3">
-									<div class="card radius-10 overflow-hidden bg-gradient-burning">
+									<div class="card radius-15 overflow-hidden bg-gradient-burning">
 										<div class="card-body">
 											<div class="d-flex align-items-center">
 												<div>
@@ -1084,7 +1117,7 @@
 									</div>
 								</div>
 								<div class="col-12 col-lg-3">
-									<div class="card radius-10 overflow-hidden bg-gradient-lush">
+									<div class="card radius-15 overflow-hidden bg-gradient-lush">
 										<div class="card-body">
 											<div class="d-flex align-items-center">
 												<div>
@@ -1098,7 +1131,7 @@
 									</div>
 								</div>
 								<div class="col-12 col-lg-3">
-									<div class="card radius-10 overflow-hidden bg-gradient-kyoto">
+									<div class="card radius-15 overflow-hidden bg-gradient-kyoto">
 										<div class="card-body">
 											<div class="d-flex align-items-center">
 												<div>
@@ -1112,7 +1145,7 @@
 									</div>
 								</div>
 								<div class="col-12 col-lg-3">
-									<div class="card radius-10 overflow-hidden bg-gradient-blues">
+									<div class="card radius-15 overflow-hidden bg-gradient-blues">
 										<div class="card-body">
 											<div class="d-flex align-items-center">
 												<div>
@@ -1126,7 +1159,7 @@
 									</div>
 								</div>
 								<div class="col-12 col-lg-3">
-									<div class="card radius-10 overflow-hidden bg-gradient-moonlit">
+									<div class="card radius-15 overflow-hidden bg-gradient-moonlit">
 										<div class="card-body">
 											<div class="d-flex align-items-center">
 												<div>
@@ -1140,7 +1173,7 @@
 									</div>
 								</div>
 								<div class="col-12 col-lg-3">
-									<div class="card radius-10 overflow-hidden bg-gradient-custom-1">
+									<div class="card radius-15 overflow-hidden bg-gradient-custom-1">
 										<div class="card-body">
 											<div class="d-flex align-items-center">
 												<div>
@@ -1264,7 +1297,7 @@
 						<div class="card-body">
 							<div class="row">
 								<div class="col-12 col-lg-3 d-flex">
-									<div class="card w-100 radius-10 overflow-hidden bg-gradient-cosmic">
+									<div class="card w-100 radius-15 overflow-hidden bg-gradient-cosmic">
 										<div class="card-body">
 											<div class="d-flex align-items-center">
 												<div>
@@ -1278,7 +1311,7 @@
 									</div>
 								</div>
 								<div class="col-12 col-lg-3 d-flex">
-									<div class="card w-100 radius-10 overflow-hidden bg-gradient-burning">
+									<div class="card w-100 radius-15 overflow-hidden bg-gradient-burning">
 										<div class="card-body">
 											<div class="d-flex align-items-center">
 												<div>
@@ -1292,7 +1325,7 @@
 									</div>
 								</div>
 								<div class="col-12 col-lg-3 d-flex">
-									<div class="card w-100 radius-10 overflow-hidden bg-gradient-lush">
+									<div class="card w-100 radius-15 overflow-hidden bg-gradient-lush">
 										<div class="card-body">
 											<div class="d-flex align-items-center">
 												<div>
@@ -1306,7 +1339,7 @@
 									</div>
 								</div>
 								<div class="col-12 col-lg-3 d-flex">
-									<div class="card w-100 radius-10 overflow-hidden bg-gradient-kyoto">
+									<div class="card w-100 radius-15 overflow-hidden bg-gradient-kyoto">
 										<div class="card-body">
 											<div class="d-flex align-items-center">
 												<div>
@@ -1763,7 +1796,7 @@
 									<h5 class="text-center text-black">Ratio Overtime</h5>
 									<div id="chartRatioOvertime"></div>
 									<div class="d-flex justify-content-end">
-										<div class="d-flex align-items-center border radius-10 px-2">
+										<div class="d-flex align-items-center border radius-15 px-2">
 											<i class='bx bxs-checkbox font-22 me-1 text-primary'></i><span>Average Overtime</span>
 										</div>
 									</div>

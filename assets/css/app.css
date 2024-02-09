@@ -124,7 +124,7 @@ a {
 
   cursor: pointer;
 
-  color: #0727d7;
+  color: #0095ff;
 }
 
 /* Header */
@@ -345,7 +345,7 @@ a {
 .sidebar-wrapper .metismenu a:focus,
 .sidebar-wrapper .metismenu a:active,
 .sidebar-wrapper .metismenu .mm-active > a {
-  color: #0727d7;
+  color: #0095ff;
 
   text-decoration: none;
 
@@ -536,7 +536,7 @@ a {
 
   right: 12px;
 
-  background-color: #0727d7;
+  background-color: #0095ff;
 
   z-index: 5;
 }
@@ -588,9 +588,9 @@ a {
 }
 
 .widgets-icons {
-  width: 50px;
+  width: 40px;
 
-  height: 50px;
+  height: 40px;
 
   display: flex;
 
@@ -598,11 +598,11 @@ a {
 
   justify-content: center;
 
-  background-color: #ededed;
+  background-color: #f5f5f5;
 
   font-size: 26px;
 
-  border-radius: 10px;
+  border-radius: 100%;
 }
 
 #geographic-map {
@@ -753,7 +753,7 @@ a {
 }
 
 .fm-menu .list-group a:hover {
-  background: #0727d7;
+  background: #0095ff;
 
   color: #ffffff;
 
@@ -926,6 +926,10 @@ a {
   right: 15px !important;
 }
 
+.font-12 {
+  font-size: 12px;
+}
+
 .font-13 {
   font-size: 13px;
 }
@@ -984,6 +988,10 @@ a {
 
 .radius-15 {
   border-radius: 15px;
+}
+
+.radius-20 {
+  border-radius: 20px;
 }
 
 .cursor-pointer {
@@ -1087,7 +1095,7 @@ a {
 
   margin-bottom: 20px;
 
-  border-bottom: 1px solid #0727d7;
+  border-bottom: 1px solid #0095ff;
 }
 
 .invoice .company-details {
@@ -1121,7 +1129,7 @@ a {
 .invoice .invoice-details .invoice-id {
   margin-top: 0;
 
-  color: #0727d7;
+  color: #0095ff;
 }
 
 .invoice main {
@@ -1139,7 +1147,7 @@ a {
 .invoice main .notices {
   padding-left: 6px;
 
-  border-left: 6px solid #0727d7;
+  border-left: 6px solid #0095ff;
 
   background: #e7f2ff;
 
@@ -1182,7 +1190,7 @@ a {
 
   font-weight: 400;
 
-  color: #0727d7;
+  color: #0095ff;
 
   font-size: 1.2em;
 }
@@ -1200,7 +1208,7 @@ a {
 
   font-size: 1.6em;
 
-  background: #0727d7;
+  background: #0095ff;
 }
 
 .invoice table .unit {
@@ -1208,7 +1216,7 @@ a {
 }
 
 .invoice table .total {
-  background: #0727d7;
+  background: #0095ff;
 
   color: #fff;
 }
@@ -1238,11 +1246,11 @@ a {
 }
 
 .invoice table tfoot tr:last-child td {
-  color: #0727d7;
+  color: #0095ff;
 
   font-size: 1.4em;
 
-  border-top: 1px solid #0727d7;
+  border-top: 1px solid #0095ff;
 }
 
 .invoice table tfoot tr td:first-child {
@@ -1485,7 +1493,7 @@ a {
 
 .chat-tab-menu .nav-pills .nav-link.active,
 .chat-tab-menu .nav-pills .show > .nav-link {
-  color: #0727d7;
+  color: #0095ff;
 
   background-color: rgb(0 123 255 / 0%);
 }
@@ -1759,7 +1767,7 @@ a {
 }
 
 .email-navigation a.list-group-item.active {
-  color: #0727d7;
+  color: #0095ff;
 
   font-weight: 600;
 
@@ -1921,9 +1929,9 @@ a {
 /* Navs and Tabs */
 
 .nav-primary.nav-tabs .nav-link.active {
-  color: #0727d7;
+  color: #0095ff;
 
-  border-color: #0727d7 #0727d7 #fff;
+  border-color: #0095ff #0095ff #fff;
 }
 
 .nav-danger.nav-tabs .nav-link.active {
@@ -2266,7 +2274,7 @@ a {
 
 .authentication-header {
   position: absolute;
-  background: #0727d7;
+  background: #0095ff;
   top: 0;
   left: 0;
   right: 0;
@@ -2948,7 +2956,7 @@ input::placeholder {
 
   font-size: 24px;
 
-  background: #0727d7;
+  background: #0095ff;
 
   box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.13);
 
@@ -3240,7 +3248,7 @@ input::placeholder {
 }
 
 .tablinks.selected {
-  background-color: #0727d7;
+  background-color: #0095ff;
   color: #ffffff;
 }
 
@@ -3256,4 +3264,64 @@ input::placeholder {
 
 .vl {
   border-left: 0.5px solid #525f7f;
+}
+
+.badge-progress-blue {
+  padding: 4px 12px;
+  border: 1px solid #0095ff;
+  background-color: #f0f9ff;
+  color: #0095ff;
+  border-radius: 8px;
+}
+
+.badge-progress-red {
+  padding: 4px 12px;
+  border: 1px solid #ef4444;
+  background-color: #fff4f4;
+  color: #ef4444;
+  border-radius: 8px;
+}
+
+.badge-progress-green {
+  padding: 4px 12px;
+  border: 1px solid #00e58f;
+  background-color: #f0fdf4;
+  color: #00e58f;
+  border-radius: 8px;
+}
+
+.badge-progress-orange {
+  padding: 4px 12px;
+  border: 1px solid #ff8f0d;
+  background-color: #fef6e6;
+  color: #ff8f0d;
+  border-radius: 8px;
+}
+
+.badge-progress-purple {
+  padding: 4px 12px;
+  border: 1px solid #884dff;
+  background-color: #fbf1ff;
+  color: #884dff;
+  border-radius: 8px;
+}
+
+.bg-red {
+  background-color: #ef4444;
+}
+
+.bg-orange {
+  background-color: #ff8f0d;
+}
+
+.bg-blue {
+  background-color: #0095ff;
+}
+
+.bg-green {
+  background-color: #00e58f;
+}
+
+.bg-purple {
+  background-color: #884dff;
 }
