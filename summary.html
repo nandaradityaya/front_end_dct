@@ -481,7 +481,7 @@
 				</div>
 				<!--end breadcrumb-->
 
-				<div class="d-flex mb-4">
+				<div class="d-lg-flex mb-4">
 					<button type="button" class="btn btn-white radius-8 me-3 tablinks selected" onclick="toggleBtn(event, 'sigma')">Sigma</button>
 					<button type="button" class="btn btn-white radius-8 me-3 tablinks" onclick="toggleBtn(event, 'cpc')">CPC</button>
 					<button type="button" class="btn btn-white radius-8 me-3 tablinks" onclick="toggleBtn(event, 'cdc')">CDC</button>
@@ -491,7 +491,7 @@
 				</div>
 
 				<div class="national-summary" id="sigma">
-					<div class="card radius-15">
+					<div class="card radius-10">
 						<div class="card-body">
 							<div class="row mb-2">
 								<div class="col-12 col-lg-3 filter-awal"><label for="filerDateAwal" class="form-label">Start Date
@@ -522,13 +522,9 @@
 										<option value="internal">Internal</option>
 									</select>
 								</div>
-								<!-- <div class="col-12 col-lg-1 button-filter">
-									<label for="" class="form-label">Action</label> <br>
-									<button type="button" class="btn btn-primary radius-4">Apply</button>
-								</div> -->
 							</div>
 		
-							<div class="d-flex justify-content-end mb-4">
+							<div class="d-flex justify-content-end">
 								<button type="button" class="btn btn-primary radius-8 me-2">Apply</button>
 								<div class="btn-group">
 									<button type="button" class="btn btn-outline-primary radius-8">Report</button>
@@ -547,7 +543,7 @@
 
 					<div class="row">
 						<div class="col-12 col-lg-7">
-							<div class="card radius-15">
+							<div class="card radius-10">
 								<div class="card-body">
 									<h5 class="text-black">Top Bank</h5>
 									<p class="mb-5">Bank Machine Ranking Summary</p>
@@ -592,72 +588,12 @@
 												</div>
 											</div>
 										</div>
-										<!-- <div class="col-12 col-lg-6">
-											<div class="card radius-15">
-												<div class="card-body">
-													<div class="d-flex align-items-center">
-														<div class="flex-grow-1">
-															<p class="mb-0">ADV</p>
-															<h4 class="font-weight-bold">10.529 <small class="text-success font-13">(+40)</small></h4>
-															<p class="text-success mb-0 font-13">Analytics for last week</p>
-														</div>
-														<div class="widgets-icons text-white"><img src="assets/images/gallery/adv-logo.png" alt="adv-logo" width="28">
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="col-12 col-lg-6">
-											<div class="card radius-15">
-												<div class="card-body">
-													<div class="d-flex align-items-center">
-														<div class="flex-grow-1">
-															<p class="mb-0">BCA</p>
-															<h4 class="font-weight-bold">2.746</h4>
-															<p class="text-secondary mb-0 font-13">Analytics for last week</p>
-														</div>
-														<div class="widgets-icons text-white"><img src="assets/images/gallery/bca-logo.png" alt="bca-logo" width="28">
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="col-12 col-lg-6">
-											<div class="card radius-15">
-												<div class="card-body">
-													<div class="d-flex align-items-center">
-														<div class="flex-grow-1">
-															<p class="mb-0">BNI</p>
-															<h4 class="font-weight-bold">1.130</h4>
-															<p class="text-secondary mb-0 font-13">Analytics for last week</p>
-														</div>
-														<div class="widgets-icons text-white"><img src="assets/images/gallery/bni-logo.png" alt="bni-logo" width="28">
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="col-12 col-lg-6">
-											<div class="card radius-15">
-												<div class="card-body">
-													<div class="d-flex align-items-center">
-														<div class="flex-grow-1">
-															<p class="mb-0">BRI</p>
-															<h4 class="font-weight-bold">924</h4>
-															<p class="text-secondary mb-0 font-13">Analytics for last week</p>
-														</div>
-														<div class="widgets-icons text-white"><img src="assets/images/gallery/bri-logo.png" alt="bri-logo" width="28">
-														</div>
-													</div>
-												</div>
-											</div>
-										</div> -->
 									</div>
 								</div>
 							</div>
 						</div>
 						<div class="col-12 col-lg-5">
-							<div class="card radius-15" style="height: 348px">
+							<div class="card radius-10" style="height: 348px">
 								<div class="card-body">
 									<div class="d-flex align-items-center">
 										<h5 class="mb-0 text-black">SLA Achievement</h5>
@@ -673,32 +609,36 @@
 					</div>
 
 					<div class="row">
-						<div class="col-12 col-lg-6 d-flex">
-							<div class="card radius-15 w-100">
+						<div class="col-12 col-lg-8 d-flex">
+							<div class="card radius-10 w-100">
 								<div class="card-body">
 									<h5 class="text-black">Achievment SLA Bank</h5>
 									<div class="mb-1">
 										<select class="multiple-select" data-placeholder="Choose anything" multiple="multiple">
-											<option value="atmi" selected>ATMI</option>
 											<option value="bca" selected>BCA</option>
 											<option value="bni" selected>BNI</option>
 											<option value="bri" selected>BRI</option>
-											<option value="maybang" selected>Maybank</option>
-											<option value="pmt" selected>PMT</option>
 											<option value="cimb" selected>CIMB</option>
+											<option value="maybang" selected>Maybank</option>
+											<option value="pmt">PMT</option>
+											<option value="atmi">ATMI</option>
 											<option value="mandiri">Mandiri</option>
 											<option value="permata">Permata</option>
 										</select>
 									</div>
+									<!-- With Image Using ChartJS -->
+									<!-- <div class="chart-container1">
+										<canvas id="chartJS"></canvas>
+									</div> -->
 									<div id="acvhievmentOfSLABank"></div>
 								</div>
 							</div>
 						</div>
-						<div class="col-12 col-lg-6 d-flex">
-							<div class="card radius-15 w-100">
+						<div class="col-12 col-lg-4 d-flex">
+							<div class="card radius-10 w-100">
 								<div class="card-body">
-									<h5 class="text-black">Weakest Branches</h5>
-									<p class="mb-3">SLA Not Achieved</p>
+									<h5 class="text-black mb-4">Weakest Branches</h5>
+									<!-- <p class="mb-3">SLA Achieved</p> -->
 										<!-- <div class="row align-items-center">
 											<div class="col-1">
 												<h5 class="mb-0">1</h5>
@@ -718,7 +658,7 @@
 											<tr>
 												<td class="text-secondary" scope="col">#</td>
 												<td class="text-secondary" scope="col">Branch</td>
-												<td class="text-secondary" scope="col" style="width:60%">Not Reached</td>
+												<td class="text-secondary" scope="col" style="width:60%">SLA Achieved</td>
 												<td class="text-secondary" scope="col"></td>
 											</tr>
 										</thead>
@@ -728,12 +668,12 @@
 												<td>Kediri</td>
 												<td>
 													<div class="progress" style="height:8px; margin-top: 5px;">
-														<div class="progress-bar bg-red" role="progressbar" style="width: 64%" aria-valuenow="64" aria-valuemin="0" aria-valuemax="100"></div>
+														<div class="progress-bar bg-red" role="progressbar" style="width: 36%" aria-valuenow="36" aria-valuemin="0" aria-valuemax="100"></div>
 													</div>
 												</td>
 												<td>
 													<span class="badge-progress-red">
-														64%
+														36%
 													</span>
 												</td>
 											</tr>
@@ -742,12 +682,12 @@
 												<td>Bengkulu</td>
 												<td>
 													<div class="progress" style="height:8px; margin-top: 5px;">
-														<div class="progress-bar bg-orange" role="progressbar" style="width: 57%" aria-valuenow="57" aria-valuemin="0" aria-valuemax="100"></div>
+														<div class="progress-bar bg-red" role="progressbar" style="width: 43%" aria-valuenow="43" aria-valuemin="0" aria-valuemax="100"></div>
 													</div>
 												</td>
 												<td>
-													<span class="badge-progress-orange">
-														57%
+													<span class="badge-progress-red">
+														43%
 													</span>
 												</td>
 											</tr>
@@ -756,12 +696,12 @@
 												<td>Jambi</td>
 												<td>
 													<div class="progress" style="height:8px; margin-top: 5px;">
-														<div class="progress-bar bg-purple" role="progressbar" style="width: 54%" aria-valuenow="54" aria-valuemin="0" aria-valuemax="100"></div>
+														<div class="progress-bar bg-red" role="progressbar" style="width: 46%" aria-valuenow="46" aria-valuemin="0" aria-valuemax="100"></div>
 													</div>
 												</td>
 												<td>
-													<span class="badge-progress-purple">
-														54%
+													<span class="badge-progress-red">
+														46%
 													</span>
 												</td>
 											</tr>
@@ -770,12 +710,12 @@
 												<td>Pontianak</td>
 												<td>
 													<div class="progress" style="height:8px; margin-top: 5px;">
-														<div class="progress-bar bg-blue" role="progressbar" style="width: 49%" aria-valuenow="49" aria-valuemin="0" aria-valuemax="100"></div>
+														<div class="progress-bar bg-red" role="progressbar" style="width: 51%" aria-valuenow="51" aria-valuemin="0" aria-valuemax="100"></div>
 													</div>
 												</td>
 												<td>
-													<span class="badge-progress-blue">
-														49%
+													<span class="badge-progress-red">
+														51%
 													</span>
 												</td>
 											</tr>
@@ -784,12 +724,12 @@
 												<td>Singkawang</td>
 												<td>
 													<div class="progress" style="height:8px; margin-top: 5px;">
-														<div class="progress-bar bg-green" role="progressbar" style="width: 45%" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
+														<div class="progress-bar bg-red" role="progressbar" style="width: 55%" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
 													</div>
 												</td>
 												<td>
-													<span class="badge-progress-green">
-														45%
+													<span class="badge-progress-red">
+														55%
 													</span>
 												</td>
 											</tr>
@@ -802,7 +742,7 @@
 				</div>
 
 				<div class="national-summary" id="cpc" style="display: none;">
-					<div class="card">
+					<div class="card radius-10">
 						<div class="card-body">
 							<div class="row mb-3">
 								<div class="col-12 col-lg-2 filter-awal"><label for="filerDateAwal" class="form-label">Start Date
@@ -838,7 +778,7 @@
 								<div class="col-12 col-lg-3">
 									<label class="form-label">Bank</label>
 									<select class="single-select form-select">
-										<option value="lorem">Lorem</option>
+										<option value="all">All</option>
 										<option value="lorem">Lorem</option>
 										<option value="lorem">Lorem</option>
 										<option value="lorem">Lorem</option>
@@ -862,186 +802,223 @@
 						</div>
 					</div>
 
-					<div class="row">
-						<div class="col-12 col-lg-6 d-flex">
-							<div class="card w-100">
-								<div class="card-body">
-									<h6 class="font-weight-bold mb-3">Status</h6>
-									<div class="row">
-										<div class="col-12 col-lg-6">
-											<div class="card radius-15 overflow-hidden bg-gradient-cosmic">
-												<div class="card-body">
-													<div class="d-flex align-items-center">
-														<div>
-															<p class="mb-0 text-white">Big Deposit</p>
-															
-														</div>
-														<div class="ms-auto text-white"><h5 class="mb-0 text-white">1.783</h5>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="col-12 col-lg-6">
-											<div class="card radius-15 overflow-hidden bg-gradient-burning">
-												<div class="card-body">
-													<div class="d-flex align-items-center">
-														<div>
-															<p class="mb-0 text-white">Small Deposit</p>
-															
-														</div>
-														<div class="ms-auto text-white"><h5 class="mb-0 text-white">533</h5>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="col-12 col-lg-6">
-											<div class="card radius-15 overflow-hidden bg-gradient-lush">
-												<div class="card-body">
-													<div class="d-flex align-items-center">
-														<div>
-															<p class="mb-0 text-white">Brick Prepare</p>
-															
-														</div>
-														<div class="ms-auto text-white"><h5 class="mb-0 text-white">801</h5>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="col-12 col-lg-6">
-											<div class="card radius-15 overflow-hidden bg-gradient-kyoto">
-												<div class="card-body">
-													<div class="d-flex align-items-center">
-														<div>
-															<p class="mb-0 text-white">Brick Return</p>
-															
-														</div>
-														<div class="ms-auto text-white"><h5 class="mb-0 text-white">300</h5>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="col-12 col-lg-6">
-											<div class="card radius-15 overflow-hidden bg-gradient-blues">
-												<div class="card-body">
-													<div class="d-flex align-items-center">
-														<div>
-															<p class="mb-0 text-white">Brick CDR</p>
-															
-														</div>
-														<div class="ms-auto text-white"><h5 class="mb-0 text-white">0</h5>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="col-12 col-lg-6">
-											<div class="card radius-15 overflow-hidden bg-gradient-moonlit">
-												<div class="card-body">
-													<div class="d-flex align-items-center">
-														<div>
-															<p class="mb-0 text-white">Total Cashier</p>
-															
-														</div>
-														<div class="ms-auto text-white"><h5 class="mb-0 text-white">846</h5>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="col-12 col-lg-6">
-											<div class="card radius-15 overflow-hidden bg-gradient-custom-1">
-												<div class="card-body">
-													<div class="d-flex align-items-center">
-														<div>
-															<p class="mb-0 text-white">Total CPC Employee</p>
-															
-														</div>
-														<div class="ms-auto text-white"><h5 class="mb-0 text-white">950</h5>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="col-12 col-lg-6">
-											<div class="card radius-15 overflow-hidden bg-gradient-custom-2">
-												<div class="card-body">
-													<div class="d-flex align-items-center">
-														<div>
-															<p class="mb-0 text-white">Pending Sortir</p>
-															
-														</div>
-														<div class="ms-auto text-white"><h5 class="mb-0 text-white">75.005.195.000</h5>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="col-12 col-lg-6">
-											<div class="card radius-15 overflow-hidden bg-gradient-custom-3">
-												<div class="card-body">
-													<div class="d-flex align-items-center">
-														<div>
-															<p class="mb-0 text-white">Less Difference</p>
-															
-														</div>
-														<div class="ms-auto text-white"><h5 class="mb-0 text-white">-2.862.800</h5>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="col-12 col-lg-6">
-											<div class="card radius-15 overflow-hidden bg-gradient-custom-4">
-												<div class="card-body">
-													<div class="d-flex align-items-center">
-														<div>
-															<p class="mb-0 text-white">More Difference</p>
-															
-														</div>
-														<div class="ms-auto text-white"><h5 class="mb-0 text-white">556.078.202</h5>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
+				
+					<div class="card radius-10">
+						<div class="card-body">
+							<div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 row-cols-xxl-5">
+								<div class="col border-end border-light-2">
+								  <div class="card bg-transparent shadow-none mb-0">
+									<div class="card-body text-center">
+									  <p class="mb-1 text-black">Big Deposit</p>
+									  <h3 class="mb-3 text-black">596</h3>
+									  <p class="font-13 text-black">
+										<span class="text-success"
+										  ><i class="lni lni-arrow-up"></i>2.1%</span
+										>
+										from last week
+									  </p>
+									  <div id="bigDeposit"></div>
 									</div>
+								  </div>
+								</div>
+								<div class="col border-end border-light-2">
+								  <div class="card bg-transparent shadow-none mb-0">
+									<div class="card-body text-center">
+									  <p class="mb-1 text-black">Small Deposit</p>
+									  <h3 class="mb-3 text-black">176</h3>
+									  <p class="font-13 text-black">
+										<span class="text-success"
+										  ><i class="lni lni-arrow-up"></i> 4.2%
+										</span>
+										from last week
+									  </p>
+									  <div id="smallDeposit"></div>
+									</div>
+								  </div>
+								</div>
+								<div class="col border-end border-light-2">
+								  <div class="card bg-transparent shadow-none mb-0">
+									<div class="card-body text-center">
+									  <p class="mb-1 text-black">Brick Prepare</p>
+									  <h3 class="mb-3 text-black">606</h3>
+									  <p class="font-13 text-black">
+										<span class="text-danger"
+										  ><i class="lni lni-arrow-down"></i> 3.6%</span
+										>
+										from last week
+									  </p>
+									  <div id="brickPrepare"></div>
+									</div>
+								  </div>
+								</div>
+								<div class="col border-end border-light-2">
+								  <div class="card bg-transparent shadow-none mb-0">
+									<div class="card-body text-center">
+									  <p class="mb-1 text-black">Brick Return</p>
+									  <h3 class="mb-3 text-black">259</h3>
+									  <p class="font-13 text-black">
+										<span class="text-success"
+										  ><i class="lni lni-arrow-up"></i> 2.5%</span
+										>
+										from last week
+									  </p>
+									  <div id="brickReturn"></div>
+									</div>
+								  </div>
+								</div>
+								<div class="col">
+								  <div class="card bg-transparent shadow-none mb-0">
+									<div class="card-body text-center">
+									  <p class="mb-1 text-black">Brick CDR</p>
+									  <h3 class="mb-3 text-black">1</h3>
+									  <p class="font-13 text-black">
+										<span class="text-danger"
+										  ><i class="lni lni-arrow-down"></i> 5.2%</span
+										>
+										from last 7 days
+									  </p>
+									  <div id="brickCDR"></div>
+									</div>
+								  </div>
+								</div>
+							</div>
+							<hr>
+							<div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 row-cols-xxl-5">
+								<div class="col border-end border-light-2">
+								  <div class="card bg-transparent shadow-none mb-0">
+									<div class="card-body text-center">
+									  <p class="mb-1 text-black">Total Cashier</p>
+									  <h3 class="mb-3 text-black">845</h3>
+									  <p class="font-13 text-black">
+										<span class="text-success"
+										  ><i class="lni lni-arrow-up"></i>2.1%</span
+										>
+										from last week
+									  </p>
+									  <div id="totalCashier"></div>
+									</div>
+								  </div>
+								</div>
+								<div class="col border-end border-light-2">
+								  <div class="card bg-transparent shadow-none mb-0">
+									<div class="card-body text-center">
+									  <p class="mb-1 text-black">Total CPC Employees</p>
+									  <h3 class="mb-3 text-black">946</h3>
+									  <p class="font-13 text-black">
+										<span class="text-success"
+										  ><i class="lni lni-arrow-up"></i> 4.2%
+										</span>
+										from last week
+									  </p>
+									  <div id="totalEmployeeCPC"></div>
+									</div>
+								  </div>
+								</div>
+								<div class="col border-end border-light-2">
+								  <div class="card bg-transparent shadow-none mb-0">
+									<div class="card-body text-center">
+									  <p class="mb-1 text-black">Pending Sortir</p>
+									  <h3 class="mb-3 text-black">19</h3>
+									  <p class="font-13 text-black">
+										<span class="text-danger"
+										  ><i class="lni lni-arrow-down"></i> 3.6%</span
+										>
+										from last week
+									  </p>
+									  <div id="pendingSortir"></div>
+									</div>
+								  </div>
+								</div>
+								<div class="col border-end border-light-2">
+								  <div class="card bg-transparent shadow-none mb-0">
+									<div class="card-body text-center">
+									  <p class="mb-1 text-black">Selisih Minus</p>
+									  <h3 class="mb-3 text-black">463.305.687</h3>
+									  <p class="font-13 text-black">
+										<span class="text-success"
+										  ><i class="lni lni-arrow-up"></i> 2.5%</span
+										>
+										from last week
+									  </p>
+									  <div id="selisihMinus"></div>
+									</div>
+								  </div>
+								</div>
+								<div class="col">
+								  <div class="card bg-transparent shadow-none mb-0">
+									<div class="card-body text-center">
+									  <p class="mb-1 text-black">Selisih Plus</p>
+									  <h3 class="mb-3 text-black">833.928.940</h3>
+									  <p class="font-13 text-black">
+										<span class="text-danger"
+										  ><i class="lni lni-arrow-down"></i> 5.2%</span
+										>
+										from last 7 days
+									  </p>
+									  <div id="selisihPlus"></div>
+									</div>
+								  </div>
 								</div>
 							</div>
 						</div>
 						
-						<div class="col-12 col-lg-6 d-flex">
-							<div class="card radius-10 w-100">
-								<div class="card-header border-bottom-0 bg-transparent">
-									<div class="d-lg-flex align-items-center">
-										<div>
-											<h6 class="font-weight-bold mb-2 mb-lg-0">Ratio Efficiency CPC and Cashier</h6>
+					</div>
+						<!--end row-->
+
+					<div class="card radius-10 w-100">
+						<div class="card-header border-bottom-0 bg-transparent">
+							<div class="d-lg-flex align-items-center">
+								<div>
+									<h6 class="font-weight-bold mb-2 mb-lg-0">Ratio Efficiency CPC and Cashier</h6>
+								</div>
+								<button type="button" class="btn btn-white btn-ratio-cpc radius-10 ms-lg-auto mb-2 mb-lg-0 me-3"
+												onclick="filterBtnChartRatioCPC(event, 'chartCompare')">Compare</button>
+								<div class="mb-2 mb-lg-0">
+									<div class="btn-group-round">
+										<div class="btn-group">
+											<button type="button" class="btn btn-white btn-ratio-cpc"
+												onclick="filterBtnChartRatioCPC(event, 'chartDay')">Day</button>
+											<button type="button" class="btn btn-white btn-ratio-cpc"
+												onclick="filterBtnChartRatioCPC(event, 'chartWeek')">Week</button>
+											<button type="button" class="btn btn-white btn-ratio-cpc selected"
+												onclick="filterBtnChartRatioCPC(event, 'chartMonth')">Month</button>
 										</div>
-										<div class="ms-lg-auto mb-2 mb-lg-0">
-											<div class="btn-group-round">
-												<div class="btn-group">
-													<button type="button" class="btn btn-white btn-ratio-cpc"
-														onclick="filterBtnChartRatioCPC(event, 'chartDay')">Day</button>
-													<button type="button" class="btn btn-white btn-ratio-cpc"
-														onclick="filterBtnChartRatioCPC(event, 'chartWeek')">Week</button>
-													<button type="button" class="btn btn-white btn-ratio-cpc selected"
-														onclick="filterBtnChartRatioCPC(event, 'chartMonth')">Month</button>
-												</div>
-											</div>
-										</div>
-										<!-- <div>
-											<button type="button" class="btn btn-primary radius-10 ms-lg-3">Download CSV</button>
-										</div> -->
 									</div>
 								</div>
-								<div class="card-body">
-									<div class="ratio-cpc" id="chartMonth"></div>
-									<div class="ratio-cpc" id="chartWeek" style="display: none;">ee</div>
-									<div class="ratio-cpc" id="chartDay" style="display: none;">rere</div>
+								
+								<!-- <div>
+									<button type="button" class="btn btn-primary radius-10 ms-lg-3">Download CSV</button>
+								</div> -->
+							</div>
+						</div>
+						<div class="card-body">
+							<div class="ratio-cpc" id="chartMonth"></div>
+							<div class="ratio-cpc" id="chartWeek" style="display: none;">Chart Week</div>
+							<div class="ratio-cpc" id="chartDay" style="display: none;">Chart Day</div>
+							<div class="ratio-cpc" id="chartCompare" style="display: none;">
+								<div class="d-flex justify-content-center">
+									<div class="form-check me-3">
+										<input class="form-check-input" type="checkbox" value="" id="check2020">
+										<label class="form-check-label" for="check2020">2020</label>
+									</div>
+									<div class="form-check me-3">
+										<input class="form-check-input" type="checkbox" value="" id="check2021">
+										<label class="form-check-label" for="check2021">2021</label>
+									</div>
+									<div class="form-check me-3">
+										<input class="form-check-input" type="checkbox" value="" id="check2022">
+										<label class="form-check-label" for="check2022">2022</label>
+									</div>
+									<div class="form-check me-3">
+										<input class="form-check-input" type="checkbox" value="" id="check2023" checked>
+										<label class="form-check-label" for="check2023">2023</label>
+									</div>
+									<div class="form-check me-3">
+										<input class="form-check-input" type="checkbox" value="" id="check2024" checked>
+										<label class="form-check-label" for="check2024">2024</label>
+									</div>
 								</div>
+								<div id="chartCompareYear"></div>
 							</div>
 						</div>
 					</div>
@@ -1304,7 +1281,7 @@
 				</div>
 
 				<div class="national-summary" id="cdc" style="display: none;">
-					<div class="card">
+					<div class="card radius-10">
 						<div class="card-body">
 							<div class="row mb-3">
 								<div class="col-12 col-lg-3 filter-awal"><label for="filerDateAwal" class="form-label">Start Date
@@ -1348,8 +1325,8 @@
 								</div>
 							</div>
 							<div class="d-flex justify-content-end">
-								<button type="button" class="btn btn-primary radius-4 me-3">Apply</button>
-								<button class="btn btn-outline-warning detail-cpc">
+								<button type="button" class="btn btn-primary radius-8 me-2">Apply</button>
+								<button class="btn btn-outline-warning detail-cpc radius-8">
 									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-alert-circle text-warning me-1"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
 									Guideline
 								</button>
@@ -1357,7 +1334,7 @@
 						</div>
 					</div>
 
-					<div class="card">
+					<div class="card radius-10">
 						<div class="card-body">
 							<div class="row">
 								<div class="col-12 col-lg-3">
@@ -1365,7 +1342,7 @@
 										<div class="card-body">
 											<div class="d-flex align-items-center">
 												<div>
-													<p class="mb-0 text-white">Number of Trips CIT COS</p>
+													<p class="mb-0 text-white">Total Trip CIT COS</p>
 													
 												</div>
 												<div class="ms-auto text-white"><h5 class="mb-0 text-white">26,733</h5>
@@ -1379,7 +1356,7 @@
 										<div class="card-body">
 											<div class="d-flex align-items-center">
 												<div>
-													<p class="mb-0 text-white">Number of Trips CIT BBC</p>
+													<p class="mb-0 text-white">Total Trip CIT BBC</p>
 													
 												</div>
 												<div class="ms-auto text-white"><h5 class="mb-0 text-white">12,785</h5>
@@ -1393,7 +1370,7 @@
 										<div class="card-body">
 											<div class="d-flex align-items-center">
 												<div>
-													<p class="mb-0 text-white">Number of Trips CIT STC</p>
+													<p class="mb-0 text-white">Total Trip CIT STC</p>
 													
 												</div>
 												<div class="ms-auto text-white"><h5 class="mb-0 text-white">171,503</h5>
@@ -1407,7 +1384,7 @@
 										<div class="card-body">
 											<div class="d-flex align-items-center">
 												<div>
-													<p class="mb-0 text-white">Number of Trips ATM</p>
+													<p class="mb-0 text-white">Total Trip ATM</p>
 													
 												</div>
 												<div class="ms-auto text-white"><h5 class="mb-0 text-white">111,948</h5>
@@ -1421,7 +1398,7 @@
 										<div class="card-body">
 											<div class="d-flex align-items-center">
 												<div>
-													<p class="mb-0 text-white">Number of RUN</p>
+													<p class="mb-0 text-white">Total RUN</p>
 													
 												</div>
 												<div class="ms-auto text-white"><h5 class="mb-0 text-white">4,012</h5>
@@ -1464,7 +1441,7 @@
 
 					<div class="row">
 						<div class="col-12 col-lg-5 d-flex">
-							<div class="card w-100">
+							<div class="card radius-10 w-100">
 								<div class="card-body">
 									<h5 class="text-black text-center mb-4">Transaction Summary</h5>
 									<div id="transactionSummary"></div>
@@ -1472,7 +1449,7 @@
 							</div>
 						</div>
 						<div class="col-12 col-lg-7 d-flex">
-							<div class="card w-100">
+							<div class="card radius-10 w-100">
 								<div class="card-body">
 									<h5 class="text-black text-center">Cancel</h5>
 									<p class="text-center mb-4">Based on Bank / Branch</p>
@@ -1484,7 +1461,7 @@
 
 					<div class="row">
 						<div class="col-12 col-lg-6 d-flex">
-							<div class="card w-100">
+							<div class="card radius-10 w-100">
 								<div class="card-body">
 									<div class="row mb-3">
 										<div class="col-12 col-lg-10">
@@ -1497,7 +1474,7 @@
 										</div>
 										<div class="col-12 col-lg-2">
 											<label for="" class="form-label">Action</label> <br>
-											<button type="button" class="btn btn-primary radius-4">Apply</button>
+											<button type="button" class="btn btn-primary radius-8">Apply</button>
 										</div>
 									</div>
 									<h5 class="text-center text-black">Cancel</h5>
@@ -1507,7 +1484,7 @@
 							</div>
 						</div>
 						<div class="col-12 col-lg-6 d-flex">
-							<div class="card w-100">
+							<div class="card radius-10 w-100">
 								<div class="card-body">
 										<div class="mb-2">
 											<label class="form-label">Factor</label>
@@ -1518,8 +1495,8 @@
 											</select>
 										</div>
 										<div class="d-flex justify-content-end mb-3">
-											<button type="button" class="btn btn-primary radius-4 me-3">Apply</button>
-											<button type="button" class="btn btn-outline-primary radius-4">Upload</button>
+											<button type="button" class="btn btn-primary radius-8 me-3">Apply</button>
+											<button type="button" class="btn btn-outline-primary radius-8">Upload</button>
 										</div>
 									<h5 class="text-center text-black">Cancel</h5>
 									<p class="text-center mb-4">Based on Cancel Factor - Data Real</p>
@@ -1531,7 +1508,7 @@
 				</div>
 
 				<div class="national-summary" id="flm" style="display: none;">
-					<div class="card">
+					<div class="card radius-10">
 						<div class="card-body">
 							<div class="row mb-4">
 								<div class="col-12 col-lg-4 filter-awal"><label for="filerDateAwal" class="form-label">Start Date
@@ -1559,86 +1536,103 @@
 								</div>
 								<div class="col-12 col-lg-1 button-filter">
 									<label for="" class="form-label">Action</label> <br>
-									<button type="button" class="btn btn-primary radius-4">Apply</button>
+									<button type="button" class="btn btn-primary radius-8">Apply</button>
 								</div>
 							</div>
 						</div>
 					</div>
 
-					<div class="card">
-						<div class="card-body">
-							<div class="row">
-								<div class="col-12 col-lg-3 d-flex">
-									<div class="card w-100 radius-15 overflow-hidden bg-gradient-cosmic">
-										<div class="card-body">
-											<div class="d-flex align-items-center">
-												<div>
-													<p class="mb-0 text-white">Number of Sectors</p>
-													
-												</div>
-												<div class="ms-auto text-white"><h5 class="mb-0 text-white">277</h5>
-												</div>
+				
+
+					<div class="row row-cols-1 row-cols-lg-2 row-cols-xl-4">
+						<div class="col">
+								<div class="card radius-10 overflow-hidden">
+									<div class="card-body">
+										<div class="d-flex align-items-center">
+											<div>
+												<p class="mb-0">Sectors</p>
+												<h5 class="mb-0">867</h5>
+											</div>
+											<div class="ms-auto">	<i class="bx bx-move font-30"></i>
 											</div>
 										</div>
 									</div>
+									<div class="" id="sectorsFLM1"></div>
 								</div>
-								<div class="col-12 col-lg-3 d-flex">
-									<div class="card w-100 radius-15 overflow-hidden bg-gradient-burning">
-										<div class="card-body">
-											<div class="d-flex align-items-center">
-												<div>
-													<p class="mb-0 text-white">Employees FLM - Sector</p>
-													
-												</div>
-												<div class="ms-auto text-white"><h5 class="mb-0 text-white">12,785</h5>
-												</div>
+							</div>
+							<div class="col">
+								<div class="card radius-10 overflow-hidden">
+									<div class="card-body">
+										<div class="d-flex align-items-center">
+											<div>
+												<p class="mb-0">FLM - Sectors</p>
+												<h5 class="mb-0">964</h5>
+											</div>
+											<div class="ms-auto">	<i class="bx bx-move font-30"></i>
 											</div>
 										</div>
 									</div>
+									<div class="" id="sectorsFLM2"></div>
 								</div>
-								<div class="col-12 col-lg-3 d-flex">
-									<div class="card w-100 radius-15 overflow-hidden bg-gradient-lush">
-										<div class="card-body">
-											<div class="d-flex align-items-center">
-												<div>
-													<p class="mb-0 text-white">Number of ATM</p>
-													
-												</div>
-												<div class="ms-auto text-white"><h5 class="mb-0 text-white">171,503</h5>
-												</div>
+							</div>
+							<div class="col">
+								<div class="card radius-10 overflow-hidden">
+									<div class="card-body">
+										<div class="d-flex align-items-center">
+											<div>
+												<p class="mb-0">ATM</p>
+												<h5 class="mb-0">642</h5>
+											</div>
+											<div class="ms-auto">	<i class="bx bx-map-pin font-30"></i>
 											</div>
 										</div>
 									</div>
+									<div class="" id="atmFLM"></div>
 								</div>
-								<div class="col-12 col-lg-3 d-flex">
-									<div class="card w-100 radius-15 overflow-hidden bg-gradient-kyoto">
-										<div class="card-body">
-											<div class="d-flex align-items-center">
-												<div>
-													<p class="mb-0 text-white">Number of ATM Employees</p>
-													
-												</div>
-												<div class="ms-auto text-white"><h5 class="mb-0 text-white">111,948</h5>
-												</div>
+							</div>
+							<div class="col">
+								<div class="card radius-10 overflow-hidden">
+									<div class="card-body">
+										<div class="d-flex align-items-center">
+											<div>
+												<p class="mb-0">ATM Employees</p>
+												<h5 class="mb-0">876</h5>
 											</div>
+											<div class="ms-auto">	<i class="bx bx-group font-30"></i>
+											</div>
+										</div>
+									</div>
+									<div class="" id="employeesFLM"></div>
+								</div>
+							</div>
+					</div>
+
+					<div class="card radius-10 w-100">
+						<div class="card-header border-bottom-0 bg-transparent">
+							<div class="d-lg-flex align-items-center">
+								<div class="">
+									<h6 class="mb-1">FLM Sector / Sector</h6>
+									<p class="text-secondary mb-2 mb-lg-0 font-14">Ratio Number of Employees</p>
+								</div>
+								<div class="ms-lg-auto">
+									<div class="btn-group-round">
+										<div class="btn-group">
+											<button type="button" class="btn btn-white btn-ratio-cpc selected">Sector 1</button>
+											<button type="button" class="btn btn-white">Sector 2</button>
+											<button type="button" class="btn btn-white">Sector 3</button>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-
-					<div class="card">
 						<div class="card-body">
-							<!-- <h5 class="text-center text-black">FLM Employee Number Ratio - Sector</h5> -->
-							
-							<div id="employeeNumberRatio"></div>
+							<div id="FLMSector"></div>
 						</div>
 					</div>
-
 					<div class="card">
+						<div class="card-header bg-transparent">Ratio Number of FLM Employees - Sector</div>
 						<div class="card-body">
-							<h5 class="text-black">Ratio Number of FLM Employees - Sector</h5>
+							<!-- <h6 class="text-black">Ratio Number of FLM Employees - Sector</h6> -->
 							<div class="table-responsive">
 								<div id="printbar" style="float:right"></div>
 								<br>
@@ -1660,202 +1654,222 @@
 										</tr>
 										<tr>
 											<td>2</td>
-											<td>Cideng</td>
+											<td>Rawamangun</td>
 											<td>1.42</td>
 											<td>2.84625</td>
 										</tr>
 										<tr>
 											<td>3</td>
-											<td>Cideng</td>
+											<td>Balikpapan</td>
 											<td>1.42</td>
 											<td>2.84625</td>
 										</tr>
 										<tr>
 											<td>4</td>
-											<td>Cideng</td>
+											<td>Kalimantan</td>
 											<td>1.42</td>
 											<td>2.84625</td>
 										</tr>
 										<tr>
 											<td>5</td>
-											<td>Cideng</td>
+											<td>Bali</td>
 											<td>1.42</td>
 											<td>2.84625</td>
 										</tr>
 										<tr>
 											<td>6</td>
-											<td>Cideng</td>
+											<td>Medan</td>
 											<td>1.42</td>
 											<td>2.84625</td>
 										</tr>
 										<tr>
 											<td>7</td>
-											<td>Cideng</td>
+											<td>Cirebon</td>
 											<td>1.42</td>
 											<td>2.84625</td>
 										</tr>
 										<tr>
 											<td>8</td>
-											<td>Cideng</td>
+											<td>Tasikmalaya</td>
 											<td>1.42</td>
 											<td>2.84625</td>
 										</tr>
 										<tr>
 											<td>9</td>
-											<td>Cideng</td>
+											<td>Bandung</td>
 											<td>1.42</td>
 											<td>2.84625</td>
 										</tr>
 										<tr>
 											<td>10</td>
-											<td>Cideng</td>
+											<td>Banjarmasin</td>
 											<td>1.42</td>
 											<td>2.84625</td>
 										</tr>
 									</tbody>
-									<tfoot class="table-light">
-										<tr>
-											<th>Level</th>
-											<th>Name</th>
-											<th>Employee Code</th>
-										</tr>
-									</tfoot>
 								</table>
 							</div>
 						</div>
 					</div>
 
-					<div class="card">
-						<div class="card-body">
-							<div id="ratioAtmEmployees"></div>
+					<div class="row">
+						<div class="col-12 col-lg-8 d-lg-flex align-items-lg-stretch">
+							<div class="card radius-10 w-100">
+								<div class="card-header border-bottom-0 bg-transparent">
+									<div class="d-lg-flex align-items-center">
+										<div class="">
+											<h6 class="mb-1">FLM Sector / Number of ATM Employees</h6>
+											<p class="text-secondary mb-2 mb-lg-0 font-14">Ratio Number of Employees</p>
+										</div>
+										<div class="ms-lg-auto">
+											<div class="btn-group-round">
+												<div class="btn-group">
+													<button type="button" class="btn btn-white btn-ratio-cpc selected">Sector 1</button>
+													<button type="button" class="btn btn-white">Sector 2</button>
+													<button type="button" class="btn btn-white">Sector 3</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="card-body">
+									<div id="FLMSectorNumberofATMEmployees"></div>
+								</div>
+							</div>
 						</div>
-					</div>
-
-					<div class="card">
-						<div class="card-body">
-							<h5 class="text-black">FLM Employee Ratio - Sector / Number of ATM Employees</h5>
-							<div class="table-responsive">
-								<div id="printbar" style="float:right"></div>
-								<br>
-								<table id="tableRatioFlmEmployeesAtm" class="table mb-0 align-middle" style="width:100%">
-									<thead class="table-light">
-										<tr>
-											<th>No</th>
-											<th>Branch</th>
-											<th>Ratio</th>
-											<th>Average Ratio</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>1</td>
-											<td>Cideng</td>
-											<td>1.42</td>
-											<td>2.84625</td>
-										</tr>
-										<tr>
-											<td>2</td>
-											<td>Cideng</td>
-											<td>1.42</td>
-											<td>2.84625</td>
-										</tr>
-										<tr>
-											<td>3</td>
-											<td>Cideng</td>
-											<td>1.42</td>
-											<td>2.84625</td>
-										</tr>
-										<tr>
-											<td>4</td>
-											<td>Cideng</td>
-											<td>1.42</td>
-											<td>2.84625</td>
-										</tr>
-										<tr>
-											<td>5</td>
-											<td>Cideng</td>
-											<td>1.42</td>
-											<td>2.84625</td>
-										</tr>
-										<tr>
-											<td>6</td>
-											<td>Cideng</td>
-											<td>1.42</td>
-											<td>2.84625</td>
-										</tr>
-										<tr>
-											<td>7</td>
-											<td>Cideng</td>
-											<td>1.42</td>
-											<td>2.84625</td>
-										</tr>
-										<tr>
-											<td>8</td>
-											<td>Cideng</td>
-											<td>1.42</td>
-											<td>2.84625</td>
-										</tr>
-										<tr>
-											<td>9</td>
-											<td>Cideng</td>
-											<td>1.42</td>
-											<td>2.84625</td>
-										</tr>
-										<tr>
-											<td>10</td>
-											<td>Cideng</td>
-											<td>1.42</td>
-											<td>2.84625</td>
-										</tr>
-									</tbody>
-									<tfoot class="table-light">
-										<tr>
-											<th>Level</th>
-											<th>Name</th>
-											<th>Employee Code</th>
-										</tr>
-									</tfoot>
-								</table>
+						<div class="col-12 col-lg-4 d-lg-flex align-items-lg-stretch">
+							<div class="card">
+								<div class="card-header bg-transparent">Ratio Number of FLM Employees - Sector</div>
+								<div class="card-body">
+									<!-- <h6 class="text-black">Ratio Number of FLM Employees - Sector</h6> -->
+									<div class="table-responsive">
+										<div id="printbar" style="float:right"></div>
+										<br>
+										<table id="tableRatioFlmEmployeesAtm" class="table mb-0 align-middle" style="width:100%">
+											<thead class="table-light">
+												<tr>
+													<th>No</th>
+													<th>Branch</th>
+													<th>Ratio</th>
+													<th>Average Ratio</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>1</td>
+													<td>Cideng</td>
+													<td>1.42</td>
+													<td>2.84625</td>
+												</tr>
+												<tr>
+													<td>2</td>
+													<td>Cideng</td>
+													<td>1.42</td>
+													<td>2.84625</td>
+												</tr>
+												<tr>
+													<td>3</td>
+													<td>Cideng</td>
+													<td>1.42</td>
+													<td>2.84625</td>
+												</tr>
+												<tr>
+													<td>4</td>
+													<td>Cideng</td>
+													<td>1.42</td>
+													<td>2.84625</td>
+												</tr>
+												<tr>
+													<td>5</td>
+													<td>Cideng</td>
+													<td>1.42</td>
+													<td>2.84625</td>
+												</tr>
+												<tr>
+													<td>6</td>
+													<td>Cideng</td>
+													<td>1.42</td>
+													<td>2.84625</td>
+												</tr>
+												<tr>
+													<td>7</td>
+													<td>Cideng</td>
+													<td>1.42</td>
+													<td>2.84625</td>
+												</tr>
+												<tr>
+													<td>8</td>
+													<td>Cideng</td>
+													<td>1.42</td>
+													<td>2.84625</td>
+												</tr>
+												<tr>
+													<td>9</td>
+													<td>Cideng</td>
+													<td>1.42</td>
+													<td>2.84625</td>
+												</tr>
+												<tr>
+													<td>10</td>
+													<td>Cideng</td>
+													<td>1.42</td>
+													<td>2.84625</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
+
+					<!-- <div class="card">
+						<div class="card-body">
+							<h5 class="text-center text-black mb-4">FLM Employee Number Ratio - Sector</h5>
+							
+							<div id="employeeNumberRatio"></div>
+						</div>
+					</div> -->
+
+					
+
 				</div>
 
 				<div class="national-summary" id="overtime" style="display: none;">
-					<div class="card">
+					<div class="card radius-10 card-10">
 						<div class="card-body">
 							<div class="row mb-3">
-								<div class="col-12 col-lg-2 filter-awal"><label for="filerDateAwal" class="form-label">Start Date
+								<div class="col-12 col-lg-3 filter-awal"><label for="filerDateAwal" class="form-label">Start Date
 										Filter</label>
 									<div class="input-group mb-2">
 										<input type="text" class="form-control datepickerawal" id="filterDateAwal"
 											placeholder="dd/mm/yyyy">
 									</div>
 								</div>
-								<div class="col-12 col-lg-2 filter-akhir"><label for="filerDateAkhir" class="form-label">End Date
+								<div class="col-12 col-lg-3 filter-akhir"><label for="filerDateAkhir" class="form-label">End Date
 										Filters</label>
 									<div class="input-group mb-2">
 										<input type="text" class="form-control datepickerakhir" id="filterDateAkhir"
 											placeholder="dd/mm/yyyy">
 									</div>
 								</div>
-								<div class="col-12 col-lg-2">
+								<div class="col-12 col-lg-3">
 									<label class="form-label">Section</label>
 									<select class="single-select form-select">
-										<option value="lorem">Lorem</option>
-										<option value="lorem">Lorem</option>
-										<option value="lorem">Lorem</option>
+										<option value="lorem">All Section</option>
+										<option value="lorem">Branch Mangement</option>
+										<option value="lorem">Lorem Ipsum</option>
 									</select>
 								</div>
-								<div class="col-12 col-lg-2">
+								<div class="col-12 col-lg-3">
 									<label class="form-label">Sub Unit</label>
 									<select class="single-select form-select">
-										<option value="lorem">Lorem</option>
-										<option value="lorem">Lorem</option>
-										<option value="lorem">Lorem</option>
+										<option value="lorem">All Sub Unit</option>
+										<option value="lorem">CIT</option>
+										<option value="lorem">CR</option>
 									</select>
 								</div>
-								<div class="col-12 col-lg-2">
+								<div class="col-12 col-lg-4">
 									<label class="form-label">Status</label>
 									<select class="single-select form-select">
 										<option value="all">All</option>
@@ -1867,7 +1881,7 @@
 										<option value="decline">Decline</option>
 									</select>
 								</div>
-								<div class="col-12 col-lg-2">
+								<div class="col-12 col-lg-4">
 									<label class="form-label">Filter</label>
 									<select class="single-select form-select">
 										<option value="all">All</option>
@@ -1876,51 +1890,376 @@
 										<option value="branch">Branch</option>
 									</select>
 								</div>
+								<div class="col-12 col-lg-4">
+									<label class="form-label">Type</label>
+									<select class="single-select form-select">
+										<option value="all">All</option>
+										<option value="spl">SPL</option>
+										<option value="fo">FO</option>
+									</select>
+								</div>
 							</div>
+							
 							<div class="d-flex justify-content-end">
-								<button class="btn btn-primary me-3">Apply</button>
-								<button class="btn btn-outline-primary me-3">
+								<button class="btn btn-primary radius-8 me-2">Apply</button>
+								<button class="btn btn-outline-primary radius-8 me-2">
 									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye text-primary me-1"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
 									Detail SPL</button>
-									<button class="btn btn-outline-primary">
+								<button class="btn btn-outline-primary radius-8">
 										<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye text-primary me-1"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
 										Detail FO</button>
 							</div>
 						</div>
 					</div>
+					<div class="row">
+						<div class="col-12 col-lg-6 d-flex">
+							<div class="card radius-10 radius-10 w-100">
+								<div class="card-body">
+									<h6 class="text-black">Percentage of Overtime Duration SPL to Working Hours</h6>
+									<p class="mb-3">Overtime Duration / (Total Hours Worked) x 100%</p>
+										<!-- <div class="row align-items-center">
+											<div class="col-1">
+												<h5 class="mb-0">1</h5>
+											</div>
+											<div class="col-9">
+												<h6 class="mb-2">Kediri</h6>
+												<div class="progress" style="height:7px;">
+													<div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+												</div>
+											</div>
+											<div class="col-2">
+												<h6 class="mb-0">35.97%</h6>
+											</div>
+										</div> -->
+									<table class="table table-borderless mb-0">
+										<thead>
+											<tr>
+												<td class="text-secondary" scope="col">#</td>
+												<td class="text-secondary" scope="col">Branch</td>
+												<td class="text-secondary" scope="col" style="width:60%">Frequency</td>
+												<td class="text-secondary" scope="col"></td>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>01</td>
+												<td>Kediri</td>
+												<td>
+													<div class="progress" style="height:8px; margin-top: 5px;">
+														<div class="progress-bar bg-blue" role="progressbar" style="width: 79%" aria-valuenow="79" aria-valuemin="0" aria-valuemax="100"></div>
+													</div>
+												</td>
+												<td>
+													<span class="badge-progress-blue">
+														12.61%
+													</span>
+												</td>
+											</tr>
+											<tr>
+												<td>02</td>
+												<td>Bengkulu</td>
+												<td>
+													<div class="progress" style="height:8px; margin-top: 5px;">
+														<div class="progress-bar bg-blue" role="progressbar" style="width: 72%" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100"></div>
+													</div>
+												</td>
+												<td>
+													<span class="badge-progress-blue">
+														10.69%
+													</span>
+												</td>
+											</tr>
+											<tr>
+												<td>03</td>
+												<td>Jambi</td>
+												<td>
+													<div class="progress" style="height:8px; margin-top: 5px;">
+														<div class="progress-bar bg-blue" role="progressbar" style="width: 49%" aria-valuenow="49" aria-valuemin="0" aria-valuemax="100"></div>
+													</div>
+												</td>
+												<td>
+													<span class="badge-progress-blue">
+														10.49%
+													</span>
+												</td>
+											</tr>
+											<tr>
+												<td>04</td>
+												<td>Pontianak</td>
+												<td>
+													<div class="progress" style="height:8px; margin-top: 5px;">
+														<div class="progress-bar bg-blue" role="progressbar" style="width: 39%" aria-valuenow="39" aria-valuemin="0" aria-valuemax="100"></div>
+													</div>
+												</td>
+												<td>
+													<span class="badge-progress-blue">
+														9.88%
+													</span>
+												</td>
+											</tr>
+											<tr>
+												<td>05</td>
+												<td>Singkawang</td>
+												<td>
+													<div class="progress" style="height:8px; margin-top: 5px;">
+														<div class="progress-bar bg-blue" role="progressbar" style="width: 39%" aria-valuenow="39" aria-valuemin="0" aria-valuemax="100"></div>
+													</div>
+												</td>
+												<td>
+													<span class="badge-progress-blue">
+														9.75%
+													</span>
+												</td>
+											</tr>
+											<tr>
+												<td>06</td>
+												<td>Kediri</td>
+												<td>
+													<div class="progress" style="height:8px; margin-top: 5px;">
+														<div class="progress-bar bg-blue" role="progressbar" style="width: 37%" aria-valuenow="37" aria-valuemin="0" aria-valuemax="100"></div>
+													</div>
+												</td>
+												<td>
+													<span class="badge-progress-blue">
+														9.71%
+													</span>
+												</td>
+											</tr>
+											<tr>
+												<td>07</td>
+												<td>Bengkulu</td>
+												<td>
+													<div class="progress" style="height:8px; margin-top: 5px;">
+														<div class="progress-bar bg-blue" role="progressbar" style="width: 36%" aria-valuenow="36" aria-valuemin="0" aria-valuemax="100"></div>
+													</div>
+												</td>
+												<td>
+													<span class="badge-progress-blue">
+														8.4%
+													</span>
+												</td>
+											</tr>
+											<tr>
+												<td>08</td>
+												<td>Jambi</td>
+												<td>
+													<div class="progress" style="height:8px; margin-top: 5px;">
+														<div class="progress-bar bg-blue" role="progressbar" style="width: 35%" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
+													</div>
+												</td>
+												<td>
+													<span class="badge-progress-blue">
+														7.8%
+													</span>
+												</td>
+											</tr>
+											<tr>
+												<td>09</td>
+												<td>Pontianak</td>
+												<td>
+													<div class="progress" style="height:8px; margin-top: 5px;">
+														<div class="progress-bar bg-blue" role="progressbar" style="width: 31%" aria-valuenow="31" aria-valuemin="0" aria-valuemax="100"></div>
+													</div>
+												</td>
+												<td>
+													<span class="badge-progress-blue">
+														7.5%
+													</span>
+												</td>
+											</tr>
+											<tr>
+												<td>10</td>
+												<td>Singkawang</td>
+												<td>
+													<div class="progress" style="height:8px; margin-top: 5px;">
+														<div class="progress-bar bg-blue" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+													</div>
+												</td>
+												<td>
+													<span class="badge-progress-blue">
+														7.1%
+													</span>
+												</td>
+											</tr>
 
-					<div class="card">
-						<div class="card-body">
-							<h5 class="text-black text-center">Percentage of overtime duration to working hours</h5>
-							<p class="text-center">Duration of Overtime / (Total Hours Worked) x 100%</p>
-							<div id="durasiLemburSPL"></div>
-						</div>
-					</div>
-
-					<div class="card">
-						<div class="card-body">
-							<h5 class="text-black text-center">Percentage of FO frequency to working days</h5>
-							<p class="text-center">FO Frequency / (Total Hours Worked) x 100%</p>
-							<div id="presentasiFrekuensiFO"></div>
-						</div>
-					</div>
-
-					<hr class="mb-4">
-
-					<div class="card">
-						<div class="card-body">
-							<div class="row">
-								<div class="col-12 col-lg-11">
-										<label class="form-label">Type</label>
-										<select class="single-select form-select">
-											<option value="all">All</option>
-											<option value="spl">SPL</option>
-											<option value="fo">FO</option>
-										</select>
+										</tbody>
+									</table>
 								</div>
-								<div class="col-12 col-lg-1">
-									<label for="" class="form-label">Action</label> <br>
-									<button type="button" class="btn btn-primary radius-4">Apply</button>
+							</div>
+						</div>
+						
+						<div class="col-12 col-lg-6 d-flex">
+							<div class="card radius-10 radius-10 w-100">
+								<div class="card-body">
+									<h6 class="text-black">Percentage of FO frequency to working days</h6>
+									<p class="mb-3">FO Frequency / (Total Hours Worked) x 100%</p>
+										<!-- <div class="row align-items-center">
+											<div class="col-1">
+												<h5 class="mb-0">1</h5>
+											</div>
+											<div class="col-9">
+												<h6 class="mb-2">Kediri</h6>
+												<div class="progress" style="height:7px;">
+													<div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+												</div>
+											</div>
+											<div class="col-2">
+												<h6 class="mb-0">35.97%</h6>
+											</div>
+										</div> -->
+									<table class="table table-borderless mb-0">
+										<thead>
+											<tr>
+												<td class="text-secondary" scope="col">#</td>
+												<td class="text-secondary" scope="col">Branch</td>
+												<td class="text-secondary" scope="col" style="width:60%">Frequency</td>
+												<td class="text-secondary" scope="col"></td>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>01</td>
+												<td>Kediri</td>
+												<td>
+													<div class="progress" style="height:8px; margin-top: 5px;">
+														<div class="progress-bar bg-purple" role="progressbar" style="width: 79%" aria-valuenow="79" aria-valuemin="0" aria-valuemax="100"></div>
+													</div>
+												</td>
+												<td>
+													<span class="badge-progress-purple">
+														7.99%
+													</span>
+												</td>
+											</tr>
+											<tr>
+												<td>02</td>
+												<td>Bengkulu</td>
+												<td>
+													<div class="progress" style="height:8px; margin-top: 5px;">
+														<div class="progress-bar bg-purple" role="progressbar" style="width: 72%" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100"></div>
+													</div>
+												</td>
+												<td>
+													<span class="badge-progress-purple">
+														7.24%
+													</span>
+												</td>
+											</tr>
+											<tr>
+												<td>03</td>
+												<td>Jambi</td>
+												<td>
+													<div class="progress" style="height:8px; margin-top: 5px;">
+														<div class="progress-bar bg-purple" role="progressbar" style="width: 49%" aria-valuenow="49" aria-valuemin="0" aria-valuemax="100"></div>
+													</div>
+												</td>
+												<td>
+													<span class="badge-progress-purple">
+														4.99%
+													</span>
+												</td>
+											</tr>
+											<tr>
+												<td>04</td>
+												<td>Pontianak</td>
+												<td>
+													<div class="progress" style="height:8px; margin-top: 5px;">
+														<div class="progress-bar bg-purple" role="progressbar" style="width: 39%" aria-valuenow="39" aria-valuemin="0" aria-valuemax="100"></div>
+													</div>
+												</td>
+												<td>
+													<span class="badge-progress-purple">
+														3.91%
+													</span>
+												</td>
+											</tr>
+											<tr>
+												<td>05</td>
+												<td>Singkawang</td>
+												<td>
+													<div class="progress" style="height:8px; margin-top: 5px;">
+														<div class="progress-bar bg-purple" role="progressbar" style="width: 39%" aria-valuenow="39" aria-valuemin="0" aria-valuemax="100"></div>
+													</div>
+												</td>
+												<td>
+													<span class="badge-progress-purple">
+														3.91%
+													</span>
+												</td>
+											</tr>
+											<tr>
+												<td>06</td>
+												<td>Kediri</td>
+												<td>
+													<div class="progress" style="height:8px; margin-top: 5px;">
+														<div class="progress-bar bg-purple" role="progressbar" style="width: 37%" aria-valuenow="37" aria-valuemin="0" aria-valuemax="100"></div>
+													</div>
+												</td>
+												<td>
+													<span class="badge-progress-purple">
+														3.72%
+													</span>
+												</td>
+											</tr>
+											<tr>
+												<td>07</td>
+												<td>Bengkulu</td>
+												<td>
+													<div class="progress" style="height:8px; margin-top: 5px;">
+														<div class="progress-bar bg-purple" role="progressbar" style="width: 36%" aria-valuenow="36" aria-valuemin="0" aria-valuemax="100"></div>
+													</div>
+												</td>
+												<td>
+													<span class="badge-progress-purple">
+														3.6%
+													</span>
+												</td>
+											</tr>
+											<tr>
+												<td>08</td>
+												<td>Jambi</td>
+												<td>
+													<div class="progress" style="height:8px; margin-top: 5px;">
+														<div class="progress-bar bg-purple" role="progressbar" style="width: 35%" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
+													</div>
+												</td>
+												<td>
+													<span class="badge-progress-purple">
+														3.51%
+													</span>
+												</td>
+											</tr>
+											<tr>
+												<td>09</td>
+												<td>Pontianak</td>
+												<td>
+													<div class="progress" style="height:8px; margin-top: 5px;">
+														<div class="progress-bar bg-purple" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+													</div>
+												</td>
+												<td>
+													<span class="badge-progress-purple">
+														3.15%
+													</span>
+												</td>
+											</tr>
+											<tr>
+												<td>10</td>
+												<td>Singkawang</td>
+												<td>
+													<div class="progress" style="height:8px; margin-top: 5px;">
+														<div class="progress-bar bg-purple" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+													</div>
+												</td>
+												<td>
+													<span class="badge-progress-purple">
+														3.07%
+													</span>
+												</td>
+											</tr>
+
+										</tbody>
+									</table>
 								</div>
 							</div>
 						</div>
@@ -1928,15 +2267,162 @@
 
 					<div class="row">
 						<div class="col-12 col-lg-4 d-flex">
-							<div class="card w-100">
+							<div class="card radius-10 w-100">
 								<div class="card-body">
-									<h5 class="text-center text-black mb-4">Index Overtime</h5>
+									<h6 class="text-center text-black mb-4">Index Overtime</h6>
 									<div id="indexOvertime"></div>
 								</div>
 							</div>
 						</div>
-						<div class="col-12 col-lg-8 d-flex">
-							<div class="card w-100">
+						<div class="col-12 col-lg-4 d-flex">
+							<div class="card radius-10 w-100">
+								<div class="card-body">
+									<h6 class="text-center text-black">Ratio Overtime</h6>
+									<div id="chartRatioOvertime"></div>
+									<div class="d-flex justify-content-end">
+										<div class="d-flex align-items-center border radius-15 px-2">
+											<i class='bx bxs-checkbox font-22 me-1 text-primary'></i><span>Average Overtime</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-lg-4 d-flex">
+							<div class="card radius-10 w-100">
+								<div class="card-body">
+									<h6 class="text-black">Employees Overtime</h6>
+									<p class="mb-3">10 Employees with the Highest Overtime Hours</p>
+								</div>
+								<div class="highest-overtime ps-3 pb-3 pe-3 mb-3">
+									<div class="d-flex align-items-center">
+										<div class="">
+											<img src="assets/images/avatars/avatar-2.png" class="p-1 avatar-ranking-employee" alt="" />
+										</div>
+										<div class="ps-3">
+											<h6 class="mb-0 font-weight-bold">Bella Swan</h6>
+											<p class="mb-0 text-secondary"><span>NIK:</span> 2401874622</p>
+											<p class="mb-0 text-secondary"><span>Branch:</span> Bandung</p>
+										</div>
+										<p class="ms-auto mb-0 text-purple">197 <span>Hours</span></p>
+									</div>
+									<hr/>
+									<div class="d-flex align-items-center">
+										<div class="">
+											<img src="assets/images/avatars/avatar-1.png" class="p-1 avatar-ranking-employee" alt="" />
+										</div>
+										<div class="ps-3">
+											<h6 class="mb-0 font-weight-bold">Satrio Adi</h6>
+											<p class="mb-0 text-secondary"><span>NIK:</span> 239184733</p>
+											<p class="mb-0 text-secondary"><span>Branch:</span> Cideng</p>
+										</div>
+										<p class="ms-auto mb-0 text-purple">162 <span>Hours</span></p>
+									</div>
+									<hr/>
+									<div class="d-flex align-items-center">
+										<div class="">
+											<img src="assets/images/avatars/avatar-3.png" class="p-1 avatar-ranking-employee" alt="" />
+										</div>
+										<div class="ps-3">
+											<h6 class="mb-0 font-weight-bold">Ardianto</h6>
+											<p class="mb-0 text-secondary"><span>NIK:</span> 229382422</p>
+											<p class="mb-0 text-secondary"><span>Branch:</span> Kalimantan</p>
+										</div>
+										<p class="ms-auto mb-0 text-purple">160 <span>Hours</span></p>
+									</div>
+									<hr/>
+									<div class="d-flex align-items-center">
+										<div class="">
+											<img src="assets/images/avatars/avatar-4.png" class="p-1 avatar-ranking-employee" alt="" />
+										</div>
+										<div class="ps-3">
+											<h6 class="mb-0 font-weight-bold">Anastasya</h6>
+											<p class="mb-0 text-secondary"><span>NIK:</span> 24821332</p>
+											<p class="mb-0 text-secondary"><span>Branch:</span> Bali</p>
+										</div>
+										<p class="ms-auto mb-0 text-purple">159 <span>Hours</span></p>
+									</div>
+									<hr/>
+									<div class="d-flex align-items-center">
+										<div class="">
+											<img src="assets/images/avatars/avatar-5.png" class="p-1 avatar-ranking-employee" alt="" />
+										</div>
+										<div class="ps-3">
+											<h6 class="mb-0 font-weight-bold">Febri</h6>
+											<p class="mb-0 text-secondary"><span>NIK:</span> 228473821</p>
+											<p class="mb-0 text-secondary"><span>Branch:</span> Tasikmalaya</p>
+										</div>
+										<p class="ms-auto mb-0 text-purple">142 <span>Hours</span></p>
+									</div>
+									<hr/>
+									<div class="d-flex align-items-center">
+										<div class="">
+											<img src="assets/images/avatars/avatar-6.png" class="p-1 avatar-ranking-employee" alt="" />
+										</div>
+										<div class="ps-3">
+											<h6 class="mb-0 font-weight-bold">Ahmad Mudofir</h6>
+											<p class="mb-0 text-secondary"><span>NIK:</span> 198484700</p>
+											<p class="mb-0 text-secondary"><span>Branch:</span> Bali</p>
+										</div>
+										<p class="ms-auto mb-0 text-purple">142 <span>Hours</span></p>
+									</div>
+									<hr/>
+									<div class="d-flex align-items-center">
+										<div class="">
+											<img src="assets/images/avatars/avatar-7.png" class="p-1 avatar-ranking-employee" alt="" />
+										</div>
+										<div class="ps-3">
+											<h6 class="mb-0 font-weight-bold">Heru Lekser</h6>
+											<p class="mb-0 text-secondary"><span>NIK:</span> 44</p>
+											<p class="mb-0 text-secondary"><span>Branch:</span> Rawamangun</p>
+										</div>
+										<p class="ms-auto mb-0 text-purple">140 <span>Hours</span></p>
+									</div>
+									<hr/>
+									<div class="d-flex align-items-center">
+										<div class="">
+											<img src="assets/images/avatars/avatar-8.png" class="p-1 avatar-ranking-employee" alt="" />
+										</div>
+										<div class="ps-3">
+											<h6 class="mb-0 font-weight-bold">Tegar Prayogi</h6>
+											<p class="mb-0 text-secondary"><span>NIK:</span> 209483722</p>
+											<p class="mb-0 text-secondary"><span>Branch:</span> Medan</p>
+										</div>
+										<p class="ms-auto mb-0 text-purple">139 <span>Hours</span></p>
+									</div>
+									<hr/>
+									<div class="d-flex align-items-center">
+										<div class="">
+											<img src="assets/images/avatars/avatar-9.png" class="p-1 avatar-ranking-employee" alt="" />
+										</div>
+										<div class="ps-3">
+											<h6 class="mb-0 font-weight-bold">Hanif Hadi</h6>
+											<p class="mb-0 text-secondary"><span>NIK:</span> 209483788</p>
+											<p class="mb-0 text-secondary"><span>Branch:</span> Bogor</p>
+										</div>
+										<p class="ms-auto mb-0 text-purple">138 <span>Hours</span></p>
+									</div>
+									<hr/>
+									<div class="d-flex align-items-center">
+										<div class="">
+											<img src="assets/images/avatars/avatar-10.png" class="p-1 avatar-ranking-employee" alt="" />
+										</div>
+										<div class="ps-3">
+											<h6 class="mb-0 font-weight-bold">Syaiful</h6>
+											<p class="mb-0 text-secondary"><span>NIK:</span> 230984233</p>
+											<p class="mb-0 text-secondary"><span>Branch:</span> Cideng</p>
+										</div>
+										<p class="ms-auto mb-0 text-purple">137 <span>Hours</span></p>
+									</div>
+									<hr/>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+
+					<div class="row">
+						<div class="col-12 col-lg-6 d-flex">
+							<div class="card radius-10 w-100">
 								<div class="card-body">
 									<div class="btn-group-round">
 										<div class="btn-group">
@@ -2059,24 +2545,8 @@
 								</div>
 							</div>
 						</div>
-					</div>
-
-					<div class="row">
-						<div class="col-12 col-lg-4 d-flex">
-							<div class="card w-100">
-								<div class="card-body">
-									<h5 class="text-center text-black">Ratio Overtime</h5>
-									<div id="chartRatioOvertime"></div>
-									<div class="d-flex justify-content-end">
-										<div class="d-flex align-items-center border radius-15 px-2">
-											<i class='bx bxs-checkbox font-22 me-1 text-primary'></i><span>Average Overtime</span>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-12 col-lg-8 d-flex">
-							<div class="card w-100">
+						<div class="col-12 col-lg-6 d-flex">
+							<div class="card radius-10 w-100">
 								<div class="card-body">
 									<div class="btn-group-round">
 										<div class="btn-group">
@@ -2129,14 +2599,7 @@
 						</div>
 					</div>
 
-					<div class="card">
-						<div class="card-body">
-							<h5 class="text-center text-black">Top 10 Employees with the Highest Overtime Hours</h5>
-							<div id="highestOvertimeHours"></div>
-						</div>
-					</div>
-
-					<div class="card">
+					<div class="card radius-10">
 						<div class="card-body">
 							<div class="row mb-3">
 								<div class="col-12 col-lg-3 filter-awal"><label for="filerDateAwal" class="form-label">Start Date
@@ -2164,9 +2627,9 @@
 								<div class="col-12 col-lg-2">
 									<label class="form-label">Sub Unit</label>
 									<select class="single-select form-select">
-										<option value="lorem">Lorem</option>
-										<option value="lorem">Lorem</option>
-										<option value="lorem">Lorem</option>
+										<option value="all">All</option>
+										<option value="cr">CIT</option>
+										<option value="cit">CR</option>
 									</select>
 								</div>
 								<div class="col-12 col-lg-1 button-filter">
@@ -2174,45 +2637,149 @@
 									<button type="button" class="btn btn-primary radius-4">Apply</button>
 								</div>
 							</div>
-							<h5 class="text-center text-black mb-3">Selisih Kebutuhan Run Terhadap Kehadiran Karyawan CDC Perhari</h5>
+							<h6 class="text-center text-black mb-3">Selisih Kebutuhan Run Terhadap Kehadiran Karyawan CDC Perhari</h6>
 							<div id="selisihKebutuhanRun"></div>
 						</div>
 					</div>
-					<div class="card">
-						<div class="card-body">
-							<div class="row mb-3">
-								<div class="col-12 col-lg-4 filter-awal"><label for="filerDateAwal" class="form-label">Start Date
-										Filter</label>
-									<div class="input-group mb-2">
-										<input type="text" class="form-control datepickerawal" id="startDatePeningkatanDurasiLembur"
-											placeholder="dd/mm/yyyy">
+
+					<div class="row">
+						<div class="col-12 col-lg-8 d-flex">
+							<div class="card radius-10 w-100">
+								<div class="card-body">
+									<div class="row mb-3">
+										<div class="col-12 col-lg-3 filter-awal"><label for="filerDateAwal" class="form-label">Start Date
+												Filter</label>
+											<div class="input-group mb-2">
+												<input type="text" class="form-control datepickerawal" id="startDatePeningkatanDurasiLembur"
+													placeholder="dd/mm/yyyy">
+											</div>
+										</div>
+										<div class="col-12 col-lg-3 filter-akhir"><label for="filerDateAkhir" class="form-label">End Date
+												Filters</label>
+											<div class="input-group mb-2">
+												<input type="text" class="form-control datepickerakhir" id="endDatePeningkatanDurasiLembur"
+													placeholder="dd/mm/yyyy">
+											</div>
+										</div>
+										<div class="col-12 col-lg-2">
+											<label class="form-label">Type</label>
+											<select class="single-select form-select">
+												<option value="all">All</option>
+												<option value="spl">SPL</option>
+												<option value="fo">FO</option>
+											</select>
+										</div>
+										<div class="col-12 col-lg-2">
+											<label class="form-label">Branch</label>
+											<select class="single-select form-select">
+												<option value="bandung">Bandung</option>
+												<option value="cideng">Cideng</option>
+												<option value="Samarinda">Samarinda</option>
+											</select>
+										</div>
+										<div class="col-12 col-lg-2 button-filter">
+											<label for="" class="form-label">Action</label> <br>
+											<button type="button" class="btn btn-primary radius-8">Apply</button>
+										</div>
 									</div>
-								</div>
-								<div class="col-12 col-lg-4 filter-akhir"><label for="filerDateAkhir" class="form-label">End Date
-										Filters</label>
-									<div class="input-group mb-2">
-										<input type="text" class="form-control datepickerakhir" id="endDatePeningkatanDurasiLembur"
-											placeholder="dd/mm/yyyy">
-									</div>
-								</div>
-								<div class="col-12 col-lg-3">
-									<label class="form-label">Type</label>
-									<select class="single-select form-select">
-										<option value="all">All</option>
-										<option value="spl">SPL</option>
-										<option value="fo">FO</option>
-									</select>
-								</div>
-								<div class="col-12 col-lg-1 button-filter">
-									<label for="" class="form-label">Action</label> <br>
-									<button type="button" class="btn btn-primary radius-4">Apply</button>
+									<h6 class="text-center text-black mb-3">Peningkatan Durasi Lembur Cabang</h6>
+									<div id="durasiLemburCabang"></div>
 								</div>
 							</div>
-							<h5 class="text-center text-black mb-3">Top 10 Cabang Dengan Peningkatan Durasi Lembur Selama 3 Bulan</h5>
-							<div id="peningkatanDurasiLemburTigaBulan"></div>
+						</div>
+						<div class="col-12 col-lg-4 d-flex">
+							<div class="card radius-10 w-100">
+								<div class="card-body">
+									<h6 class="text-center text-black mb-3">Cabang Dengan Peningkatan Durasi Lembur</h6>
+									<div class="p-3 mb-3">
+										<div class="d-flex align-items-center">
+											<div class="">
+												<h6 class="mb-0">1</h6>
+											</div>
+											<div class="ps-3">
+												<h6 class="mb-0 font-weight-bold">Bandung</h6>
+											</div>
+											<p class="ms-auto mb-0 text-purple">1.822 <span>Hours</span></p>
+										</div>
+										<hr/>
+										<div class="d-flex align-items-center">
+											<div class="">
+												<h6 class="mb-0">2</h6>
+											</div>
+											<div class="ps-3">
+												<h6 class="mb-0 font-weight-bold">Medan</h6>
+											</div>
+											<p class="ms-auto mb-0 text-purple">1.703 <span>Hours</span></p>
+										</div>
+										<hr/>
+										<div class="d-flex align-items-center">
+											<div class="">
+												<h6 class="mb-0">3</h6>
+											</div>
+											<div class="ps-3">
+												<h6 class="mb-0 font-weight-bold">Jambi</h6>
+											</div>
+											<p class="ms-auto mb-0 text-purple">1.386 <span>Hours</span></p>
+										</div>
+										<hr/>
+										<div class="d-flex align-items-center">
+											<div class="">
+												<h6 class="mb-0">4</h6>
+											</div>
+											<div class="ps-3">
+												<h6 class="mb-0 font-weight-bold">Purwokerto</h6>
+											</div>
+											<p class="ms-auto mb-0 text-purple">1.369 <span>Hours</span></p>
+										</div>
+										<hr/>
+										<div class="d-flex align-items-center">
+											<div class="">
+												<h6 class="mb-0">5</h6>
+											</div>
+											<div class="ps-3">
+												<h6 class="mb-0 font-weight-bold">Solo</h6>
+											</div>
+											<p class="ms-auto mb-0 text-purple">1.346 <span>Hours</span></p>
+										</div>
+										<hr/>
+										<div class="d-flex align-items-center">
+											<div class="">
+												<h6 class="mb-0">6</h6>
+											</div>
+											<div class="ps-3">
+												<h6 class="mb-0 font-weight-bold">Lampung</h6>
+											</div>
+											<p class="ms-auto mb-0 text-purple">1.316 <span>Hours</span></p>
+										</div>
+										<hr/>
+										<div class="d-flex align-items-center">
+											<div class="">
+												<h6 class="mb-0">7</h6>
+											</div>
+											<div class="ps-3">
+												<h6 class="mb-0 font-weight-bold">Pontianak</h6>
+											</div>
+											<p class="ms-auto mb-0 text-purple">1.153 <span>Hours</span></p>
+										</div>
+										<hr/>
+										<div class="d-flex align-items-center">
+											<div class="">
+												<h6 class="mb-0">8</h6>
+											</div>
+											<div class="ps-3">
+												<h6 class="mb-0 font-weight-bold">Bengkulu</h6>
+											</div>
+											<p class="ms-auto mb-0 text-purple">1.070 <span>Hours</span></p>
+										</div>
+										<hr/>
+									</div>
+								</div>								
+								
+							</div>
 						</div>
 					</div>
-					<div class="card">
+					
+					<div class="card radius-10">
 						<div class="card-body">
 							
 							<div class="row mb-3">
@@ -2240,11 +2807,67 @@
 								</div>
 								<div class="col-12 col-lg-1 button-filter">
 									<label for="" class="form-label">Action</label> <br>
-									<button type="button" class="btn btn-primary radius-4">Apply</button>
+									<button type="button" class="btn btn-primary radius-8">Apply</button>
 								</div>
 							</div>
-							<h5 class="text-center text-black">Top 10 Karyawan Dengan Peningkatan Durasi Lembur Selama 3 Bulan</h5>
-							<div id="topKaryawanLembur"></div>
+							<h5 class="text-center text-black mb-3">Karyawan Dengan Peningkatan Durasi Lembur Selama 3 Bulan</h5>
+							<div class="table-responsive">
+								<table class="table table-borderless mb-0">
+									<thead>
+										<tr>
+											<td class="text-secondary" scope="col">#</td>
+											<td class="text-secondary" scope="col">Name</td>
+											<td class="text-secondary" scope="col">Branch</td>
+											<td class="text-secondary" scope="col">November</td>
+											<td class="text-secondary" scope="col">December</td>
+											<td class="text-secondary" scope="col">January</td>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>01</td>
+											<td>Tasya Amanda</td>
+											<td>Bandung</td>
+											<td>1.239 Hours</td>
+											<td>1.684 Hours</td>
+											<td>1.822 Hours</td>
+										</tr>
+										<tr>
+											<td>02</td>
+											<td>Reza Nasution</td>
+											<td>Cideng</td>
+											<td>1.123 Hours</td>
+											<td>1.578 Hours</td>
+											<td>1.762 Hours</td>
+										</tr>
+										<tr>
+											<td>03</td>
+											<td>Jonathan Liadi</td>
+											<td>Samarinda</td>
+											<td>1.109 Hours</td>
+											<td>1.500 Hours</td>
+											<td>1.690 Hours</td>
+										</tr>
+										<tr>
+											<td>04</td>
+											<td>Rizky Ramadan</td>
+											<td>Rawamangun</td>
+											<td>1.078 Hours</td>
+											<td>1.476 Hours</td>
+											<td>1.561 Hours</td>
+										</tr>
+										<tr>
+											<td>05</td>
+											<td>Rizal</td>
+											<td>Medan</td>
+											<td>1.011 Hours</td>
+											<td>1.345 Hours</td>
+											<td>1.452 Hours</td>
+										</tr>
+										
+									</tbody>
+								</table>
+							</div>
 						</div>
 					</div>
 
@@ -2252,7 +2875,7 @@
 				</div>
 
 				<div class="national-summary" id="ejPending" style="display: none;">
-							<div class="card">
+							<div class="card radius-10">
 								<div class="card-body">
 									<div class="row mb-4">
 										<div class="col-12 col-lg-4 filter-awal"><label for="filerDateAwal" class="form-label">Start Date
@@ -2280,44 +2903,57 @@
 										</div>
 										<div class="col-12 col-lg-1 button-filter">
 											<label for="" class="form-label">Action</label> <br>
-											<button type="button" class="btn btn-primary radius-4">Apply</button>
+											<button type="button" class="btn btn-primary radius-8">Apply</button>
 										</div>
 									</div>
 								</div>
 							</div>
 
-					<div class="card">
+					
+					<div class="card radius-10">
 						<div class="card-body">
-							<div id="outstandingEJ"></div>
+							<h6 class="font-weight-bold">Outstanding EJ</h6>
+							<div id="outstandingEJTest"></div>
 						</div>
 					</div>
-					<div class="card">
+					<div class="card radius-10">
 						<div class="card-body">
 							<div class="mb-3">
-								<label class="form-label">Select Bank (Max 7)</label>
+								<label class="form-label">Select Bank (Max 4)</label>
 								<select class="multiple-select" data-placeholder="Choose anything" multiple="multiple">
 									<option value="atmi" selected>ATMI</option>
 									<option value="bca" selected>BCA</option>
 									<option value="bni" selected>BNI</option>
 									<option value="bri" selected>BRI</option>
-									<option value="bii" selected>BII</option>
-									<option value="pmt" selected>PMT</option>
-									<option value="cimb" selected>CIMB</option>
+									<option value="bii">BII</option>
+									<option value="pmt">PMT</option>
+									<option value="cimb">CIMB</option>
 									<option value="mandiri">Mandiri</option>
 									<option value="permata">Permata</option>
 								</select>
 							</div>
-							<h5 class="text-center text-black">Outstanding EJ has no difference</h5>
-							<div id="outstandingEJNoDifference"></div>
-							<hr class="mb-4">
-							<h5 class="text-center text-black">Outstanding Difference</h5>
-							<div id="outstandingDifference"></div>
+							<div class="row">
+								<div class="col-12 col-lg-6">
+									<div class="card">
+										<h6 class="text-center text-black mt-2">Outstanding EJ Tidak Selisih</h6>
+										<div id="outstandingEJNoDifference"></div>
+									</div>
+								</div>
+								<div class="col-12 col-lg-6">
+									<div class="card">
+										<h6 class="text-center text-black mt-2">Outstanding EJ Selisih</h6>
+										<div id="outstandingDifference"></div>
+									</div>
+								</div>
+							</div>
+							
+							
 						</div>
 					</div>
 
-					<div class="card">
+					<div class="card radius-10">
 						<div class="card-body">
-							<div class="mb-3">
+							<!-- <div class="mb-3">
 								<label class="form-label">Select Bank (Max 7)</label>
 								<select class="multiple-select" data-placeholder="Choose anything" multiple="multiple">
 									<option value="atmi" selected>ATMI</option>
@@ -2330,40 +2966,53 @@
 									<option value="mandiri">Mandiri</option>
 									<option value="permata">Permata</option>
 								</select>
-							</div>
+							</div> -->
 							<div class="row mb-4">
-								<div class="col-12 col-lg-4 filter-awal"><label for="filerDateAwal" class="form-label">Start Date
+								<div class="col-12 col-lg-3 filter-awal"><label for="filerDateAwal" class="form-label">Start Date
 										Filter</label>
 									<div class="input-group mb-2">
 										<input type="text" class="form-control" id="startDateSummaryEjPending"
 											placeholder="dd/mm/yyyy">
 									</div>
 								</div>
-								<div class="col-12 col-lg-4 filter-akhir"><label for="filerDateAkhir" class="form-label">End Date
+								<div class="col-12 col-lg-3 filter-akhir"><label for="filerDateAkhir" class="form-label">End Date
 										Filters</label>
 									<div class="input-group mb-2">
 										<input type="text" class="form-control" id="endDateSummaryEjPending"
 											placeholder="dd/mm/yyyy">
 									</div>
 								</div>
-								<div class="col-12 col-lg-3">
+								<div class="col-12 col-lg-2">
 									<label class="form-label">Type</label>
 									<select class="single-select form-select">
-										<option value="harian">Harian</option>
 										<option value="bulanan">Bulanan</option>
+										<option value="harian">Harian</option>
+									</select>
+								</div>
+								<div class="col-12 col-lg-3">
+									<label class="form-label">Bank</label>
+									<select class="single-select form-select">
+										<option value="select">Select Bank</option>
+										<option value="BCA">BCA</option>
+										<option value="BNI">BRI</option>
 									</select>
 								</div>
 								<div class="col-12 col-lg-1 button-filter">
 									<label for="" class="form-label">Action</label> <br>
-									<button type="button" class="btn btn-primary radius-4">Apply</button>
+									<button type="button" class="btn btn-primary radius-8">Apply</button>
 								</div>
 							</div>
 
-							<h5 class="text-center text-black">Summary of EJ Pending No Difference</h5>
-							<div id="summaryEJPendingNoDifference"></div>
-							<hr>
-							<h5 class="text-center text-black">Summary of EJ Pending Difference</h5>
-							<div id="summaryEJPendingDifference"></div>
+							<div class="row">
+								<div class="col-12 col-lg-6">
+									<h6 class="text-center text-black">Summary EJ Pending Tidak Selisih</h6>
+									<div id="summaryEJPendingNoDifference"></div>
+								</div>
+								<div class="col-12 col-lg-6">
+									<h6 class="text-center text-black">Summary EJ Pending Selisih</h6>
+									<div id="summaryEJPendingDifference"></div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -2399,6 +3048,10 @@
 	<script src="assets/plugins/datatable/js/dataTables.bootstrap5.min.js"></script>
 	<script src="assets/plugins/apexcharts-bundle/js/apexcharts.min.js"></script>
 	<script src="assets/plugins/apexcharts-bundle/js/apex-custom.js"></script>
+	<script src="assets/plugins/chartjs/js/Chart.min.js"></script>
+	<script src="assets/plugins/chartjs/js/chartjs-custom.js"></script>
+	<!-- <script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.0/dist/chart.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script> -->
 
 	<!-- highcharts js -->
 	<script src="assets/plugins/highcharts/js/highcharts.js"></script>
@@ -2414,6 +3067,7 @@
 	<script src="assets/plugins/highcharts/js/highcharts-custom.script.js"></script>
 
 	<script src="assets/js/index4.js"></script>
+	
 	<script>
 		$(document).ready(function () {
 
@@ -2536,6 +3190,36 @@
 					rightIcon: '<img src="assets/images/icons/calendar-days.svg" />'
 				}
 			})
+
+			$("#filterStartCompareRatio1").datepicker({
+				uiLibrary: "bootstrap4",
+				format: 'mmmm yyyy',
+				icons: {
+					rightIcon: '<img src="assets/images/icons/calendar-days.svg" />'
+				}
+			})
+			$("#filterEndCompareRatio1").datepicker({
+				uiLibrary: "bootstrap4",
+				format: 'mmmm yyyy',
+				icons: {
+					rightIcon: '<img src="assets/images/icons/calendar-days.svg" />'
+				}
+			})
+
+			$("#filterStartCompareRatio2").datepicker({
+				uiLibrary: "bootstrap4",
+				format: 'mmmm yyyy',
+				icons: {
+					rightIcon: '<img src="assets/images/icons/calendar-days.svg" />'
+				}
+			})
+			$("#filterEndCompareRatio2").datepicker({
+				uiLibrary: "bootstrap4",
+				format: 'mmmm yyyy',
+				icons: {
+					rightIcon: '<img src="assets/images/icons/calendar-days.svg" />'
+				}
+			})
 			
 			
 		});
@@ -2555,823 +3239,6 @@
 		});
 	</script>
 
-	<!-- HIGHCHART -->
-	<script>
-		$(function () {
-			"use strict";
-			Highcharts.chart("chartPencapaian", {
-				chart: {
-					type: "bar",
-					styledMode: true,
-				},
-				credits: {
-					enabled: false,
-				},
-				title: {
-					text: null,
-				},
-				xAxis: {
-					categories: ["ATMI", "BCA", "BNI", "BRI", "BII", "CIMB"],
-				},
-				yAxis: {
-					min: 0,
-					title: {
-						text: "Target SLA (%)",
-					},
-				},
-				legend: {
-					reversed: false,
-				},
-				plotOptions: {
-					series: {
-						stacking: "normal",
-						dataLabels: {
-							enabled: true,
-							format: '{point.y:.2f}% ({point.total} mesin)', // Menampilkan persentase dan jumlah mesin
-							style: {
-								color: 'white', // Mengatur warna data label menjadi putih
-							},
-						},
-					},
-				},
-				tooltip: {
-					formatter: function () {
-						return '<b>' + this.series.name + '</b><br/>' +
-							this.point.category + ': ' + Highcharts.numberFormat(this.point.y, 2) + '% (' + this.point.total + ' mesin)';
-					},
-				},
-				series: [
-				{
-						name: "Success Achieved",
-						data: [{y: 83, total: 100}, {y: 79, total: 100}, {y: 55, total: 100}, {y: 70, total: 100}, {y: 83, total: 100}, {y: 83, total: 100}],
-				
-					},
-					{
-						name: "No Success Yet",
-						data: [{y: 17, total: 100}, {y: 21, total: 100}, {y: 45, total: 100}, {y: 30, total: 100}, {y: 17, total: 100}, {y: 17, total: 100}],
-					
-					},
-					
-				],
-			});
-
-		
-		
-			  Highcharts.chart("chartBottomFive", {
-				chart: {
-				type: "bar",
-				styledMode: true,
-				},
-				credits: {
-				enabled: false,
-				},
-				title: {
-				text: null,
-				},
-				xAxis: {
-				categories: ["Kudus", "Singkawang", "Bengkulu", "Kediri", "Pontianak"],
-				title: {
-					text: null,
-				},
-				},
-				yAxis: {
-				min: 0,
-				title: {
-					text: "Target SLA",
-					align: "high",
-				},
-				labels: {
-					overflow: "justify",
-				},
-				},
-				tooltip: {
-					formatter: function () {
-						return '<b>' + this.series.name + '</b><br/>' +
-							this.point.category + ': ' + Highcharts.numberFormat(this.point.y, 2) + '% (' + this.point.total + ' mesin)';
-					},
-				},
-				plotOptions: {
-					series: {
-						dataLabels: {
-							enabled: true,
-							format: '{point.y:.2f}% ({point.total} mesin)', // Menampilkan persentase dan jumlah mesin
-							style: {
-								color: 'white', // Mengatur warna data label menjadi putih
-							},
-						},
-					},
-				bar: {
-					dataLabels: {
-					enabled: true,
-					},
-				},
-				},
-				legend: {
-				layout: "vertical",
-				align: "right",
-				verticalAlign: "top",
-				x: -40,
-				y: 80,
-				floating: true,
-				borderWidth: 1,
-				backgroundColor:
-					Highcharts.defaultOptions.legend.backgroundColor || "#FFFFFF",
-				shadow: true,
-				},
-				credits: {
-				enabled: false,
-				},
-				series: [
-				{
-					name: "Success Achieved",
-					data: [{y: 45, total: 100}, {y: 48, total: 100}, {y: 55, total: 100}, {y: 62, total: 100}, {y: 75, total: 100},],
-				},
-				{
-					name: "No Success Yet",
-					data: [{y: 55, total: 100}, {y: 52, total: 100}, {y: 45, total: 100}, {y: 38, total: 100}, {y: 25, total: 100},],
-				},
-				
-				
-				],
-			});
-
-			Highcharts.chart("employeeNumberRatio", {
-				chart: {
-				zoomType: "xy",
-				styledMode: true,
-				},
-				credits: {
-				enabled: false,
-				},
-				title: {
-					text: "FLM Employee Number Ratio - Sector",
-				},
-				xAxis: [
-				{
-					categories: [
-					"Cideng",
-					"Karawang",
-					"Meruya",
-					"Pontianak",
-					"Rawamangun",
-					"Semarang",
-					"Serang",
-					"Tegal",
-					"Bandung",
-					"Banjarmasin",
-					"Jambi",
-					"Purwokerto",
-					],
-					crosshair: true,
-				},
-				],
-				yAxis: [
-				{
-					// Primary yAxis
-					labels: {
-					// format: "{value}°C",
-					style: {
-						color: Highcharts.getOptions().colors[1],
-					},
-					},
-					title: {
-					text: "Ratio Data",
-					style: {
-						color: Highcharts.getOptions().colors[1],
-					},
-					},
-				},
-				{
-					// Secondary yAxis
-					title: {
-					text: "Average",
-					style: {
-						color: Highcharts.getOptions().colors[0],
-					},
-					},
-					labels: {
-					// format: "{value} mm",
-					style: {
-						color: Highcharts.getOptions().colors[0],
-					},
-					},
-					opposite: true,
-				},
-				],
-				tooltip: {
-				shared: true,
-				},
-				legend: {
-				layout: "vertical",
-				align: "left",
-				x: 120,
-				verticalAlign: "top",
-				y: 100,
-				floating: true,
-				backgroundColor:
-					Highcharts.defaultOptions.legend.backgroundColor || // theme
-					"rgba(255,255,255,0.25)",
-				},
-				series: [
-				{
-					name: "Ratio Data",
-					type: "column",
-					yAxis: 1,
-					data: [
-					49.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1,
-					95.6, 54.4,
-					],
-					// tooltip: {
-					// valueSuffix: " mm",
-					// },
-				},
-				{
-					name: "Average",
-					type: "spline",
-					data: [
-					7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6,
-					],
-					// tooltip: {
-					// valueSuffix: "°C",
-					// },
-				},
-				],
-			});
-
-			Highcharts.chart("ratioAtmEmployees", {
-				chart: {
-				zoomType: "xy",
-				styledMode: true,
-				},
-				credits: {
-				enabled: false,
-				},
-				title: {
-					text: "FLM Employee Ratio - Sector / Number of ATM Employees",
-				},
-				xAxis: [
-				{
-					categories: [
-					"Cideng",
-					"Karawang",
-					"Meruya",
-					"Pontianak",
-					"Rawamangun",
-					"Semarang",
-					"Serang",
-					"Tegal",
-					"Bandung",
-					"Banjarmasin",
-					"Jambi",
-					"Purwokerto",
-					],
-					crosshair: true,
-				},
-				],
-				yAxis: [
-				{
-					// Primary yAxis
-					labels: {
-					// format: "{value}°C",
-					style: {
-						color: Highcharts.getOptions().colors[1],
-					},
-					},
-					title: {
-					text: "Ratio Data",
-					style: {
-						color: Highcharts.getOptions().colors[1],
-					},
-					},
-				},
-				{
-					// Secondary yAxis
-					title: {
-					text: "Average",
-					style: {
-						color: Highcharts.getOptions().colors[0],
-					},
-					},
-					labels: {
-					// format: "{value} mm",
-					style: {
-						color: Highcharts.getOptions().colors[0],
-					},
-					},
-					opposite: true,
-				},
-				],
-				tooltip: {
-				shared: true,
-				},
-				legend: {
-				layout: "vertical",
-				align: "left",
-				x: 120,
-				verticalAlign: "top",
-				y: 100,
-				floating: true,
-				backgroundColor:
-					Highcharts.defaultOptions.legend.backgroundColor || // theme
-					"rgba(255,255,255,0.25)",
-				},
-				series: [
-				{
-					name: "Ratio Data",
-					type: "column",
-					yAxis: 1,
-					data: [
-					49.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1,
-					95.6, 54.4,
-					],
-					// tooltip: {
-					// valueSuffix: " mm",
-					// },
-				},
-				{
-					name: "Average",
-					type: "spline",
-					data: [
-					7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6,
-					],
-					// tooltip: {
-					// valueSuffix: "°C",
-					// },
-				},
-				],
-			});
-
-Highcharts.chart("durasiLemburSPL", {
-    chart: {
-      type: "column",
-      styledMode: true,
-    },
-    credits: {
-      enabled: false,
-    },
-    title: {
-      text: null,
-    },
-    subtitle: {
-      text: null,
-    },
-    accessibility: {
-      announceNewData: {
-        enabled: true,
-      },
-    },
-    xAxis: {
-      type: "category",
-    },
-    yAxis: {
-      title: {
-        text: "Total percent",
-      },
-    },
-    legend: {
-      enabled: false,
-    },
-    plotOptions: {
-      series: {
-        borderWidth: 0,
-        dataLabels: {
-          enabled: true,
-          format: "{point.y:.1f}%",
-        },
-      },
-    },
-    tooltip: {
-      headerFormat: '<span style="font-size:11px">{series.name}</span><br>',
-      pointFormat:
-        '<span style="color:{point.color}">{point.name}</span>: <b>{point.y:.2f}%</b> of total<br/>',
-    },
-    series: [
-      {
-        name: "City",
-        colorByPoint: true,
-        data: [
-          {
-            name: "Kararwang",
-            y: 62.74,
-            drilldown: "Kararwang",
-          },
-          {
-            name: "Tegal",
-            y: 7.23,
-            drilldown: "Tegal",
-          },
-          {
-            name: "Solo",
-            y: 5.58,
-            drilldown: "Solo",
-          },
-          {
-            name: "Mataram",
-            y: 4.02,
-            drilldown: "Mataram",
-          },
-          {
-            name: "Kudus",
-            y: 1.92,
-            drilldown: "Kudus",
-          },
-          {
-            name: "Denpasar",
-            y: 7.62,
-            drilldown: "Denpasar",
-          },
-		  {
-            name: "Rawamangun",
-            y: 7.62,
-            drilldown: "Rawamangun",
-          },
-		  {
-            name: "Purwokerto",
-            y: 7.62,
-            drilldown: "Purwokerto",
-          },
-		  {
-            name: "Bandung",
-            y: 7.62,
-            drilldown: "Bandung",
-          },
-		  {
-            name: "Medan",
-            y: 7.62,
-            drilldown: "Medan",
-          },
-        ],
-      },
-    ],
-  });
-		
-  Highcharts.chart("presentasiFrekuensiFO", {
-    chart: {
-      type: "column",
-      styledMode: true,
-    },
-    credits: {
-      enabled: false,
-    },
-    title: {
-      text: null,
-    },
-    subtitle: {
-      text: null,
-    },
-    accessibility: {
-      announceNewData: {
-        enabled: true,
-      },
-    },
-    xAxis: {
-      type: "category",
-    },
-    yAxis: {
-      title: {
-        text: "Total percent",
-      },
-    },
-    legend: {
-      enabled: false,
-    },
-    plotOptions: {
-      series: {
-        borderWidth: 0,
-        dataLabels: {
-          enabled: true,
-          format: "{point.y:.1f}%",
-        },
-      },
-    },
-    tooltip: {
-      headerFormat: '<span style="font-size:11px">{series.name}</span><br>',
-      pointFormat:
-        '<span style="color:{point.color}">{point.name}</span>: <b>{point.y:.2f}%</b> of total<br/>',
-    },
-    series: [
-      {
-        name: "City",
-        colorByPoint: true,
-        data: [
-          {
-            name: "Kararwang",
-            y: 62.74,
-            drilldown: "Kararwang",
-          },
-          {
-            name: "Tegal",
-            y: 7.23,
-            drilldown: "Tegal",
-          },
-          {
-            name: "Solo",
-            y: 5.58,
-            drilldown: "Solo",
-          },
-          {
-            name: "Mataram",
-            y: 4.02,
-            drilldown: "Mataram",
-          },
-          {
-            name: "Kudus",
-            y: 1.92,
-            drilldown: "Kudus",
-          },
-          {
-            name: "Denpasar",
-            y: 7.62,
-            drilldown: "Denpasar",
-          },
-		  {
-            name: "Rawamangun",
-            y: 7.62,
-            drilldown: "Rawamangun",
-          },
-		  {
-            name: "Purwokerto",
-            y: 7.62,
-            drilldown: "Purwokerto",
-          },
-		  {
-            name: "Bandung",
-            y: 7.62,
-            drilldown: "Bandung",
-          },
-		  {
-            name: "Medan",
-            y: 7.62,
-            drilldown: "Medan",
-          },
-        ],
-      },
-    ],
-  });
-
-
-Highcharts.chart("outstandingEJNoDifference", {
-    chart: {
-      type: "bar",
-      styledMode: true,
-    },
-    credits: {
-      enabled: false,
-    },
-    title: {
-      text: null,
-    },
-    subtitle: {
-      text: null,
-    },
-    xAxis: {
-      categories: ["BCA", "CIMB", ],
-      title: {
-        text: null,
-      },
-    },
-    yAxis: {
-      min: 0,
-      title: {
-        text: "EJ Pending",
-        align: "high",
-      },
-      labels: {
-        overflow: "justify",
-      },
-    },
-    tooltip: {
-      valueSuffix: " EJ Pending",
-    },
-    plotOptions: {
-      series: {
-        stacking: "normal",
-        dataLabels: {
-          enabled: true,
-          format: "{point.y:.2f}% ({point.ejpending} EJ Pending)", // Menampilkan persentase dan jumlah mesin
-          style: {
-            color: "white", // Mengatur warna data label menjadi putih
-          },
-        },
-      },
-    },
-    legend: {
-      layout: "vertical",
-      align: "right",
-      verticalAlign: "top",
-      x: -40,
-      y: 80,
-      floating: true,
-      borderWidth: 1,
-      backgroundColor:
-        Highcharts.defaultOptions.legend.backgroundColor || "#FFFFFF",
-      shadow: true,
-    },
-    credits: {
-      enabled: false,
-    },
-    series: [
-      {
-        name: "EJ Pending",
-        data: [
-          { y: 5.57, ejpending: 52 },
-          { y: 4.5, ejpending: 45 },
-        ],
-      },
-    ],
-  });
-
-  Highcharts.chart("outstandingDifference", {
-    chart: {
-      type: "bar",
-      styledMode: true,
-    },
-    credits: {
-      enabled: false,
-    },
-    title: {
-      text: null,
-    },
-    subtitle: {
-      text: null,
-    },
-    xAxis: {
-      categories: ["BCA", "CIMB", "MANDIRI", "BNI", "BRI", "PERMATA"],
-      title: {
-        text: null,
-      },
-    },
-    yAxis: {
-      min: 0,
-      title: {
-        text: "EJ Pending",
-        align: "high",
-      },
-      labels: {
-        overflow: "justify",
-      },
-    },
-    tooltip: {
-      valueSuffix: " EJ Pending",
-    },
-    plotOptions: {
-      series: {
-        stacking: "normal",
-        dataLabels: {
-          enabled: true,
-          format: "{point.y:.2f}% ({point.ejpending} EJ Pending)", // Menampilkan persentase dan jumlah mesin
-          style: {
-            color: "white", // Mengatur warna data label menjadi putih
-          },
-        },
-      },
-    },
-    legend: {
-      layout: "vertical",
-      align: "right",
-      verticalAlign: "top",
-      x: -40,
-      y: 80,
-      floating: true,
-      borderWidth: 1,
-      backgroundColor:
-        Highcharts.defaultOptions.legend.backgroundColor || "#FFFFFF",
-      shadow: true,
-    },
-    credits: {
-      enabled: false,
-    },
-    series: [
-      {
-        name: "EJ Pending",
-        data: [
-          { y: 5.57, ejpending: 52 },
-          { y: 4.5, ejpending: 45 },
-          { y: 55, ejpending: 100 },
-          { y: 70, ejpending: 100 },
-          { y: 83, ejpending: 100 },
-          { y: 83, ejpending: 100 },
-        ],
-      },
-    ],
-  });
-
-  Highcharts.chart("differenceMoreRegional", {
-  chart: {
-    type: "bar",
-    styledMode: true,
-  },
-  credits: {
-    enabled: false,
-  },
-  title: {
-    text: null,
-  },
-  subtitle: {
-    text: null,
-  },
-  xAxis: {
-    categories: ["Medan", "Singkawang", "Bandung"],
-    title: {
-      text: null,
-    },
-  },
-  yAxis: {
-    min: 0,
-    title: {
-      text: "Selisih Lebih",
-      align: "high",
-    },
-    labels: {
-      overflow: "justify",
-      formatter: function () {
-        return new Intl.NumberFormat("id-ID", {
-          style: "currency",
-          currency: "IDR",
-        }).format(this.value);
-      },
-    },
-  },
-  tooltip: {
-    valuePrefix: "Rp ",
-    valueSuffix: " lebih",
-    formatter: function () {
-      return '<span style="color:' + this.series.color + '">\u25CF</span> ' + this.series.name + ': <b>Rp ' + new Intl.NumberFormat("id-ID").format(this.y) + ' lebih</b><br/>';
-    },
-  },
-  plotOptions: {
-    bar: {
-      dataLabels: {
-        enabled: true,
-        formatter: function () {
-          return 'Rp ' + new Intl.NumberFormat("id-ID").format(this.y);
-        }
-      },
-    },
-  },
-  legend: {
-    layout: "vertical",
-    align: "right",
-    verticalAlign: "top",
-    x: -40,
-    y: 80,
-    floating: true,
-    borderWidth: 1,
-    backgroundColor:
-      Highcharts.defaultOptions.legend.backgroundColor || "#FFFFFF",
-    shadow: true,
-  },
-  series: [
-    {
-      name: "PMT",
-      data: [75000, 24000],
-    },
-    {
-      name: "CIMB",
-      data: [100000, 215000, 87000],
-    },
-    {
-      name: "DNM",
-      data: [43000],
-    },
-    {
-      name: "BCA",
-      data: [24000, 10000, 12000],
-    },
-  ],
-});
-
-Highcharts.chart("selisihKebutuhanRun", {
-    chart: {
-      type: "column",
-      styledMode: true,
-    },
-    title: {
-      text: null,
-    },
-	yAxis: {
-		title: {
-			text: "Selisih"
-		}
-	},
-    xAxis: {
-      categories: ["24-01-2024", "25-01-2024", "26-01-2024", "27-01-2024", "28-01-2024"],
-    },
-    credits: {
-      enabled: false,
-    },
-    series: [
-      {
-        name: "Selisih",
-        data: [5, 3, -1, 7, -3],
-      },
-    ],
-  });
-
-});
-
-	</script>
-	<!-- END HIGHCHART -->
 
 
 	<script>
@@ -3477,7 +3344,10 @@ Highcharts.chart("selisihKebutuhanRun", {
 		$(document).ready(function () {
 			var table = $('#tableRatioFlmEmployees').DataTable({
 				dom: '<"row top"<"col-lg-4 col-md-4 col-sm-12 mb-2"B><"col-lg-4 col-md-4 col-sm-12 mb-2"l><"col-lg-4 col-md-4 col-sm-12 mb-2"f>>rtip',
-				buttons: ['csv', 'excel', 'pdf', 'print']
+				// dom: 'Bfrtip',
+				buttons: ['copy', 'csv','excel', 'pdf'
+				],
+				"pageLength": 5
 			});
 
 			table.buttons().container()
@@ -3486,8 +3356,11 @@ Highcharts.chart("selisihKebutuhanRun", {
 
 		$(document).ready(function () {
 			var table = $('#tableRatioFlmEmployeesAtm').DataTable({
-				dom: '<"row top"<"col-lg-4 col-md-4 col-sm-12 mb-2"B><"col-lg-4 col-md-4 col-sm-12 mb-2"l><"col-lg-4 col-md-4 col-sm-12 mb-2"f>>rtip',
-				buttons: ['csv', 'excel', 'pdf', 'print']
+				// dom: '<"row top"<"col-lg-4 col-md-4 col-sm-12 mb-2"B><"col-lg-4 col-md-4 col-sm-12 mb-2"l><"col-lg-4 col-md-4 col-sm-12 mb-2"f>>rtip',
+				dom: 'Bfrtip',
+				buttons: ['excel', 'pdf',
+				],
+				"pageLength": 5
 			});
 
 			table.buttons().container()
@@ -3496,7 +3369,9 @@ Highcharts.chart("selisihKebutuhanRun", {
 		
 	</script>
 	<script>
-      new PerfectScrollbar(".dashboard-top-countries");
+		new PerfectScrollbar('.highest-overtime');
+      	new PerfectScrollbar(".dashboard-top-countries");
+      	new PerfectScrollbar(".top-overtime-branch");
     </script>
 
 	<!--app JS-->
