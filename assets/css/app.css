@@ -2019,7 +2019,7 @@ a {
 }
 
 .bg-light-primary {
-  background-color: rgb(136 51 255 / 15%) !important;
+  background-color: #0095ff15 !important;
 }
 
 .bg-light-success {
@@ -3986,4 +3986,8 @@ input::placeholder {
   .slide-content {
     margin: 0 10px;
   }
+}
+
+.font-weight-bold {
+  font-weight: 500;
 }

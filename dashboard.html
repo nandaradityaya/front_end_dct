@@ -13,6 +13,7 @@
 	<link href="assets/plugins/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet" />
 	<link href="assets/plugins/metismenu/css/metisMenu.min.css" rel="stylesheet" />
 	<link href="assets/plugins/highcharts/css/highcharts.css" rel="stylesheet" />
+	<link href="assets/plugins/datatable/css/dataTables.bootstrap5.min.css" rel="stylesheet" />
 	<!-- loader-->
 	<link href="assets/css/pace.min.css" rel="stylesheet" />
 	<script src="assets/js/pace.min.js"></script>
@@ -483,84 +484,50 @@
 				</div>
 				<!-- End Calendar -->
 
-				<!-- Magazine -->
-				<div class="page-breadcrumb d-none d-sm-flex align-items-center mb-3">
-					<div class="breadcrumb-title pe-3">Magazine</div>
-				</div>
-				<section class="hero-carousel">
-					<div class="row post-carousel-featured post-carousel">
-					  <!-- post -->
-					  <div class="post featured-post-md">
+				<div class="card radius-10">
+					<div class="card-body">
 						<div class="mb-3">
-							<img src="assets/images/gallery/magazine.jpg" alt="magazine" width="100%" class="radius-5">
-							<div class="badge-custom text-center text-white" style="padding: 8px 16px; background-color: #0DCAF0; border-radius: 4px;">December 2019</div>
+							<h6 class="mb-0 d-flex align-items-center"><i class="bx bx-task font-22 me-1"></i>Task To Do<span class="alert-count">8</span></h6>
 						</div>
-					  </div>
-					   <!-- post -->
-					   <div class="post featured-post-md">
-						<div class="mb-3">
-							<img src="assets/images/gallery/magazine2.jpeg" alt="magazine" width="100%" class="radius-5">
-							<div class="badge-custom text-center text-white" style="padding: 8px 16px; background-color: #0DCAF0; border-radius: 4px;">December 2019</div>
+						<div class="table-responsive">
+							<div id="printbar" style="float:right"></div>
+							<br>
+							<table id="taskToDoSPOInput" class="table mb-0 align-middle table-striped" style="width:100%">
+								<thead style="background-color: #0DCAF0;">
+									<tr>
+										<th class="text-white">No</th>
+										<th class="text-white">Jenis Transaksi</th>
+										<th class="text-white">No. Transaksi</th>
+										<th class="text-white">Keterangan</th>
+										<th class="text-white">Action</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>1</td>
+										<td>Surat Peringatan Online</td>
+										<td>215506</td>
+										<td>ERI MARTHA - Laporan surat perinatan belum diapprove oleh Chandra Budiana</td>
+										<td><div class="d-flex order-actions">
+											<a type="button" class="text-primary bg-light-primary border-0 me-3" data-bs-toggle="modal" data-bs-target="#editGroupQuestion"><i class="bx bxs-edit"></i></a>
+										</div></td>
+									</tr>
+									<tr>
+										<td>1</td>
+										<td>Surat Peringatan Online</td>
+										<td>215506</td>
+										<td>ERI MARTHA - Laporan surat perinatan belum diapprove oleh Chandra Budiana</td>
+										<td><div class="d-flex order-actions">
+											<a type="button" class="text-primary bg-light-primary border-0 me-3" data-bs-toggle="modal" data-bs-target="#editGroupQuestion"><i class="bx bxs-edit"></i></a>
+										</div></td>
+									</tr>
+								</tbody>
+							</table>
 						</div>
-					  </div>
-					  <!-- post -->
-					  <div class="post featured-post-md">
-						<div class="mb-3">
-							<img src="assets/images/gallery/magazine3.jpeg" alt="magazine" width="100%" class="radius-5">
-							<div class="badge-custom text-center text-white" style="padding: 8px 16px; background-color: #0DCAF0; border-radius: 4px;">December 2019</div>
-						</div>
-					  </div>
-					  <!-- post -->
-					  <div class="post featured-post-md">
-						<div class="mb-3">
-							<img src="assets/images/gallery/magazine4.jpeg" alt="magazine" width="100%" class="radius-5">
-							<div class="badge-custom text-center text-white" style="padding: 8px 16px; background-color: #0DCAF0; border-radius: 4px;">December 2019</div>
-						</div>
-					  </div>
-					  <!-- post -->
-					  <div class="post featured-post-md">
-						<div class="mb-3">
-							<img src="assets/images/gallery/magazine5.jpeg" alt="magazine" width="100%" class="radius-5">
-							<div class="badge-custom text-center text-white" style="padding: 8px 16px; background-color: #0DCAF0; border-radius: 4px;">December 2019</div>
-						</div>
-					  </div>
-					  <!-- post -->
-					  <div class="post featured-post-md">
-						<div class="mb-3">
-							<img src="assets/images/gallery/magazine6.jpeg" alt="magazine" width="100%" class="radius-5">
-							<div class="badge-custom text-center text-white" style="padding: 8px 16px; background-color: #0DCAF0; border-radius: 4px;">December 2019</div>
-						</div>
-					  </div>
-					  <!-- post -->
-					  <div class="post featured-post-md">
-						<div class="mb-3">
-							<img src="assets/images/gallery/magazine7.jpeg" alt="magazine" width="100%" class="radius-5">
-							<div class="badge-custom text-center text-white" style="padding: 8px 16px; background-color: #0DCAF0; border-radius: 4px;">December 2019</div>
-						</div>
-					  </div>
-					  <!-- post -->
-					  <div class="post featured-post-md">
-						<div class="mb-3">
-							<img src="assets/images/gallery/magazine8.jpeg" alt="magazine" width="100%" class="radius-5">
-							<div class="badge-custom text-center text-white" style="padding: 8px 16px; background-color: #0DCAF0; border-radius: 4px;">December 2019</div>
-						</div>
-					  </div>
-					  <!-- post -->
-					  <div class="post featured-post-md">
-						<div class="mb-3">
-							<img src="assets/images/gallery/magazine9.jpeg" alt="magazine" width="100%" class="radius-5">
-							<div class="badge-custom text-center text-white" style="padding: 8px 16px; background-color: #0DCAF0; border-radius: 4px;">December 2019</div>
-						</div>
-					  </div>
-					  <!-- post -->
-					  <div class="post featured-post-md">
-						<div class="mb-3">
-							<img src="assets/images/gallery/magazine10.jpeg" alt="magazine" width="100%" class="radius-5">
-							<div class="badge-custom text-center text-white" style="padding: 8px 16px; background-color: #0DCAF0; border-radius: 4px;">December 2019</div>
-						</div>
-					  </div>
+		
 					</div>
-				</section>
+				</div>
+				
 
 				<!-- Article -->
 				<div class="page-breadcrumb d-none d-sm-flex align-items-center mb-3">
@@ -747,38 +714,84 @@
 					</div>
 				</div>
 
-				<!-- <div class="slide-container swiper">
-					<div class="slide-content">
-					  <div class="card-wrapper swiper-wrapper">
-						<div class="card swiper-slide">
+				<!-- Magazine -->
+				<div class="page-breadcrumb d-none d-sm-flex align-items-center mb-3">
+					<div class="breadcrumb-title pe-3">Magazine</div>
+				</div>
+				<section class="hero-carousel">
+					<div class="row post-carousel-featured post-carousel">
+					  <!-- post -->
+					  <div class="post featured-post-md">
+						<div class="mb-3">
 							<img src="assets/images/gallery/magazine.jpg" alt="magazine" width="100%" class="radius-5">
 							<div class="badge-custom text-center text-white" style="padding: 8px 16px; background-color: #0DCAF0; border-radius: 4px;">December 2019</div>
 						</div>
-						<div class="card swiper-slide">
+					  </div>
+					   <!-- post -->
+					   <div class="post featured-post-md">
+						<div class="mb-3">
 							<img src="assets/images/gallery/magazine2.jpeg" alt="magazine" width="100%" class="radius-5">
 							<div class="badge-custom text-center text-white" style="padding: 8px 16px; background-color: #0DCAF0; border-radius: 4px;">December 2019</div>
 						</div>
-						<div class="card swiper-slide">
-							<img src="assets/images/gallery/magazine2.jpeg" alt="magazine" width="100%" class="radius-5">
+					  </div>
+					  <!-- post -->
+					  <div class="post featured-post-md">
+						<div class="mb-3">
+							<img src="assets/images/gallery/magazine3.jpeg" alt="magazine" width="100%" class="radius-5">
 							<div class="badge-custom text-center text-white" style="padding: 8px 16px; background-color: #0DCAF0; border-radius: 4px;">December 2019</div>
 						</div>
-						<div class="card swiper-slide">
-							<img src="assets/images/gallery/magazine2.jpeg" alt="magazine" width="100%" class="radius-5">
+					  </div>
+					  <!-- post -->
+					  <div class="post featured-post-md">
+						<div class="mb-3">
+							<img src="assets/images/gallery/magazine4.jpeg" alt="magazine" width="100%" class="radius-5">
 							<div class="badge-custom text-center text-white" style="padding: 8px 16px; background-color: #0DCAF0; border-radius: 4px;">December 2019</div>
 						</div>
-						<div class="card swiper-slide">
-							<img src="assets/images/gallery/magazine2.jpeg" alt="magazine" width="100%" class="radius-5">
+					  </div>
+					  <!-- post -->
+					  <div class="post featured-post-md">
+						<div class="mb-3">
+							<img src="assets/images/gallery/magazine5.jpeg" alt="magazine" width="100%" class="radius-5">
 							<div class="badge-custom text-center text-white" style="padding: 8px 16px; background-color: #0DCAF0; border-radius: 4px;">December 2019</div>
 						</div>
-						
+					  </div>
+					  <!-- post -->
+					  <div class="post featured-post-md">
+						<div class="mb-3">
+							<img src="assets/images/gallery/magazine6.jpeg" alt="magazine" width="100%" class="radius-5">
+							<div class="badge-custom text-center text-white" style="padding: 8px 16px; background-color: #0DCAF0; border-radius: 4px;">December 2019</div>
+						</div>
+					  </div>
+					  <!-- post -->
+					  <div class="post featured-post-md">
+						<div class="mb-3">
+							<img src="assets/images/gallery/magazine7.jpeg" alt="magazine" width="100%" class="radius-5">
+							<div class="badge-custom text-center text-white" style="padding: 8px 16px; background-color: #0DCAF0; border-radius: 4px;">December 2019</div>
+						</div>
+					  </div>
+					  <!-- post -->
+					  <div class="post featured-post-md">
+						<div class="mb-3">
+							<img src="assets/images/gallery/magazine8.jpeg" alt="magazine" width="100%" class="radius-5">
+							<div class="badge-custom text-center text-white" style="padding: 8px 16px; background-color: #0DCAF0; border-radius: 4px;">December 2019</div>
+						</div>
+					  </div>
+					  <!-- post -->
+					  <div class="post featured-post-md">
+						<div class="mb-3">
+							<img src="assets/images/gallery/magazine9.jpeg" alt="magazine" width="100%" class="radius-5">
+							<div class="badge-custom text-center text-white" style="padding: 8px 16px; background-color: #0DCAF0; border-radius: 4px;">December 2019</div>
+						</div>
+					  </div>
+					  <!-- post -->
+					  <div class="post featured-post-md">
+						<div class="mb-3">
+							<img src="assets/images/gallery/magazine10.jpeg" alt="magazine" width="100%" class="radius-5">
+							<div class="badge-custom text-center text-white" style="padding: 8px 16px; background-color: #0DCAF0; border-radius: 4px;">December 2019</div>
+						</div>
 					  </div>
 					</div>
-			  
-					<div class="swiper-button-next swiper-navBtn"></div>
-					<div class="swiper-button-prev swiper-navBtn"></div>
-					<div class="swiper-pagination"></div>
-				  </div>
-				 -->
+				</section>
 
 				
 				<!-- End Article -->
@@ -817,6 +830,8 @@
 	<script src="assets/js/index4.js"></script>
 	<script src="assets/js/custom.js"></script>
 	<script src="assets/js/slick.min.js"></script>
+	<script src="assets/plugins/datatable/js/jquery.dataTables.min.js"></script>
+	<script src="assets/plugins/datatable/js/dataTables.bootstrap5.min.js"></script>
 
 	<!-- <script src="assets/js/swiper-bundle.min.js"></script>
 	<script src="assets/js/slider.js"></script> -->
@@ -848,6 +863,12 @@
 				},]
 			});
 			calendar.render();
+		});
+	</script>
+	<script>
+		$(document).ready(function () {
+			var table = $('#taskToDoSPOInput').DataTable({
+			});
 		});
 	</script>
 	<!--app JS-->
