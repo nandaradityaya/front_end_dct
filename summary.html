@@ -488,6 +488,7 @@
 					<button type="button" class="btn btn-white radius-8 me-3 tablinks" onclick="toggleBtn(event, 'flm')">FLM</button>
 					<button type="button" class="btn btn-white radius-8 me-3 tablinks" onclick="toggleBtn(event, 'overtime')">Overtime</button>
 					<button type="button" class="btn btn-white radius-8 me-3 tablinks" onclick="toggleBtn(event, 'ejPending')">EJ Pending</button>
+					<button type="button" class="btn btn-white radius-8 me-3 tablinks" onclick="toggleBtn(event, 'sentralPlanner')">Sentral Planner</button>
 				</div>
 
 				<div class="national-summary" id="sigma">
@@ -3016,6 +3017,117 @@
 						</div>
 					</div>
 				</div>
+
+				<div class="national-summary" id="sentralPlanner" style="display: none;">
+					<div class="card radius-10">
+						<div class="card-body">
+							<div class="row mb-4">
+								<div class="col-12 col-lg-3 filter-awal"><label for="filerDateAwal" class="form-label">Start Date
+										Filter</label>
+									<div class="input-group mb-2">
+										<input type="text" class="form-control" id="startDateSentralPlanner"
+											placeholder="dd/mm/yyyy">
+									</div>
+								</div>
+								<div class="col-12 col-lg-3 filter-akhir"><label for="filerDateAkhir" class="form-label">End Date
+										Filters</label>
+									<div class="input-group mb-2">
+										<input type="text" class="form-control" id="endDateSentralPlanner"
+											placeholder="dd/mm/yyyy">
+									</div>
+								</div>
+								<div class="col-12 col-lg-3">
+									<label class="form-label">Filter</label>
+									<select class="single-select form-select">
+										<option value="dct">All</option>
+										<option value="region">Region</option>
+										<option value="branch">Branch</option>
+									</select>
+								</div>
+
+								<!-- If user choose region show this option -->
+								<div class="col-12 col-lg-2">
+									<label class="form-label">Region</label>
+									<select class="single-select form-select">
+										<option value="">CID</option>
+										<option value="">R1</option>
+										<option value="">R2</option>
+										<option value="">R3</option>
+										<option value="">R4</option>
+										<option value="">R5</option>
+									</select>
+								</div>
+								<!-- end -->
+								
+								<!-- If user choose branch show this option -->
+								<!-- <div class="col-12 col-lg-2">
+									<label class="form-label">Region</label>
+									<select class="single-select form-select">
+										<option value="">CID</option>
+										<option value="">R1</option>
+										<option value="">R2</option>
+										<option value="">R3</option>
+										<option value="">R4</option>
+										<option value="">R5</option>
+									</select>
+								</div> -->
+								<!-- end -->
+
+								<div class="col-12 col-lg-1 button-filter">
+									<label for="" class="form-label">Action</label> <br>
+									<button type="button" class="btn btn-primary radius-8">Apply</button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-12 col-lg-6">
+							<div class="card radius-10">
+								<div class="card-body">
+									<h6 class="font-weight-bold text-center">Total Run CR</h6>
+									<div id="totalRunCR"></div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-12 col-lg-6">
+							<div class="card radius-10">
+								<div class="card-body">
+									<h6 class="font-weight-bold text-center">Jumlah Trip CR (STB)</h6>
+									<div id="jumlahTripCR"></div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-12 col-lg-4">
+							<div class="card radius-10">
+								<div class="card-body">
+									<h6 class="font-weight-bold text-center">Status Batal Isi</h6>
+									<div id="statusBatalIsi"></div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-12 col-lg-4">
+							<div class="card radius-10">
+								<div class="card-body">
+									<h6 class="font-weight-bold text-center">Status Cash Out Client</h6>
+									<div id="statusCashOutClient"></div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-12 col-lg-4">
+							<div class="card radius-10">
+								<div class="card-body">
+									<h6 class="font-weight-bold text-center">Status Cash Out Cabang</h6>
+									<div id="statusCashOutCabang"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 				
 
 
@@ -3133,6 +3245,18 @@
 				}
 			})
 			$("#endDateEjPending").datepicker({
+				uiLibrary: "bootstrap4",
+				icons: {
+					rightIcon: '<img src="assets/images/icons/calendar-days.svg" />'
+				}
+			})
+			$("#startDateSentralPlanner").datepicker({
+				uiLibrary: "bootstrap4",
+				icons: {
+					rightIcon: '<img src="assets/images/icons/calendar-days.svg" />'
+				}
+			})
+			$("#endDateSentralPlanner").datepicker({
 				uiLibrary: "bootstrap4",
 				icons: {
 					rightIcon: '<img src="assets/images/icons/calendar-days.svg" />'

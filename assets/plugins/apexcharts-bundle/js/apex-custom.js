@@ -2593,4 +2593,184 @@ $(function () {
     options
   );
   chart.render();
+
+  // Chart Total Run CR
+  var options = {
+    series: [72.7, 18.2, 9.1],
+    chart: {
+      foreColor: "#9ba7b2",
+      height: 330,
+      type: "pie",
+    },
+    colors: ["#56AB2F", "#F7971E", "#FD3550"],
+    labels: ["Done (400)", "Progress (100)", "Batal Isi (50)"],
+    legend: {
+      position: "bottom",
+    },
+    responsive: [
+      {
+        breakpoint: 480,
+        options: {
+          chart: {
+            height: 360,
+          },
+          legend: {
+            show: true,
+            position: "bottom",
+          },
+        },
+      },
+    ],
+  };
+  var chart = new ApexCharts(document.querySelector("#totalRunCR"), options);
+  chart.render();
+
+  // Jumlah Trip CR
+  var options = {
+    series: [56, 20, 24],
+    chart: {
+      foreColor: "#9ba7b2",
+      height: 330,
+      type: "pie",
+    },
+    colors: ["#B000A9", "#69AEFF", "#0727D7"],
+    labels: ["Cash Out (100)", "Cash Low (120)", "Cash High (280)"],
+    legend: {
+      position: "bottom",
+    },
+    responsive: [
+      {
+        breakpoint: 480,
+        options: {
+          chart: {
+            height: 360,
+          },
+          legend: {
+            show: true,
+            position: "bottom",
+          },
+        },
+      },
+    ],
+  };
+  var chart = new ApexCharts(document.querySelector("#jumlahTripCR"), options);
+  chart.render();
+
+  // Status Batal Isi
+  var options = {
+    series: [60, 40],
+    chart: {
+      foreColor: "#9ba7b2",
+      height: 330,
+      type: "pie",
+    },
+    colors: ["#2F80ED", "#E158D9"],
+    labels: ["Internal (20)", "Eksternal (30)"],
+    legend: {
+      position: "bottom",
+    },
+    responsive: [
+      {
+        breakpoint: 480,
+        options: {
+          chart: {
+            height: 360,
+          },
+          legend: {
+            show: true,
+            position: "bottom",
+          },
+        },
+      },
+    ],
+  };
+  var chart = new ApexCharts(
+    document.querySelector("#statusBatalIsi"),
+    options
+  );
+  chart.render();
+
+  // Status Batal Isi
+  var options = {
+    series: [30, 10, 5, 15, 10, 5, 25],
+    chart: {
+      foreColor: "#9ba7b2",
+      height: 330,
+      type: "pie",
+    },
+    // colors: ["#2F80ED", "#E158D9"],
+    labels: [
+      "OCBC (30)",
+      "BCA (10)",
+      "BRI (5)",
+      "BNI (15)",
+      "CIMB (10)",
+      "ARTH (5)",
+      "ATMI (25)",
+    ],
+    legend: {
+      position: "bottom",
+    },
+    responsive: [
+      {
+        breakpoint: 480,
+        options: {
+          chart: {
+            height: 360,
+          },
+          legend: {
+            show: true,
+            position: "bottom",
+          },
+        },
+      },
+    ],
+  };
+  var chart = new ApexCharts(
+    document.querySelector("#statusCashOutClient"),
+    options
+  );
+  chart.render();
+
+  // Status Cash Out Cabang
+  var options = {
+    series: [10, 15, 10, 15, 20, 15, 15],
+    chart: {
+      foreColor: "#9ba7b2",
+      height: 330,
+      type: "pie",
+    },
+    // colors: ["#2F80ED", "#E158D9"],
+    labels: [
+      "SEMARANG (10)",
+      "BANDUNG (15)",
+      "MATARAM (10)",
+      "SURABAYA (15)",
+      "SAMARINDA (20)",
+      "MERUYA (15)",
+      "RAWAMANGUN (15)",
+    ],
+    legend: {
+      position: "bottom",
+    },
+    responsive: [
+      {
+        breakpoint: 480,
+        options: {
+          chart: {
+            height: 360,
+          },
+          legend: {
+            show: true,
+            position: "bottom",
+          },
+        },
+      },
+    ],
+  };
+  var chart = new ApexCharts(
+    document.querySelector("#statusCashOutCabang"),
+    options
+  );
+  chart.render();
 });

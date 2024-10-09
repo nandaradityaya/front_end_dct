@@ -83,6 +83,16 @@ $(function () {
     ],
   });
 
+  const data = [
+    { name: "BCA", y: 15.68, z: 521, drilldown: "BCA" },
+    { name: "BNI", y: 14.79, z: 439, drilldown: "BNI" },
+    { name: "Maybank", y: 0, z: 391, drilldown: "Maybank" },
+    { name: "BRI", y: 10.58, z: 231, drilldown: "BRI" },
+  ];
+
+  // Filter out data where y is 0
+  const filteredData = data.filter((point) => point.y !== 0);
+
   Highcharts.chart("outstandingEJNoDifference", {
     chart: {
       height: 360,
@@ -129,32 +139,7 @@ $(function () {
       {
         name: "Traffic Sources",
         colorByPoint: true,
-        data: [
-          {
-            name: "BCA",
-            y: 15.68,
-            z: 521,
-            drilldown: "BCA",
-          },
-          {
-            name: "BNI",
-            y: 14.79,
-            z: 439,
-            drilldown: "BNI",
-          },
-          {
-            name: "Maybank",
-            y: 12.45,
-            z: 391,
-            drilldown: "Maybank",
-          },
-          {
-            name: "BRI",
-            y: 10.58,
-            z: 231,
-            drilldown: "BRI",
-          },
-        ],
+        data: filteredData,
       },
     ],
   });
